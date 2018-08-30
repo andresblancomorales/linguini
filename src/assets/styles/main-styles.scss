@@ -1,0 +1,30 @@
+$main-color: #8fa08d;
+$main-color-selected: #7e917c;
+$secondary-color: #998EAD;
+$third-color: #90A1BA;
+$fourth-color: #BBB290;
+$error-color: #BE9087;
+$font-color: #686055;
+
+@import url('https://fonts.googleapis.com/css?family=Fascinate|Poppins');
+$font-family: 'Poppins', sans-serif;
+$title-font: 'Fascinate', cursive;
+
+* {
+  box-sizing: border-box;
+  font-size: 15px;
+  font-family: $font-family;
+  color: $font-color;
+}
+
+textarea, select, input, button { outline: none; }
+
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+body {
+  height: calc(100vh);
+  margin: 0;
+}

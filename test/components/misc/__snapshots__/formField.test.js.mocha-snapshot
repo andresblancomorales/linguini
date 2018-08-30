@@ -1,0 +1,74 @@
+exports["should match snapshot(0)"] = {
+  "node": {
+    "nodeType": "host",
+    "type": "div",
+    "props": {
+      "className": "form",
+      "children": [
+        {
+          "type": "input",
+          "props": {
+            "onChange": "bound handleChange"
+          },
+          "_store": {}
+        },
+        {
+          "type": "div",
+          "props": {
+            "className": "underline"
+          },
+          "_store": {}
+        }
+      ]
+    },
+    "rendered": [
+      {
+        "nodeType": "host",
+        "type": "input",
+        "props": {
+          "onChange": "bound handleChange"
+        }
+      },
+      {
+        "nodeType": "host",
+        "type": "div",
+        "props": {
+          "className": "underline"
+        }
+      }
+    ]
+  },
+  "type": "div",
+  "props": {
+    "className": "form"
+  },
+  "children": [
+    {
+      "node": {
+        "nodeType": "host",
+        "type": "input",
+        "props": {
+          "onChange": "bound handleChange"
+        }
+      },
+      "type": "input",
+      "props": {
+        "onChange": "bound handleChange"
+      }
+    },
+    {
+      "node": {
+        "nodeType": "host",
+        "type": "div",
+        "props": {
+          "className": "underline"
+        }
+      },
+      "type": "div",
+      "props": {
+        "className": "underline"
+      }
+    }
+  ]
+};
+

@@ -1,0 +1,280 @@
+@import 'main-styles';
+@import 'animations.scss';
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  background: radial-gradient(#d2d1cb, $main-color);
+  overflow-x: hidden;
+}
+
+body #app {
+  height: 100%;
+}
+
+h1 {
+  text-shadow: 1px 1px $main-color-selected;
+  font-family: $title-font;
+  font-size: 3.5rem;
+  margin: auto auto 3rem auto;
+  background-color: transparent;
+  white-space: nowrap;
+  position: relative;
+}
+
+h1::before, h1::after {
+  content: '';
+  position: absolute;
+  height: 40%;
+  width: 100%;
+  background-color: transparent;
+  animation: pulse 1.5s ease-out infinite;
+}
+
+h1::before {
+  border-top-left-radius: 5px;
+  border-left: 0.2rem solid $error-color;
+  border-top: 0.2rem solid $error-color;
+  box-shadow: -0.3rem -0.3rem 0rem 0rem $font-color;
+  top: -1rem;
+  left: -1rem;
+}
+
+h1::after {
+  border-bottom-right-radius: 5px;
+  border-right: 0.2rem solid $error-color;
+  border-bottom: 0.2rem solid $error-color;
+  box-shadow: 0.3rem 0.3rem 0rem 0rem $font-color;
+  bottom: -0.5rem;
+  right: -1rem;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding-top: 1.5rem;
+}
+
+.login_form {
+  padding: 2rem 2rem 2rem 2rem;
+  width: 30rem;
+  background-color: white;
+  color: #3B3A3D;
+  box-shadow: 0rem 1rem 1rem -1rem rgba(124, 123, 123, 1);
+  border-radius: 5px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 25rem;
+  margin: 0 auto auto auto;
+}
+
+.login_form::before {
+  content: ' ';
+  opacity: 0.5;
+  background-image: url('../images/bread.png');
+  background-size: cover;
+  height: 22rem;
+  width: 30rem;
+  position: absolute;
+  top: 1.7rem;
+  left: -22rem;
+  z-index: -1;
+  transform: rotate(10deg);
+}
+
+.login_form::after {
+  content: ' ';
+  opacity: 0.5;
+  background-image: url('../images/vegetables-bw.png');
+  background-size: cover;
+  height: 20rem;
+  width: 41rem;
+  position: absolute;
+  top: 3rem;
+  left: 15rem;
+  z-index: -1;
+  transform: rotate(10deg);
+}
+
+.error {
+  display: flex;
+  height: 3rem;
+  width: 100%;
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 0.75s ease-out;
+}
+
+.error p {
+  margin-top: -2rem;
+  color: $error-color;
+  padding: 0.6rem;
+}
+
+.form_field {
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.form_field button {
+  align-self: flex-end;
+}
+
+.form_field input {
+  width: 100%;
+  border: 0;
+  //border-bottom: 0.05rem solid #B5B7B9;
+  padding: 0.1rem;
+  padding-bottom: 0.3rem;
+  position: relative;
+  display: inline-block;
+  z-index: 0;
+  height: 1.2rem;
+}
+
+.form_field input[disabled] {
+  background-color: transparent;
+  font-size: 0.9rem;
+  color: #d2d1cb;
+}
+
+.form_field input:disabled + .underline {
+  background-color: #d2d1cb;
+}
+
+.form_field input:disabled::-webkit-input-placeholder {
+  font-size: 0.9rem;
+  color: #d2d1cb;
+}
+
+.form_field input:disabled:-moz-placeholder { /* Firefox 18- */
+  font-size: 0.9rem;
+  color: #d2d1cb;
+}
+
+.form_field input:disabled::-moz-placeholder {  /* Firefox 19+ */
+  font-size: 0.9rem;
+  color: #d2d1cb;
+}
+
+.form_field input:disabled:-ms-input-placeholder {
+  font-size: 0.9rem;
+  color: #d2d1cb;
+}
+
+.form_field .underline {
+  position: relative;
+  width: 100%;
+  height: 0.15rem;
+  background-color: $main-color;
+  z-index: 1;
+}
+
+.form_field input:focus + .underline {
+  width: 100%;
+  background-color: $third-color;
+  transition: width 1s ease-in-out;
+}
+
+.form_field input:focus::-webkit-input-placeholder {
+  color:white;
+}
+
+.form_field input:focus:-moz-placeholder { /* Firefox 18- */
+  color:white;
+}
+
+.form_field input:focus::-moz-placeholder {  /* Firefox 19+ */
+  color:white;
+}
+
+.form_field input:focus:-ms-input-placeholder {
+  color:white;
+}
+
+.form_field input + .underline::before {
+  position: absolute;
+  content: '';
+  top: -1.1rem;
+  left: 0;
+  font-size: 1rem;
+}
+
+.form_field input:focus + .underline::before {
+  color: $secondary-color;
+  top: -3rem;
+  left: 0.1rem;
+  content: attr(data-placeholder);
+  font-size: 0.75rem;
+  transition: top 0.25s ease-in-out, font-size 0.25s ease-in-out;
+}
+
+.form_field input:not(:placeholder-shown) + .underline::before {
+  color: $secondary-color;
+  top: -3rem;
+  left: 0.1rem;
+  content: attr(data-placeholder);
+  font-size: 0.75rem;
+}
+
+button {
+  background-color: $main-color;
+  color: white;
+  border-radius: 0.25rem;
+  border-width: 0;
+  font-weight: bold;
+  //text-transform: uppercase;
+  width: 50%;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  align-self: flex-end;
+}
+
+button:active {
+  background-color: $main-color-selected;
+}
+
+.form_field a {
+  margin-top: 0.5rem;
+  color: $third-color;
+  align-self: flex-end;
+  font-size: 0.75rem;
+}
+
+@media only screen and (max-width: 800px) {
+  * {
+    font-size: 15px;
+  }
+
+  .login_form {
+    width: 22rem;
+  }
+
+  .login_form::before {
+    height: 19rem;
+    width: 26rem;
+    left: -16rem;
+  }
+
+  .login_form::after {
+    height: 18rem;
+    width: 35rem;
+    top: 3rem;
+    left: 8rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+}

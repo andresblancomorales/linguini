@@ -1,0 +1,9 @@
+@import 'main-styles';
+
+body {
+  background-color: $main-color;
+
+  div {
+    background-color: $secondary-color;
+  }
+}
