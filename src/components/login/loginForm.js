@@ -4,6 +4,7 @@ import {connect} from "react-redux";
 import {bindActionCreators} from 'redux';
 import {sessionActions} from './instanceProvider';
 import * as _ from '../../utils/utilities'
+import PropTypes from 'prop-types';
 
 const mapStateToProps = state => {
   return {
@@ -40,24 +41,49 @@ export class LoginForm extends Component {
     this.setState(newState);
   }
 
+  renderError() {
+
+    if (!_.isDefined(this.props.session.error) || this.props.session.loading) {
+      return (
+        <div key='empty' className='error'/>
+      );
+    } else {
+      return (
+        <div className='error'>
+          <p>{this.props.session.error}</p>
+        </div>
+      );
+    }
+  }
+
+  renderProgress() {
+    if (!this.props.session.loading) {
+      return null;
+    }
+
+    return (
+      <div className='progress'/>
+    );
+  }
+
   render() {
     return (
       <div className="main">
         <h1>Sous-chef</h1>
         <div className="login_form">
-          {!_.isDefined(this.props.session.error) ? <div key='empty' className="error"/> :
-            <div className="error">
-              <p>{this.props.session.error}</p>
-            </div>
-          }
+          {this.renderProgress()}
+          {this.renderError()}
           <FormField placeholder='Username'
                      autoComplete='username'
+                     disabled={this.props.session.loading}
                      onChange={this.onInputChange.bind(this, 'username')}/>
           <FormField type='password'
                      placeholder='Password'
+                     disabled={this.props.session.loading}
                      onChange={this.onInputChange.bind(this, 'password')}/>
           <div className="form_field">
-            <button onClick={this.getToken.bind(this)}>Let's cook!</button>
+            <button onClick={this.getToken.bind(this)}
+                    disabled={this.props.session.loading}>Let's cook!</button>
             <a href="#">Forgot your password?</a>
           </div>
         </div>
@@ -65,5 +91,14 @@ export class LoginForm extends Component {
     );
   }
 }
+
+LoginForm.propTypes = {
+  session: PropTypes.shape({
+    error: PropTypes.string
+  }),
+  actions: PropTypes.shape({
+    getToken: PropTypes.func.isRequired
+  })
+};
 
 export default connect(mapStateToProps, mapActionsToProps)(LoginForm);

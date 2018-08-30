@@ -33,3 +33,12 @@
     border-color: #BE9087;
   }
 }
+
+@keyframes progress {
+  0% {
+    right: -100%;
+  }
+  100% {
+    right: 200%;
+  }
+}

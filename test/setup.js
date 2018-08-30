@@ -9,3 +9,4 @@ Enzyme.configure({ adapter: new Adapter()});
 global.expect = require('chai').expect;
 global.path = require('path');
 global.sinon = require('sinon');
+global.GUSTEAU_URL = 'http://www.gusteau.com';
