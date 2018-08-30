@@ -4,6 +4,7 @@ import { connectRouter, routerMiddleware } from 'connected-react-router';
 import thunk from 'redux-thunk';
 import {createLogger} from 'redux-logger';
 import {sessionReducer} from '../../reducers/sessionReducer';
+import {redirector} from "../../middlewares/redirector";
 
 export const history = createHashHistory();
 
@@ -13,8 +14,9 @@ const reducers = combineReducers({
 
 const middlewares = applyMiddleware(
   thunk,
+  createLogger(),
   routerMiddleware(history),
-  createLogger()
+  redirector
 );
 
 export const store = createStore(

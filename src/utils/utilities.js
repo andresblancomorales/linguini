@@ -5,3 +5,7 @@ export function isDefined(variable) {
 export function isFunction(variable) {
   return typeof variable === 'function';
 }
+
+export function navigateTo(url) {
+  window.location.replace(url);
+}
