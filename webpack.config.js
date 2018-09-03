@@ -33,7 +33,7 @@ module.exports = (env, arguments) => {
         template: './src/assets/template.html',
         filename: 'login/index.html',
         inject: 'body',
-        chunks: ['poly','login']
+        chunks: ['poly', 'login']
       }),
       new MiniCssExtractPlugin({
         filename: isDevMode ? '[name].css' : '[name].[hash].css',
@@ -43,7 +43,7 @@ module.exports = (env, arguments) => {
         'process.env': {
           NODE_ENV: JSON.stringify(arguments.mode)
         },
-        GUSTEAU_URL: isDevMode ? "'http://localhost:3000'" : "'http://www.gusteau.com'"
+        GUSTEAU_URL: isDevMode ? "'http://localhost:81'" : "'http://www.gusteau.com'"
       }),
       new webpack.optimize.SplitChunksPlugin({
         names: ['login'],
