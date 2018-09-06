@@ -1,4 +1,5 @@
 import FetchClient from './fetchClient';
+import {isDefined} from "../utils/utilities";
 
 export default class GusteauClient extends FetchClient {
   constructor(url, bearerTokenProvider, listeners) {
@@ -19,5 +20,27 @@ export default class GusteauClient extends FetchClient {
     };
 
     return this.doPost(request);
+  }
+
+  deleteToken(accessToken) {
+    let request = {
+      path: '/token',
+      deserialize: false,
+      skipBearer: true,
+      body: {
+        access_token: accessToken
+      }
+    };
+
+    return this.doDelete(request);
+  }
+
+  getRecipes(offset) {
+    let request = {
+      path: !isDefined(offset)? '/recipes': `/recipes?offset=${offset}`,
+      deserialize: true
+    };
+
+    return this.doGet(request);
   }
 }

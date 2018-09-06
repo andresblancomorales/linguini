@@ -95,10 +95,10 @@ export class LoginForm extends Component {
 LoginForm.propTypes = {
   session: PropTypes.shape({
     error: PropTypes.string
-  }),
+  }).isRequired,
   actions: PropTypes.shape({
     getToken: PropTypes.func.isRequired
-  })
+  }).isRequired
 };
 
 export default connect(mapStateToProps, mapActionsToProps)(LoginForm);

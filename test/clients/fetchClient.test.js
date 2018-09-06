@@ -1,5 +1,6 @@
 import FetchClient from '../../src/clients/fetchClient';
 import fetchMock from 'fetch-mock';
+import {NoTokenProvidedException} from '../../src/clients/fetchClient';
 
 describe('FetchClient', () => {
 
@@ -10,7 +11,10 @@ describe('FetchClient', () => {
         opts.headers['Content-Type'] === 'application/json'
         && opts.body === JSON.stringify({chef: 'Andres'})
     }, {status: 200});
-    fetchMock.get('http://www.linguini.com/recipes', {status: 200, body: JSON.stringify({username: 'andres@email.com'})});
+    fetchMock.get('http://www.linguini.com/recipes', {
+      status: 200,
+      body: JSON.stringify({username: 'andres@email.com'})
+    });
     fetchMock.get('http://www.linguini.com/unauthorizedWithBody', {status: 401, body: {error: 'Unauthorized'}});
     fetchMock.get('http://www.linguini.com/unauthorized', {status: 401});
     fetchMock.get('http://www.linguini.com/forbidden', {status: 403});
@@ -63,7 +67,26 @@ describe('FetchClient', () => {
     )).to.be.true;
   });
 
-  it('should configure the request without the Bearer token if a provider is configure but the request asks to skip it', async () => {
+  it('should try to send the request with a Bearer Token and throw a NoTokenProvidedException', done => {
+    let baseClient = new FetchClient('http://www.linguini.com', {
+      getToken: () => {
+        return Promise.reject(new Error("Kapow"));
+      }
+    });
+
+    let request = {
+      path: '/recipes',
+      deserialize: true
+    };
+
+    baseClient.configureAndFetch(request, 'GET')
+      .catch(error => {
+        expect(error.name).to.equal(NoTokenProvidedException.Name);
+        done();
+      });
+  });
+
+  it('should configure the request without the Bearer token if a provider is configured but the request asks to skip it', async () => {
     let baseClient = new FetchClient('http://www.linguini.com', {
       getToken: () => {
         return Promise.resolve('70k3n')

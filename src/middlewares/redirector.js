@@ -7,6 +7,9 @@ export const redirector = store => next => action => {
       let session = action.session;
       _.navigateTo(`${session.redirectUrl}?access_token=${session.accessToken}`);
       break;
+    case SessionActions.Actions.LOGGED_OUT:
+      console.log('LOGGED OUT, REDIRECTING');
+      _.navigateTo('/login');
     default:
       return next(action);
   }

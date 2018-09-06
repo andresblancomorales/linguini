@@ -4,7 +4,7 @@ import {LoginForm} from '../../../src/components/login/loginForm';
 
 describe('<LoginForm />', () => {
 
-  it('should match snapshot', done => {
+  it('should match the snapshot', done => {
     const wrapper  = shallow(<LoginForm session={{error: undefined, loading: false} }/>);
 
     expect(wrapper).to.matchSnapshot();

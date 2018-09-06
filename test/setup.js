@@ -10,3 +10,5 @@ global.expect = require('chai').expect;
 global.path = require('path');
 global.sinon = require('sinon');
 global.GUSTEAU_URL = 'http://www.gusteau.com';
+
+global.URLSearchParams = require('url-search-params');

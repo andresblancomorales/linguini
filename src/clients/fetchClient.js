@@ -1,8 +1,9 @@
 import * as _ from '../utils/utilities';
 
-class NoTokenProvidedException extends Error {
+export class NoTokenProvidedException extends Error {
   constructor() {
     super('No Bearer token was provided');
+    this.name = NoTokenProvidedException.Name;
   }
 }
 NoTokenProvidedException.Name = 'NoTokenProvidedException';
@@ -23,22 +24,22 @@ export default class FetchClient {
 
   async configureAndFetch(request, method) {
     if (_.isDefined(this.bearerTokenProvider) && !request.skipBearer) {
-        let token = await this.bearerTokenProvider.getToken();
+        try {
+          let token = await this.bearerTokenProvider.getToken();
 
-        if (!_.isDefined(token)) {
+          request.headers = {
+            ...request.headers,
+            'Authorization': `Bearer ${token}`
+          };
+
+          return this.executeFetch(request, method);
+        } catch(error) {
           if (_.isDefined(this.authenticationListener)) {
             this.authenticationListener();
           }
 
           throw new NoTokenProvidedException();
         }
-
-        request.headers = {
-          ...request.headers,
-          'Authorization': `Bearer ${token}`
-        };
-
-        return this.executeFetch(request, method);
     } else {
       return this.executeFetch(request, method);
     }

@@ -1748,3 +1748,555 @@ exports["should match the progress snapshot(0)"] = {
   ]
 };
 
+exports["should match the snapshot(0)"] = {
+  "node": {
+    "nodeType": "host",
+    "type": "div",
+    "props": {
+      "className": "main",
+      "children": [
+        {
+          "type": "h1",
+          "props": {
+            "children": "Sous-chef"
+          },
+          "_store": {}
+        },
+        {
+          "type": "div",
+          "props": {
+            "className": "login",
+            "children": [
+              null,
+              {
+                "type": "div",
+                "key": "empty",
+                "props": {
+                  "className": "error"
+                },
+                "_store": {}
+              },
+              {
+                "type": "FormField",
+                "props": {
+                  "placeholder": "Username",
+                  "autoComplete": "username",
+                  "disabled": false,
+                  "onChange": "bound onInputChange"
+                },
+                "_store": {}
+              },
+              {
+                "type": "FormField",
+                "props": {
+                  "type": "password",
+                  "placeholder": "Password",
+                  "disabled": false,
+                  "onChange": "bound onInputChange"
+                },
+                "_store": {}
+              },
+              {
+                "type": "div",
+                "props": {
+                  "className": "form",
+                  "children": [
+                    {
+                      "type": "button",
+                      "props": {
+                        "onClick": "bound getToken",
+                        "disabled": false,
+                        "children": "Let's cook!"
+                      },
+                      "_store": {}
+                    },
+                    {
+                      "type": "a",
+                      "props": {
+                        "href": "#",
+                        "children": "Forgot your password?"
+                      },
+                      "_store": {}
+                    }
+                  ]
+                },
+                "_store": {}
+              }
+            ]
+          },
+          "_store": {}
+        }
+      ]
+    },
+    "rendered": [
+      {
+        "nodeType": "host",
+        "type": "h1",
+        "props": {
+          "children": "Sous-chef"
+        },
+        "rendered": "Sous-chef"
+      },
+      {
+        "nodeType": "host",
+        "type": "div",
+        "props": {
+          "className": "login",
+          "children": [
+            null,
+            {
+              "type": "div",
+              "key": "empty",
+              "props": {
+                "className": "error"
+              },
+              "_store": {}
+            },
+            {
+              "type": "FormField",
+              "props": {
+                "placeholder": "Username",
+                "autoComplete": "username",
+                "disabled": false,
+                "onChange": "bound onInputChange"
+              },
+              "_store": {}
+            },
+            {
+              "type": "FormField",
+              "props": {
+                "type": "password",
+                "placeholder": "Password",
+                "disabled": false,
+                "onChange": "bound onInputChange"
+              },
+              "_store": {}
+            },
+            {
+              "type": "div",
+              "props": {
+                "className": "form",
+                "children": [
+                  {
+                    "type": "button",
+                    "props": {
+                      "onClick": "bound getToken",
+                      "disabled": false,
+                      "children": "Let's cook!"
+                    },
+                    "_store": {}
+                  },
+                  {
+                    "type": "a",
+                    "props": {
+                      "href": "#",
+                      "children": "Forgot your password?"
+                    },
+                    "_store": {}
+                  }
+                ]
+              },
+              "_store": {}
+            }
+          ]
+        },
+        "rendered": [
+          null,
+          {
+            "nodeType": "host",
+            "type": "div",
+            "props": {
+              "className": "error"
+            },
+            "key": "empty"
+          },
+          {
+            "nodeType": "class",
+            "type": "FormField",
+            "props": {
+              "placeholder": "Username",
+              "autoComplete": "username",
+              "disabled": false,
+              "onChange": "bound onInputChange"
+            }
+          },
+          {
+            "nodeType": "class",
+            "type": "FormField",
+            "props": {
+              "type": "password",
+              "placeholder": "Password",
+              "disabled": false,
+              "onChange": "bound onInputChange"
+            }
+          },
+          {
+            "nodeType": "host",
+            "type": "div",
+            "props": {
+              "className": "form",
+              "children": [
+                {
+                  "type": "button",
+                  "props": {
+                    "onClick": "bound getToken",
+                    "disabled": false,
+                    "children": "Let's cook!"
+                  },
+                  "_store": {}
+                },
+                {
+                  "type": "a",
+                  "props": {
+                    "href": "#",
+                    "children": "Forgot your password?"
+                  },
+                  "_store": {}
+                }
+              ]
+            },
+            "rendered": [
+              {
+                "nodeType": "host",
+                "type": "button",
+                "props": {
+                  "onClick": "bound getToken",
+                  "disabled": false,
+                  "children": "Let's cook!"
+                },
+                "rendered": "Let's cook!"
+              },
+              {
+                "nodeType": "host",
+                "type": "a",
+                "props": {
+                  "href": "#",
+                  "children": "Forgot your password?"
+                },
+                "rendered": "Forgot your password?"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "type": "div",
+  "props": {
+    "className": "main"
+  },
+  "children": [
+    {
+      "node": {
+        "nodeType": "host",
+        "type": "h1",
+        "props": {
+          "children": "Sous-chef"
+        },
+        "rendered": "Sous-chef"
+      },
+      "type": "h1",
+      "props": {},
+      "children": [
+        "Sous-chef"
+      ]
+    },
+    {
+      "node": {
+        "nodeType": "host",
+        "type": "div",
+        "props": {
+          "className": "login",
+          "children": [
+            null,
+            {
+              "type": "div",
+              "key": "empty",
+              "props": {
+                "className": "error"
+              },
+              "_store": {}
+            },
+            {
+              "type": "FormField",
+              "props": {
+                "placeholder": "Username",
+                "autoComplete": "username",
+                "disabled": false,
+                "onChange": "bound onInputChange"
+              },
+              "_store": {}
+            },
+            {
+              "type": "FormField",
+              "props": {
+                "type": "password",
+                "placeholder": "Password",
+                "disabled": false,
+                "onChange": "bound onInputChange"
+              },
+              "_store": {}
+            },
+            {
+              "type": "div",
+              "props": {
+                "className": "form",
+                "children": [
+                  {
+                    "type": "button",
+                    "props": {
+                      "onClick": "bound getToken",
+                      "disabled": false,
+                      "children": "Let's cook!"
+                    },
+                    "_store": {}
+                  },
+                  {
+                    "type": "a",
+                    "props": {
+                      "href": "#",
+                      "children": "Forgot your password?"
+                    },
+                    "_store": {}
+                  }
+                ]
+              },
+              "_store": {}
+            }
+          ]
+        },
+        "rendered": [
+          null,
+          {
+            "nodeType": "host",
+            "type": "div",
+            "props": {
+              "className": "error"
+            },
+            "key": "empty"
+          },
+          {
+            "nodeType": "class",
+            "type": "FormField",
+            "props": {
+              "placeholder": "Username",
+              "autoComplete": "username",
+              "disabled": false,
+              "onChange": "bound onInputChange"
+            }
+          },
+          {
+            "nodeType": "class",
+            "type": "FormField",
+            "props": {
+              "type": "password",
+              "placeholder": "Password",
+              "disabled": false,
+              "onChange": "bound onInputChange"
+            }
+          },
+          {
+            "nodeType": "host",
+            "type": "div",
+            "props": {
+              "className": "form",
+              "children": [
+                {
+                  "type": "button",
+                  "props": {
+                    "onClick": "bound getToken",
+                    "disabled": false,
+                    "children": "Let's cook!"
+                  },
+                  "_store": {}
+                },
+                {
+                  "type": "a",
+                  "props": {
+                    "href": "#",
+                    "children": "Forgot your password?"
+                  },
+                  "_store": {}
+                }
+              ]
+            },
+            "rendered": [
+              {
+                "nodeType": "host",
+                "type": "button",
+                "props": {
+                  "onClick": "bound getToken",
+                  "disabled": false,
+                  "children": "Let's cook!"
+                },
+                "rendered": "Let's cook!"
+              },
+              {
+                "nodeType": "host",
+                "type": "a",
+                "props": {
+                  "href": "#",
+                  "children": "Forgot your password?"
+                },
+                "rendered": "Forgot your password?"
+              }
+            ]
+          }
+        ]
+      },
+      "type": "div",
+      "props": {
+        "className": "login"
+      },
+      "children": [
+        {
+          "node": {
+            "nodeType": "host",
+            "type": "div",
+            "props": {
+              "className": "error"
+            },
+            "key": "empty"
+          },
+          "type": "div",
+          "props": {
+            "className": "error",
+            "key": "empty"
+          }
+        },
+        {
+          "node": {
+            "nodeType": "class",
+            "type": "FormField",
+            "props": {
+              "placeholder": "Username",
+              "autoComplete": "username",
+              "disabled": false,
+              "onChange": "bound onInputChange"
+            }
+          },
+          "type": "FormField",
+          "props": {
+            "placeholder": "Username",
+            "autoComplete": "username",
+            "disabled": false,
+            "onChange": "bound onInputChange"
+          }
+        },
+        {
+          "node": {
+            "nodeType": "class",
+            "type": "FormField",
+            "props": {
+              "type": "password",
+              "placeholder": "Password",
+              "disabled": false,
+              "onChange": "bound onInputChange"
+            }
+          },
+          "type": "FormField",
+          "props": {
+            "type": "password",
+            "placeholder": "Password",
+            "disabled": false,
+            "onChange": "bound onInputChange"
+          }
+        },
+        {
+          "node": {
+            "nodeType": "host",
+            "type": "div",
+            "props": {
+              "className": "form",
+              "children": [
+                {
+                  "type": "button",
+                  "props": {
+                    "onClick": "bound getToken",
+                    "disabled": false,
+                    "children": "Let's cook!"
+                  },
+                  "_store": {}
+                },
+                {
+                  "type": "a",
+                  "props": {
+                    "href": "#",
+                    "children": "Forgot your password?"
+                  },
+                  "_store": {}
+                }
+              ]
+            },
+            "rendered": [
+              {
+                "nodeType": "host",
+                "type": "button",
+                "props": {
+                  "onClick": "bound getToken",
+                  "disabled": false,
+                  "children": "Let's cook!"
+                },
+                "rendered": "Let's cook!"
+              },
+              {
+                "nodeType": "host",
+                "type": "a",
+                "props": {
+                  "href": "#",
+                  "children": "Forgot your password?"
+                },
+                "rendered": "Forgot your password?"
+              }
+            ]
+          },
+          "type": "div",
+          "props": {
+            "className": "form"
+          },
+          "children": [
+            {
+              "node": {
+                "nodeType": "host",
+                "type": "button",
+                "props": {
+                  "onClick": "bound getToken",
+                  "disabled": false,
+                  "children": "Let's cook!"
+                },
+                "rendered": "Let's cook!"
+              },
+              "type": "button",
+              "props": {
+                "onClick": "bound getToken",
+                "disabled": false
+              },
+              "children": [
+                "Let's cook!"
+              ]
+            },
+            {
+              "node": {
+                "nodeType": "host",
+                "type": "a",
+                "props": {
+                  "href": "#",
+                  "children": "Forgot your password?"
+                },
+                "rendered": "Forgot your password?"
+              },
+              "type": "a",
+              "props": {
+                "href": "#"
+              },
+              "children": [
+                "Forgot your password?"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+};
+

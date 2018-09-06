@@ -52,4 +52,48 @@ describe('SessionActions', () => {
       });
   });
 
+  it('should logout and dispatch the correct events', done => {
+    let gusteauClient = new GusteauClient('http://www.gusteau.com');
+    sinon.stub(gusteauClient, 'deleteToken')
+      .withArgs('70k3n')
+      .returns(Promise.resolve({status: 200}));
+
+    let expectedActions = [
+      {type: SessionActions.Actions.LOGGING_OUT},
+      {type: SessionActions.Actions.LOGGED_OUT}
+    ];
+
+    let store = mockStore({});
+
+    let sessionActions = new SessionActions(gusteauClient);
+
+    store.dispatch(sessionActions.logout('70k3n'))
+      .then(() => {
+        expect(store.getActions()).to.deep.equal(expectedActions);
+        done();
+      });
+  });
+
+  it('should try to logout and dispatch the correct events if it fails', done => {
+    let gusteauClient = new GusteauClient('http://www.gusteau.com');
+    sinon.stub(gusteauClient, 'deleteToken')
+      .withArgs('70k3n')
+      .returns(Promise.reject({status: 500}));
+
+    let expectedActions = [
+      {type: SessionActions.Actions.LOGGING_OUT},
+      {type: SessionActions.Actions.LOG_OUT_FAILED}
+    ];
+
+    let store = mockStore({});
+
+    let sessionActions = new SessionActions(gusteauClient);
+
+    store.dispatch(sessionActions.logout('70k3n'))
+      .then(() => {
+        expect(store.getActions()).to.deep.equal(expectedActions);
+        done();
+      });
+  });
+
 });
