@@ -40,7 +40,6 @@ export class RecipesView extends Component {
                 </label>
               </label>
               <label htmlFor={`ingredientsCheck_${recipe._id}`} className='ingredientsCard'>
-                <label htmlFor={`ingredientsCheck_${recipe._id}`}>
                   <div className='ingredients'>
                     <div className='recipeName'>{recipe.name}</div>
                     <div>{recipe.ingredients.map(ingredient => {
@@ -52,10 +51,8 @@ export class RecipesView extends Component {
                       )
                     })}</div>
                   </div>
-                </label>
               </label>
-              <div className='preparation_steps'>
-                <label htmlFor={`stepsCheck_${recipe._id}`}>
+              <label htmlFor={`stepsCheck_${recipe._id}`} className='preparation_steps'>
                   <div className='preparation'>
                     <div>Steps</div>
                     {recipe.preparation.map(step => {
@@ -64,8 +61,7 @@ export class RecipesView extends Component {
                       )
                     })}
                   </div>
-                </label>
-              </div>
+              </label>
             </div>
           )
         })}

@@ -49,7 +49,7 @@ module.exports = (env, arguments) => {
         'process.env': {
           NODE_ENV: JSON.stringify(arguments.mode)
         },
-        GUSTEAU_URL: isDevMode ? "'http://localhost:3000'" : "'http://www.gusteau.com'"
+        GUSTEAU_URL: isDevMode ? "'http://192.168.11.19:3000'" : "'http://www.gusteau.com'"
       }),
       new webpack.optimize.SplitChunksPlugin({
         names: ['login'],
