@@ -1,0 +1,3433 @@
+exports["should match the spapshot with session details(0)"] = {
+  "node": {
+    "nodeType": "host",
+    "type": "div",
+    "props": {
+      "className": "recipes",
+      "children": []
+    },
+    "rendered": []
+  },
+  "type": "div",
+  "props": {
+    "className": "recipes"
+  }
+};
+
+exports["should match the spapshot with recipes(0)"] = {
+  "node": {
+    "nodeType": "host",
+    "type": "div",
+    "props": {
+      "className": "recipes",
+      "children": [
+        {
+          "type": "div",
+          "key": "001",
+          "props": {
+            "className": "recipeCard",
+            "children": [
+              {
+                "type": "input",
+                "props": {
+                  "name": "cardSelector_001",
+                  "id": "imgCheck_001",
+                  "type": "radio",
+                  "defaultChecked": true
+                },
+                "_store": {}
+              },
+              {
+                "type": "input",
+                "props": {
+                  "name": "cardSelector_001",
+                  "id": "ingredientsCheck_001",
+                  "type": "radio"
+                },
+                "_store": {}
+              },
+              {
+                "type": "input",
+                "props": {
+                  "name": "cardSelector_001",
+                  "id": "stepsCheck_001",
+                  "type": "radio"
+                },
+                "_store": {}
+              },
+              {
+                "type": "label",
+                "props": {
+                  "htmlFor": "imgCheck_001",
+                  "className": "imageCard",
+                  "children": {
+                    "type": "div",
+                    "props": {
+                      "className": "recipeImage",
+                      "children": [
+                        {
+                          "type": "div",
+                          "props": {
+                            "className": "cardTitle",
+                            "children": "Rice n Beans"
+                          },
+                          "_store": {}
+                        },
+                        {
+                          "type": "img",
+                          "props": {
+                            "src": "http://www.linguini.com/recipe.png"
+                          },
+                          "_store": {}
+                        }
+                      ]
+                    },
+                    "_store": {}
+                  }
+                },
+                "_store": {}
+              },
+              {
+                "type": "label",
+                "props": {
+                  "htmlFor": "ingredientsCheck_001",
+                  "className": "ingredientsCard",
+                  "children": [
+                    {
+                      "type": "div",
+                      "props": {
+                        "className": "cardTitle",
+                        "children": "Ingredients"
+                      },
+                      "_store": {}
+                    },
+                    {
+                      "type": "div",
+                      "props": {
+                        "className": "ingredients",
+                        "children": {
+                          "type": "ol",
+                          "props": {
+                            "children": [
+                              {
+                                "type": "li",
+                                "props": {
+                                  "children": [
+                                    {
+                                      "type": "span",
+                                      "props": {
+                                        "children": [
+                                          "Rice",
+                                          " - "
+                                        ]
+                                      },
+                                      "_store": {}
+                                    },
+                                    {
+                                      "type": "span",
+                                      "props": {
+                                        "children": "1kg"
+                                      },
+                                      "_store": {}
+                                    }
+                                  ]
+                                },
+                                "_store": {}
+                              },
+                              {
+                                "type": "li",
+                                "props": {
+                                  "children": [
+                                    {
+                                      "type": "span",
+                                      "props": {
+                                        "children": [
+                                          "Beans",
+                                          " - "
+                                        ]
+                                      },
+                                      "_store": {}
+                                    },
+                                    {
+                                      "type": "span",
+                                      "props": {
+                                        "children": "2kg"
+                                      },
+                                      "_store": {}
+                                    }
+                                  ]
+                                },
+                                "_store": {}
+                              }
+                            ]
+                          },
+                          "_store": {}
+                        }
+                      },
+                      "_store": {}
+                    }
+                  ]
+                },
+                "_store": {}
+              },
+              {
+                "type": "label",
+                "props": {
+                  "htmlFor": "stepsCheck_001",
+                  "className": "preparation",
+                  "children": [
+                    {
+                      "type": "div",
+                      "props": {
+                        "className": "cardTitle",
+                        "children": "Steps"
+                      },
+                      "_store": {}
+                    },
+                    {
+                      "type": "div",
+                      "props": {
+                        "className": "preparation",
+                        "children": {
+                          "type": "ol",
+                          "props": {
+                            "children": [
+                              {
+                                "type": "li",
+                                "props": {
+                                  "className": "step",
+                                  "children": "Gather"
+                                },
+                                "_store": {}
+                              },
+                              {
+                                "type": "li",
+                                "props": {
+                                  "className": "step",
+                                  "children": "Mix"
+                                },
+                                "_store": {}
+                              },
+                              {
+                                "type": "li",
+                                "props": {
+                                  "className": "step",
+                                  "children": "Cook"
+                                },
+                                "_store": {}
+                              }
+                            ]
+                          },
+                          "_store": {}
+                        }
+                      },
+                      "_store": {}
+                    }
+                  ]
+                },
+                "_store": {}
+              }
+            ]
+          },
+          "_store": {}
+        }
+      ]
+    },
+    "rendered": [
+      {
+        "nodeType": "host",
+        "type": "div",
+        "props": {
+          "className": "recipeCard",
+          "children": [
+            {
+              "type": "input",
+              "props": {
+                "name": "cardSelector_001",
+                "id": "imgCheck_001",
+                "type": "radio",
+                "defaultChecked": true
+              },
+              "_store": {}
+            },
+            {
+              "type": "input",
+              "props": {
+                "name": "cardSelector_001",
+                "id": "ingredientsCheck_001",
+                "type": "radio"
+              },
+              "_store": {}
+            },
+            {
+              "type": "input",
+              "props": {
+                "name": "cardSelector_001",
+                "id": "stepsCheck_001",
+                "type": "radio"
+              },
+              "_store": {}
+            },
+            {
+              "type": "label",
+              "props": {
+                "htmlFor": "imgCheck_001",
+                "className": "imageCard",
+                "children": {
+                  "type": "div",
+                  "props": {
+                    "className": "recipeImage",
+                    "children": [
+                      {
+                        "type": "div",
+                        "props": {
+                          "className": "cardTitle",
+                          "children": "Rice n Beans"
+                        },
+                        "_store": {}
+                      },
+                      {
+                        "type": "img",
+                        "props": {
+                          "src": "http://www.linguini.com/recipe.png"
+                        },
+                        "_store": {}
+                      }
+                    ]
+                  },
+                  "_store": {}
+                }
+              },
+              "_store": {}
+            },
+            {
+              "type": "label",
+              "props": {
+                "htmlFor": "ingredientsCheck_001",
+                "className": "ingredientsCard",
+                "children": [
+                  {
+                    "type": "div",
+                    "props": {
+                      "className": "cardTitle",
+                      "children": "Ingredients"
+                    },
+                    "_store": {}
+                  },
+                  {
+                    "type": "div",
+                    "props": {
+                      "className": "ingredients",
+                      "children": {
+                        "type": "ol",
+                        "props": {
+                          "children": [
+                            {
+                              "type": "li",
+                              "props": {
+                                "children": [
+                                  {
+                                    "type": "span",
+                                    "props": {
+                                      "children": [
+                                        "Rice",
+                                        " - "
+                                      ]
+                                    },
+                                    "_store": {}
+                                  },
+                                  {
+                                    "type": "span",
+                                    "props": {
+                                      "children": "1kg"
+                                    },
+                                    "_store": {}
+                                  }
+                                ]
+                              },
+                              "_store": {}
+                            },
+                            {
+                              "type": "li",
+                              "props": {
+                                "children": [
+                                  {
+                                    "type": "span",
+                                    "props": {
+                                      "children": [
+                                        "Beans",
+                                        " - "
+                                      ]
+                                    },
+                                    "_store": {}
+                                  },
+                                  {
+                                    "type": "span",
+                                    "props": {
+                                      "children": "2kg"
+                                    },
+                                    "_store": {}
+                                  }
+                                ]
+                              },
+                              "_store": {}
+                            }
+                          ]
+                        },
+                        "_store": {}
+                      }
+                    },
+                    "_store": {}
+                  }
+                ]
+              },
+              "_store": {}
+            },
+            {
+              "type": "label",
+              "props": {
+                "htmlFor": "stepsCheck_001",
+                "className": "preparation",
+                "children": [
+                  {
+                    "type": "div",
+                    "props": {
+                      "className": "cardTitle",
+                      "children": "Steps"
+                    },
+                    "_store": {}
+                  },
+                  {
+                    "type": "div",
+                    "props": {
+                      "className": "preparation",
+                      "children": {
+                        "type": "ol",
+                        "props": {
+                          "children": [
+                            {
+                              "type": "li",
+                              "props": {
+                                "className": "step",
+                                "children": "Gather"
+                              },
+                              "_store": {}
+                            },
+                            {
+                              "type": "li",
+                              "props": {
+                                "className": "step",
+                                "children": "Mix"
+                              },
+                              "_store": {}
+                            },
+                            {
+                              "type": "li",
+                              "props": {
+                                "className": "step",
+                                "children": "Cook"
+                              },
+                              "_store": {}
+                            }
+                          ]
+                        },
+                        "_store": {}
+                      }
+                    },
+                    "_store": {}
+                  }
+                ]
+              },
+              "_store": {}
+            }
+          ]
+        },
+        "key": "001",
+        "rendered": [
+          {
+            "nodeType": "host",
+            "type": "input",
+            "props": {
+              "name": "cardSelector_001",
+              "id": "imgCheck_001",
+              "type": "radio",
+              "defaultChecked": true
+            }
+          },
+          {
+            "nodeType": "host",
+            "type": "input",
+            "props": {
+              "name": "cardSelector_001",
+              "id": "ingredientsCheck_001",
+              "type": "radio"
+            }
+          },
+          {
+            "nodeType": "host",
+            "type": "input",
+            "props": {
+              "name": "cardSelector_001",
+              "id": "stepsCheck_001",
+              "type": "radio"
+            }
+          },
+          {
+            "nodeType": "host",
+            "type": "label",
+            "props": {
+              "htmlFor": "imgCheck_001",
+              "className": "imageCard",
+              "children": {
+                "type": "div",
+                "props": {
+                  "className": "recipeImage",
+                  "children": [
+                    {
+                      "type": "div",
+                      "props": {
+                        "className": "cardTitle",
+                        "children": "Rice n Beans"
+                      },
+                      "_store": {}
+                    },
+                    {
+                      "type": "img",
+                      "props": {
+                        "src": "http://www.linguini.com/recipe.png"
+                      },
+                      "_store": {}
+                    }
+                  ]
+                },
+                "_store": {}
+              }
+            },
+            "rendered": {
+              "nodeType": "host",
+              "type": "div",
+              "props": {
+                "className": "recipeImage",
+                "children": [
+                  {
+                    "type": "div",
+                    "props": {
+                      "className": "cardTitle",
+                      "children": "Rice n Beans"
+                    },
+                    "_store": {}
+                  },
+                  {
+                    "type": "img",
+                    "props": {
+                      "src": "http://www.linguini.com/recipe.png"
+                    },
+                    "_store": {}
+                  }
+                ]
+              },
+              "rendered": [
+                {
+                  "nodeType": "host",
+                  "type": "div",
+                  "props": {
+                    "className": "cardTitle",
+                    "children": "Rice n Beans"
+                  },
+                  "rendered": "Rice n Beans"
+                },
+                {
+                  "nodeType": "host",
+                  "type": "img",
+                  "props": {
+                    "src": "http://www.linguini.com/recipe.png"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "nodeType": "host",
+            "type": "label",
+            "props": {
+              "htmlFor": "ingredientsCheck_001",
+              "className": "ingredientsCard",
+              "children": [
+                {
+                  "type": "div",
+                  "props": {
+                    "className": "cardTitle",
+                    "children": "Ingredients"
+                  },
+                  "_store": {}
+                },
+                {
+                  "type": "div",
+                  "props": {
+                    "className": "ingredients",
+                    "children": {
+                      "type": "ol",
+                      "props": {
+                        "children": [
+                          {
+                            "type": "li",
+                            "props": {
+                              "children": [
+                                {
+                                  "type": "span",
+                                  "props": {
+                                    "children": [
+                                      "Rice",
+                                      " - "
+                                    ]
+                                  },
+                                  "_store": {}
+                                },
+                                {
+                                  "type": "span",
+                                  "props": {
+                                    "children": "1kg"
+                                  },
+                                  "_store": {}
+                                }
+                              ]
+                            },
+                            "_store": {}
+                          },
+                          {
+                            "type": "li",
+                            "props": {
+                              "children": [
+                                {
+                                  "type": "span",
+                                  "props": {
+                                    "children": [
+                                      "Beans",
+                                      " - "
+                                    ]
+                                  },
+                                  "_store": {}
+                                },
+                                {
+                                  "type": "span",
+                                  "props": {
+                                    "children": "2kg"
+                                  },
+                                  "_store": {}
+                                }
+                              ]
+                            },
+                            "_store": {}
+                          }
+                        ]
+                      },
+                      "_store": {}
+                    }
+                  },
+                  "_store": {}
+                }
+              ]
+            },
+            "rendered": [
+              {
+                "nodeType": "host",
+                "type": "div",
+                "props": {
+                  "className": "cardTitle",
+                  "children": "Ingredients"
+                },
+                "rendered": "Ingredients"
+              },
+              {
+                "nodeType": "host",
+                "type": "div",
+                "props": {
+                  "className": "ingredients",
+                  "children": {
+                    "type": "ol",
+                    "props": {
+                      "children": [
+                        {
+                          "type": "li",
+                          "props": {
+                            "children": [
+                              {
+                                "type": "span",
+                                "props": {
+                                  "children": [
+                                    "Rice",
+                                    " - "
+                                  ]
+                                },
+                                "_store": {}
+                              },
+                              {
+                                "type": "span",
+                                "props": {
+                                  "children": "1kg"
+                                },
+                                "_store": {}
+                              }
+                            ]
+                          },
+                          "_store": {}
+                        },
+                        {
+                          "type": "li",
+                          "props": {
+                            "children": [
+                              {
+                                "type": "span",
+                                "props": {
+                                  "children": [
+                                    "Beans",
+                                    " - "
+                                  ]
+                                },
+                                "_store": {}
+                              },
+                              {
+                                "type": "span",
+                                "props": {
+                                  "children": "2kg"
+                                },
+                                "_store": {}
+                              }
+                            ]
+                          },
+                          "_store": {}
+                        }
+                      ]
+                    },
+                    "_store": {}
+                  }
+                },
+                "rendered": {
+                  "nodeType": "host",
+                  "type": "ol",
+                  "props": {
+                    "children": [
+                      {
+                        "type": "li",
+                        "props": {
+                          "children": [
+                            {
+                              "type": "span",
+                              "props": {
+                                "children": [
+                                  "Rice",
+                                  " - "
+                                ]
+                              },
+                              "_store": {}
+                            },
+                            {
+                              "type": "span",
+                              "props": {
+                                "children": "1kg"
+                              },
+                              "_store": {}
+                            }
+                          ]
+                        },
+                        "_store": {}
+                      },
+                      {
+                        "type": "li",
+                        "props": {
+                          "children": [
+                            {
+                              "type": "span",
+                              "props": {
+                                "children": [
+                                  "Beans",
+                                  " - "
+                                ]
+                              },
+                              "_store": {}
+                            },
+                            {
+                              "type": "span",
+                              "props": {
+                                "children": "2kg"
+                              },
+                              "_store": {}
+                            }
+                          ]
+                        },
+                        "_store": {}
+                      }
+                    ]
+                  },
+                  "rendered": [
+                    {
+                      "nodeType": "host",
+                      "type": "li",
+                      "props": {
+                        "children": [
+                          {
+                            "type": "span",
+                            "props": {
+                              "children": [
+                                "Rice",
+                                " - "
+                              ]
+                            },
+                            "_store": {}
+                          },
+                          {
+                            "type": "span",
+                            "props": {
+                              "children": "1kg"
+                            },
+                            "_store": {}
+                          }
+                        ]
+                      },
+                      "rendered": [
+                        {
+                          "nodeType": "host",
+                          "type": "span",
+                          "props": {
+                            "children": [
+                              "Rice",
+                              " - "
+                            ]
+                          },
+                          "rendered": [
+                            "Rice",
+                            " - "
+                          ]
+                        },
+                        {
+                          "nodeType": "host",
+                          "type": "span",
+                          "props": {
+                            "children": "1kg"
+                          },
+                          "rendered": "1kg"
+                        }
+                      ]
+                    },
+                    {
+                      "nodeType": "host",
+                      "type": "li",
+                      "props": {
+                        "children": [
+                          {
+                            "type": "span",
+                            "props": {
+                              "children": [
+                                "Beans",
+                                " - "
+                              ]
+                            },
+                            "_store": {}
+                          },
+                          {
+                            "type": "span",
+                            "props": {
+                              "children": "2kg"
+                            },
+                            "_store": {}
+                          }
+                        ]
+                      },
+                      "rendered": [
+                        {
+                          "nodeType": "host",
+                          "type": "span",
+                          "props": {
+                            "children": [
+                              "Beans",
+                              " - "
+                            ]
+                          },
+                          "rendered": [
+                            "Beans",
+                            " - "
+                          ]
+                        },
+                        {
+                          "nodeType": "host",
+                          "type": "span",
+                          "props": {
+                            "children": "2kg"
+                          },
+                          "rendered": "2kg"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "nodeType": "host",
+            "type": "label",
+            "props": {
+              "htmlFor": "stepsCheck_001",
+              "className": "preparation",
+              "children": [
+                {
+                  "type": "div",
+                  "props": {
+                    "className": "cardTitle",
+                    "children": "Steps"
+                  },
+                  "_store": {}
+                },
+                {
+                  "type": "div",
+                  "props": {
+                    "className": "preparation",
+                    "children": {
+                      "type": "ol",
+                      "props": {
+                        "children": [
+                          {
+                            "type": "li",
+                            "props": {
+                              "className": "step",
+                              "children": "Gather"
+                            },
+                            "_store": {}
+                          },
+                          {
+                            "type": "li",
+                            "props": {
+                              "className": "step",
+                              "children": "Mix"
+                            },
+                            "_store": {}
+                          },
+                          {
+                            "type": "li",
+                            "props": {
+                              "className": "step",
+                              "children": "Cook"
+                            },
+                            "_store": {}
+                          }
+                        ]
+                      },
+                      "_store": {}
+                    }
+                  },
+                  "_store": {}
+                }
+              ]
+            },
+            "rendered": [
+              {
+                "nodeType": "host",
+                "type": "div",
+                "props": {
+                  "className": "cardTitle",
+                  "children": "Steps"
+                },
+                "rendered": "Steps"
+              },
+              {
+                "nodeType": "host",
+                "type": "div",
+                "props": {
+                  "className": "preparation",
+                  "children": {
+                    "type": "ol",
+                    "props": {
+                      "children": [
+                        {
+                          "type": "li",
+                          "props": {
+                            "className": "step",
+                            "children": "Gather"
+                          },
+                          "_store": {}
+                        },
+                        {
+                          "type": "li",
+                          "props": {
+                            "className": "step",
+                            "children": "Mix"
+                          },
+                          "_store": {}
+                        },
+                        {
+                          "type": "li",
+                          "props": {
+                            "className": "step",
+                            "children": "Cook"
+                          },
+                          "_store": {}
+                        }
+                      ]
+                    },
+                    "_store": {}
+                  }
+                },
+                "rendered": {
+                  "nodeType": "host",
+                  "type": "ol",
+                  "props": {
+                    "children": [
+                      {
+                        "type": "li",
+                        "props": {
+                          "className": "step",
+                          "children": "Gather"
+                        },
+                        "_store": {}
+                      },
+                      {
+                        "type": "li",
+                        "props": {
+                          "className": "step",
+                          "children": "Mix"
+                        },
+                        "_store": {}
+                      },
+                      {
+                        "type": "li",
+                        "props": {
+                          "className": "step",
+                          "children": "Cook"
+                        },
+                        "_store": {}
+                      }
+                    ]
+                  },
+                  "rendered": [
+                    {
+                      "nodeType": "host",
+                      "type": "li",
+                      "props": {
+                        "className": "step",
+                        "children": "Gather"
+                      },
+                      "rendered": "Gather"
+                    },
+                    {
+                      "nodeType": "host",
+                      "type": "li",
+                      "props": {
+                        "className": "step",
+                        "children": "Mix"
+                      },
+                      "rendered": "Mix"
+                    },
+                    {
+                      "nodeType": "host",
+                      "type": "li",
+                      "props": {
+                        "className": "step",
+                        "children": "Cook"
+                      },
+                      "rendered": "Cook"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "type": "div",
+  "props": {
+    "className": "recipes"
+  },
+  "children": [
+    {
+      "node": {
+        "nodeType": "host",
+        "type": "div",
+        "props": {
+          "className": "recipeCard",
+          "children": [
+            {
+              "type": "input",
+              "props": {
+                "name": "cardSelector_001",
+                "id": "imgCheck_001",
+                "type": "radio",
+                "defaultChecked": true
+              },
+              "_store": {}
+            },
+            {
+              "type": "input",
+              "props": {
+                "name": "cardSelector_001",
+                "id": "ingredientsCheck_001",
+                "type": "radio"
+              },
+              "_store": {}
+            },
+            {
+              "type": "input",
+              "props": {
+                "name": "cardSelector_001",
+                "id": "stepsCheck_001",
+                "type": "radio"
+              },
+              "_store": {}
+            },
+            {
+              "type": "label",
+              "props": {
+                "htmlFor": "imgCheck_001",
+                "className": "imageCard",
+                "children": {
+                  "type": "div",
+                  "props": {
+                    "className": "recipeImage",
+                    "children": [
+                      {
+                        "type": "div",
+                        "props": {
+                          "className": "cardTitle",
+                          "children": "Rice n Beans"
+                        },
+                        "_store": {}
+                      },
+                      {
+                        "type": "img",
+                        "props": {
+                          "src": "http://www.linguini.com/recipe.png"
+                        },
+                        "_store": {}
+                      }
+                    ]
+                  },
+                  "_store": {}
+                }
+              },
+              "_store": {}
+            },
+            {
+              "type": "label",
+              "props": {
+                "htmlFor": "ingredientsCheck_001",
+                "className": "ingredientsCard",
+                "children": [
+                  {
+                    "type": "div",
+                    "props": {
+                      "className": "cardTitle",
+                      "children": "Ingredients"
+                    },
+                    "_store": {}
+                  },
+                  {
+                    "type": "div",
+                    "props": {
+                      "className": "ingredients",
+                      "children": {
+                        "type": "ol",
+                        "props": {
+                          "children": [
+                            {
+                              "type": "li",
+                              "props": {
+                                "children": [
+                                  {
+                                    "type": "span",
+                                    "props": {
+                                      "children": [
+                                        "Rice",
+                                        " - "
+                                      ]
+                                    },
+                                    "_store": {}
+                                  },
+                                  {
+                                    "type": "span",
+                                    "props": {
+                                      "children": "1kg"
+                                    },
+                                    "_store": {}
+                                  }
+                                ]
+                              },
+                              "_store": {}
+                            },
+                            {
+                              "type": "li",
+                              "props": {
+                                "children": [
+                                  {
+                                    "type": "span",
+                                    "props": {
+                                      "children": [
+                                        "Beans",
+                                        " - "
+                                      ]
+                                    },
+                                    "_store": {}
+                                  },
+                                  {
+                                    "type": "span",
+                                    "props": {
+                                      "children": "2kg"
+                                    },
+                                    "_store": {}
+                                  }
+                                ]
+                              },
+                              "_store": {}
+                            }
+                          ]
+                        },
+                        "_store": {}
+                      }
+                    },
+                    "_store": {}
+                  }
+                ]
+              },
+              "_store": {}
+            },
+            {
+              "type": "label",
+              "props": {
+                "htmlFor": "stepsCheck_001",
+                "className": "preparation",
+                "children": [
+                  {
+                    "type": "div",
+                    "props": {
+                      "className": "cardTitle",
+                      "children": "Steps"
+                    },
+                    "_store": {}
+                  },
+                  {
+                    "type": "div",
+                    "props": {
+                      "className": "preparation",
+                      "children": {
+                        "type": "ol",
+                        "props": {
+                          "children": [
+                            {
+                              "type": "li",
+                              "props": {
+                                "className": "step",
+                                "children": "Gather"
+                              },
+                              "_store": {}
+                            },
+                            {
+                              "type": "li",
+                              "props": {
+                                "className": "step",
+                                "children": "Mix"
+                              },
+                              "_store": {}
+                            },
+                            {
+                              "type": "li",
+                              "props": {
+                                "className": "step",
+                                "children": "Cook"
+                              },
+                              "_store": {}
+                            }
+                          ]
+                        },
+                        "_store": {}
+                      }
+                    },
+                    "_store": {}
+                  }
+                ]
+              },
+              "_store": {}
+            }
+          ]
+        },
+        "key": "001",
+        "rendered": [
+          {
+            "nodeType": "host",
+            "type": "input",
+            "props": {
+              "name": "cardSelector_001",
+              "id": "imgCheck_001",
+              "type": "radio",
+              "defaultChecked": true
+            }
+          },
+          {
+            "nodeType": "host",
+            "type": "input",
+            "props": {
+              "name": "cardSelector_001",
+              "id": "ingredientsCheck_001",
+              "type": "radio"
+            }
+          },
+          {
+            "nodeType": "host",
+            "type": "input",
+            "props": {
+              "name": "cardSelector_001",
+              "id": "stepsCheck_001",
+              "type": "radio"
+            }
+          },
+          {
+            "nodeType": "host",
+            "type": "label",
+            "props": {
+              "htmlFor": "imgCheck_001",
+              "className": "imageCard",
+              "children": {
+                "type": "div",
+                "props": {
+                  "className": "recipeImage",
+                  "children": [
+                    {
+                      "type": "div",
+                      "props": {
+                        "className": "cardTitle",
+                        "children": "Rice n Beans"
+                      },
+                      "_store": {}
+                    },
+                    {
+                      "type": "img",
+                      "props": {
+                        "src": "http://www.linguini.com/recipe.png"
+                      },
+                      "_store": {}
+                    }
+                  ]
+                },
+                "_store": {}
+              }
+            },
+            "rendered": {
+              "nodeType": "host",
+              "type": "div",
+              "props": {
+                "className": "recipeImage",
+                "children": [
+                  {
+                    "type": "div",
+                    "props": {
+                      "className": "cardTitle",
+                      "children": "Rice n Beans"
+                    },
+                    "_store": {}
+                  },
+                  {
+                    "type": "img",
+                    "props": {
+                      "src": "http://www.linguini.com/recipe.png"
+                    },
+                    "_store": {}
+                  }
+                ]
+              },
+              "rendered": [
+                {
+                  "nodeType": "host",
+                  "type": "div",
+                  "props": {
+                    "className": "cardTitle",
+                    "children": "Rice n Beans"
+                  },
+                  "rendered": "Rice n Beans"
+                },
+                {
+                  "nodeType": "host",
+                  "type": "img",
+                  "props": {
+                    "src": "http://www.linguini.com/recipe.png"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "nodeType": "host",
+            "type": "label",
+            "props": {
+              "htmlFor": "ingredientsCheck_001",
+              "className": "ingredientsCard",
+              "children": [
+                {
+                  "type": "div",
+                  "props": {
+                    "className": "cardTitle",
+                    "children": "Ingredients"
+                  },
+                  "_store": {}
+                },
+                {
+                  "type": "div",
+                  "props": {
+                    "className": "ingredients",
+                    "children": {
+                      "type": "ol",
+                      "props": {
+                        "children": [
+                          {
+                            "type": "li",
+                            "props": {
+                              "children": [
+                                {
+                                  "type": "span",
+                                  "props": {
+                                    "children": [
+                                      "Rice",
+                                      " - "
+                                    ]
+                                  },
+                                  "_store": {}
+                                },
+                                {
+                                  "type": "span",
+                                  "props": {
+                                    "children": "1kg"
+                                  },
+                                  "_store": {}
+                                }
+                              ]
+                            },
+                            "_store": {}
+                          },
+                          {
+                            "type": "li",
+                            "props": {
+                              "children": [
+                                {
+                                  "type": "span",
+                                  "props": {
+                                    "children": [
+                                      "Beans",
+                                      " - "
+                                    ]
+                                  },
+                                  "_store": {}
+                                },
+                                {
+                                  "type": "span",
+                                  "props": {
+                                    "children": "2kg"
+                                  },
+                                  "_store": {}
+                                }
+                              ]
+                            },
+                            "_store": {}
+                          }
+                        ]
+                      },
+                      "_store": {}
+                    }
+                  },
+                  "_store": {}
+                }
+              ]
+            },
+            "rendered": [
+              {
+                "nodeType": "host",
+                "type": "div",
+                "props": {
+                  "className": "cardTitle",
+                  "children": "Ingredients"
+                },
+                "rendered": "Ingredients"
+              },
+              {
+                "nodeType": "host",
+                "type": "div",
+                "props": {
+                  "className": "ingredients",
+                  "children": {
+                    "type": "ol",
+                    "props": {
+                      "children": [
+                        {
+                          "type": "li",
+                          "props": {
+                            "children": [
+                              {
+                                "type": "span",
+                                "props": {
+                                  "children": [
+                                    "Rice",
+                                    " - "
+                                  ]
+                                },
+                                "_store": {}
+                              },
+                              {
+                                "type": "span",
+                                "props": {
+                                  "children": "1kg"
+                                },
+                                "_store": {}
+                              }
+                            ]
+                          },
+                          "_store": {}
+                        },
+                        {
+                          "type": "li",
+                          "props": {
+                            "children": [
+                              {
+                                "type": "span",
+                                "props": {
+                                  "children": [
+                                    "Beans",
+                                    " - "
+                                  ]
+                                },
+                                "_store": {}
+                              },
+                              {
+                                "type": "span",
+                                "props": {
+                                  "children": "2kg"
+                                },
+                                "_store": {}
+                              }
+                            ]
+                          },
+                          "_store": {}
+                        }
+                      ]
+                    },
+                    "_store": {}
+                  }
+                },
+                "rendered": {
+                  "nodeType": "host",
+                  "type": "ol",
+                  "props": {
+                    "children": [
+                      {
+                        "type": "li",
+                        "props": {
+                          "children": [
+                            {
+                              "type": "span",
+                              "props": {
+                                "children": [
+                                  "Rice",
+                                  " - "
+                                ]
+                              },
+                              "_store": {}
+                            },
+                            {
+                              "type": "span",
+                              "props": {
+                                "children": "1kg"
+                              },
+                              "_store": {}
+                            }
+                          ]
+                        },
+                        "_store": {}
+                      },
+                      {
+                        "type": "li",
+                        "props": {
+                          "children": [
+                            {
+                              "type": "span",
+                              "props": {
+                                "children": [
+                                  "Beans",
+                                  " - "
+                                ]
+                              },
+                              "_store": {}
+                            },
+                            {
+                              "type": "span",
+                              "props": {
+                                "children": "2kg"
+                              },
+                              "_store": {}
+                            }
+                          ]
+                        },
+                        "_store": {}
+                      }
+                    ]
+                  },
+                  "rendered": [
+                    {
+                      "nodeType": "host",
+                      "type": "li",
+                      "props": {
+                        "children": [
+                          {
+                            "type": "span",
+                            "props": {
+                              "children": [
+                                "Rice",
+                                " - "
+                              ]
+                            },
+                            "_store": {}
+                          },
+                          {
+                            "type": "span",
+                            "props": {
+                              "children": "1kg"
+                            },
+                            "_store": {}
+                          }
+                        ]
+                      },
+                      "rendered": [
+                        {
+                          "nodeType": "host",
+                          "type": "span",
+                          "props": {
+                            "children": [
+                              "Rice",
+                              " - "
+                            ]
+                          },
+                          "rendered": [
+                            "Rice",
+                            " - "
+                          ]
+                        },
+                        {
+                          "nodeType": "host",
+                          "type": "span",
+                          "props": {
+                            "children": "1kg"
+                          },
+                          "rendered": "1kg"
+                        }
+                      ]
+                    },
+                    {
+                      "nodeType": "host",
+                      "type": "li",
+                      "props": {
+                        "children": [
+                          {
+                            "type": "span",
+                            "props": {
+                              "children": [
+                                "Beans",
+                                " - "
+                              ]
+                            },
+                            "_store": {}
+                          },
+                          {
+                            "type": "span",
+                            "props": {
+                              "children": "2kg"
+                            },
+                            "_store": {}
+                          }
+                        ]
+                      },
+                      "rendered": [
+                        {
+                          "nodeType": "host",
+                          "type": "span",
+                          "props": {
+                            "children": [
+                              "Beans",
+                              " - "
+                            ]
+                          },
+                          "rendered": [
+                            "Beans",
+                            " - "
+                          ]
+                        },
+                        {
+                          "nodeType": "host",
+                          "type": "span",
+                          "props": {
+                            "children": "2kg"
+                          },
+                          "rendered": "2kg"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "nodeType": "host",
+            "type": "label",
+            "props": {
+              "htmlFor": "stepsCheck_001",
+              "className": "preparation",
+              "children": [
+                {
+                  "type": "div",
+                  "props": {
+                    "className": "cardTitle",
+                    "children": "Steps"
+                  },
+                  "_store": {}
+                },
+                {
+                  "type": "div",
+                  "props": {
+                    "className": "preparation",
+                    "children": {
+                      "type": "ol",
+                      "props": {
+                        "children": [
+                          {
+                            "type": "li",
+                            "props": {
+                              "className": "step",
+                              "children": "Gather"
+                            },
+                            "_store": {}
+                          },
+                          {
+                            "type": "li",
+                            "props": {
+                              "className": "step",
+                              "children": "Mix"
+                            },
+                            "_store": {}
+                          },
+                          {
+                            "type": "li",
+                            "props": {
+                              "className": "step",
+                              "children": "Cook"
+                            },
+                            "_store": {}
+                          }
+                        ]
+                      },
+                      "_store": {}
+                    }
+                  },
+                  "_store": {}
+                }
+              ]
+            },
+            "rendered": [
+              {
+                "nodeType": "host",
+                "type": "div",
+                "props": {
+                  "className": "cardTitle",
+                  "children": "Steps"
+                },
+                "rendered": "Steps"
+              },
+              {
+                "nodeType": "host",
+                "type": "div",
+                "props": {
+                  "className": "preparation",
+                  "children": {
+                    "type": "ol",
+                    "props": {
+                      "children": [
+                        {
+                          "type": "li",
+                          "props": {
+                            "className": "step",
+                            "children": "Gather"
+                          },
+                          "_store": {}
+                        },
+                        {
+                          "type": "li",
+                          "props": {
+                            "className": "step",
+                            "children": "Mix"
+                          },
+                          "_store": {}
+                        },
+                        {
+                          "type": "li",
+                          "props": {
+                            "className": "step",
+                            "children": "Cook"
+                          },
+                          "_store": {}
+                        }
+                      ]
+                    },
+                    "_store": {}
+                  }
+                },
+                "rendered": {
+                  "nodeType": "host",
+                  "type": "ol",
+                  "props": {
+                    "children": [
+                      {
+                        "type": "li",
+                        "props": {
+                          "className": "step",
+                          "children": "Gather"
+                        },
+                        "_store": {}
+                      },
+                      {
+                        "type": "li",
+                        "props": {
+                          "className": "step",
+                          "children": "Mix"
+                        },
+                        "_store": {}
+                      },
+                      {
+                        "type": "li",
+                        "props": {
+                          "className": "step",
+                          "children": "Cook"
+                        },
+                        "_store": {}
+                      }
+                    ]
+                  },
+                  "rendered": [
+                    {
+                      "nodeType": "host",
+                      "type": "li",
+                      "props": {
+                        "className": "step",
+                        "children": "Gather"
+                      },
+                      "rendered": "Gather"
+                    },
+                    {
+                      "nodeType": "host",
+                      "type": "li",
+                      "props": {
+                        "className": "step",
+                        "children": "Mix"
+                      },
+                      "rendered": "Mix"
+                    },
+                    {
+                      "nodeType": "host",
+                      "type": "li",
+                      "props": {
+                        "className": "step",
+                        "children": "Cook"
+                      },
+                      "rendered": "Cook"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "type": "div",
+      "props": {
+        "className": "recipeCard",
+        "key": "001"
+      },
+      "children": [
+        {
+          "node": {
+            "nodeType": "host",
+            "type": "input",
+            "props": {
+              "name": "cardSelector_001",
+              "id": "imgCheck_001",
+              "type": "radio",
+              "defaultChecked": true
+            }
+          },
+          "type": "input",
+          "props": {
+            "name": "cardSelector_001",
+            "id": "imgCheck_001",
+            "type": "radio",
+            "defaultChecked": true
+          }
+        },
+        {
+          "node": {
+            "nodeType": "host",
+            "type": "input",
+            "props": {
+              "name": "cardSelector_001",
+              "id": "ingredientsCheck_001",
+              "type": "radio"
+            }
+          },
+          "type": "input",
+          "props": {
+            "name": "cardSelector_001",
+            "id": "ingredientsCheck_001",
+            "type": "radio"
+          }
+        },
+        {
+          "node": {
+            "nodeType": "host",
+            "type": "input",
+            "props": {
+              "name": "cardSelector_001",
+              "id": "stepsCheck_001",
+              "type": "radio"
+            }
+          },
+          "type": "input",
+          "props": {
+            "name": "cardSelector_001",
+            "id": "stepsCheck_001",
+            "type": "radio"
+          }
+        },
+        {
+          "node": {
+            "nodeType": "host",
+            "type": "label",
+            "props": {
+              "htmlFor": "imgCheck_001",
+              "className": "imageCard",
+              "children": {
+                "type": "div",
+                "props": {
+                  "className": "recipeImage",
+                  "children": [
+                    {
+                      "type": "div",
+                      "props": {
+                        "className": "cardTitle",
+                        "children": "Rice n Beans"
+                      },
+                      "_store": {}
+                    },
+                    {
+                      "type": "img",
+                      "props": {
+                        "src": "http://www.linguini.com/recipe.png"
+                      },
+                      "_store": {}
+                    }
+                  ]
+                },
+                "_store": {}
+              }
+            },
+            "rendered": {
+              "nodeType": "host",
+              "type": "div",
+              "props": {
+                "className": "recipeImage",
+                "children": [
+                  {
+                    "type": "div",
+                    "props": {
+                      "className": "cardTitle",
+                      "children": "Rice n Beans"
+                    },
+                    "_store": {}
+                  },
+                  {
+                    "type": "img",
+                    "props": {
+                      "src": "http://www.linguini.com/recipe.png"
+                    },
+                    "_store": {}
+                  }
+                ]
+              },
+              "rendered": [
+                {
+                  "nodeType": "host",
+                  "type": "div",
+                  "props": {
+                    "className": "cardTitle",
+                    "children": "Rice n Beans"
+                  },
+                  "rendered": "Rice n Beans"
+                },
+                {
+                  "nodeType": "host",
+                  "type": "img",
+                  "props": {
+                    "src": "http://www.linguini.com/recipe.png"
+                  }
+                }
+              ]
+            }
+          },
+          "type": "label",
+          "props": {
+            "htmlFor": "imgCheck_001",
+            "className": "imageCard"
+          },
+          "children": [
+            {
+              "node": {
+                "nodeType": "host",
+                "type": "div",
+                "props": {
+                  "className": "recipeImage",
+                  "children": [
+                    {
+                      "type": "div",
+                      "props": {
+                        "className": "cardTitle",
+                        "children": "Rice n Beans"
+                      },
+                      "_store": {}
+                    },
+                    {
+                      "type": "img",
+                      "props": {
+                        "src": "http://www.linguini.com/recipe.png"
+                      },
+                      "_store": {}
+                    }
+                  ]
+                },
+                "rendered": [
+                  {
+                    "nodeType": "host",
+                    "type": "div",
+                    "props": {
+                      "className": "cardTitle",
+                      "children": "Rice n Beans"
+                    },
+                    "rendered": "Rice n Beans"
+                  },
+                  {
+                    "nodeType": "host",
+                    "type": "img",
+                    "props": {
+                      "src": "http://www.linguini.com/recipe.png"
+                    }
+                  }
+                ]
+              },
+              "type": "div",
+              "props": {
+                "className": "recipeImage"
+              },
+              "children": [
+                {
+                  "node": {
+                    "nodeType": "host",
+                    "type": "div",
+                    "props": {
+                      "className": "cardTitle",
+                      "children": "Rice n Beans"
+                    },
+                    "rendered": "Rice n Beans"
+                  },
+                  "type": "div",
+                  "props": {
+                    "className": "cardTitle"
+                  },
+                  "children": [
+                    "Rice n Beans"
+                  ]
+                },
+                {
+                  "node": {
+                    "nodeType": "host",
+                    "type": "img",
+                    "props": {
+                      "src": "http://www.linguini.com/recipe.png"
+                    }
+                  },
+                  "type": "img",
+                  "props": {
+                    "src": "http://www.linguini.com/recipe.png"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "node": {
+            "nodeType": "host",
+            "type": "label",
+            "props": {
+              "htmlFor": "ingredientsCheck_001",
+              "className": "ingredientsCard",
+              "children": [
+                {
+                  "type": "div",
+                  "props": {
+                    "className": "cardTitle",
+                    "children": "Ingredients"
+                  },
+                  "_store": {}
+                },
+                {
+                  "type": "div",
+                  "props": {
+                    "className": "ingredients",
+                    "children": {
+                      "type": "ol",
+                      "props": {
+                        "children": [
+                          {
+                            "type": "li",
+                            "props": {
+                              "children": [
+                                {
+                                  "type": "span",
+                                  "props": {
+                                    "children": [
+                                      "Rice",
+                                      " - "
+                                    ]
+                                  },
+                                  "_store": {}
+                                },
+                                {
+                                  "type": "span",
+                                  "props": {
+                                    "children": "1kg"
+                                  },
+                                  "_store": {}
+                                }
+                              ]
+                            },
+                            "_store": {}
+                          },
+                          {
+                            "type": "li",
+                            "props": {
+                              "children": [
+                                {
+                                  "type": "span",
+                                  "props": {
+                                    "children": [
+                                      "Beans",
+                                      " - "
+                                    ]
+                                  },
+                                  "_store": {}
+                                },
+                                {
+                                  "type": "span",
+                                  "props": {
+                                    "children": "2kg"
+                                  },
+                                  "_store": {}
+                                }
+                              ]
+                            },
+                            "_store": {}
+                          }
+                        ]
+                      },
+                      "_store": {}
+                    }
+                  },
+                  "_store": {}
+                }
+              ]
+            },
+            "rendered": [
+              {
+                "nodeType": "host",
+                "type": "div",
+                "props": {
+                  "className": "cardTitle",
+                  "children": "Ingredients"
+                },
+                "rendered": "Ingredients"
+              },
+              {
+                "nodeType": "host",
+                "type": "div",
+                "props": {
+                  "className": "ingredients",
+                  "children": {
+                    "type": "ol",
+                    "props": {
+                      "children": [
+                        {
+                          "type": "li",
+                          "props": {
+                            "children": [
+                              {
+                                "type": "span",
+                                "props": {
+                                  "children": [
+                                    "Rice",
+                                    " - "
+                                  ]
+                                },
+                                "_store": {}
+                              },
+                              {
+                                "type": "span",
+                                "props": {
+                                  "children": "1kg"
+                                },
+                                "_store": {}
+                              }
+                            ]
+                          },
+                          "_store": {}
+                        },
+                        {
+                          "type": "li",
+                          "props": {
+                            "children": [
+                              {
+                                "type": "span",
+                                "props": {
+                                  "children": [
+                                    "Beans",
+                                    " - "
+                                  ]
+                                },
+                                "_store": {}
+                              },
+                              {
+                                "type": "span",
+                                "props": {
+                                  "children": "2kg"
+                                },
+                                "_store": {}
+                              }
+                            ]
+                          },
+                          "_store": {}
+                        }
+                      ]
+                    },
+                    "_store": {}
+                  }
+                },
+                "rendered": {
+                  "nodeType": "host",
+                  "type": "ol",
+                  "props": {
+                    "children": [
+                      {
+                        "type": "li",
+                        "props": {
+                          "children": [
+                            {
+                              "type": "span",
+                              "props": {
+                                "children": [
+                                  "Rice",
+                                  " - "
+                                ]
+                              },
+                              "_store": {}
+                            },
+                            {
+                              "type": "span",
+                              "props": {
+                                "children": "1kg"
+                              },
+                              "_store": {}
+                            }
+                          ]
+                        },
+                        "_store": {}
+                      },
+                      {
+                        "type": "li",
+                        "props": {
+                          "children": [
+                            {
+                              "type": "span",
+                              "props": {
+                                "children": [
+                                  "Beans",
+                                  " - "
+                                ]
+                              },
+                              "_store": {}
+                            },
+                            {
+                              "type": "span",
+                              "props": {
+                                "children": "2kg"
+                              },
+                              "_store": {}
+                            }
+                          ]
+                        },
+                        "_store": {}
+                      }
+                    ]
+                  },
+                  "rendered": [
+                    {
+                      "nodeType": "host",
+                      "type": "li",
+                      "props": {
+                        "children": [
+                          {
+                            "type": "span",
+                            "props": {
+                              "children": [
+                                "Rice",
+                                " - "
+                              ]
+                            },
+                            "_store": {}
+                          },
+                          {
+                            "type": "span",
+                            "props": {
+                              "children": "1kg"
+                            },
+                            "_store": {}
+                          }
+                        ]
+                      },
+                      "rendered": [
+                        {
+                          "nodeType": "host",
+                          "type": "span",
+                          "props": {
+                            "children": [
+                              "Rice",
+                              " - "
+                            ]
+                          },
+                          "rendered": [
+                            "Rice",
+                            " - "
+                          ]
+                        },
+                        {
+                          "nodeType": "host",
+                          "type": "span",
+                          "props": {
+                            "children": "1kg"
+                          },
+                          "rendered": "1kg"
+                        }
+                      ]
+                    },
+                    {
+                      "nodeType": "host",
+                      "type": "li",
+                      "props": {
+                        "children": [
+                          {
+                            "type": "span",
+                            "props": {
+                              "children": [
+                                "Beans",
+                                " - "
+                              ]
+                            },
+                            "_store": {}
+                          },
+                          {
+                            "type": "span",
+                            "props": {
+                              "children": "2kg"
+                            },
+                            "_store": {}
+                          }
+                        ]
+                      },
+                      "rendered": [
+                        {
+                          "nodeType": "host",
+                          "type": "span",
+                          "props": {
+                            "children": [
+                              "Beans",
+                              " - "
+                            ]
+                          },
+                          "rendered": [
+                            "Beans",
+                            " - "
+                          ]
+                        },
+                        {
+                          "nodeType": "host",
+                          "type": "span",
+                          "props": {
+                            "children": "2kg"
+                          },
+                          "rendered": "2kg"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "type": "label",
+          "props": {
+            "htmlFor": "ingredientsCheck_001",
+            "className": "ingredientsCard"
+          },
+          "children": [
+            {
+              "node": {
+                "nodeType": "host",
+                "type": "div",
+                "props": {
+                  "className": "cardTitle",
+                  "children": "Ingredients"
+                },
+                "rendered": "Ingredients"
+              },
+              "type": "div",
+              "props": {
+                "className": "cardTitle"
+              },
+              "children": [
+                "Ingredients"
+              ]
+            },
+            {
+              "node": {
+                "nodeType": "host",
+                "type": "div",
+                "props": {
+                  "className": "ingredients",
+                  "children": {
+                    "type": "ol",
+                    "props": {
+                      "children": [
+                        {
+                          "type": "li",
+                          "props": {
+                            "children": [
+                              {
+                                "type": "span",
+                                "props": {
+                                  "children": [
+                                    "Rice",
+                                    " - "
+                                  ]
+                                },
+                                "_store": {}
+                              },
+                              {
+                                "type": "span",
+                                "props": {
+                                  "children": "1kg"
+                                },
+                                "_store": {}
+                              }
+                            ]
+                          },
+                          "_store": {}
+                        },
+                        {
+                          "type": "li",
+                          "props": {
+                            "children": [
+                              {
+                                "type": "span",
+                                "props": {
+                                  "children": [
+                                    "Beans",
+                                    " - "
+                                  ]
+                                },
+                                "_store": {}
+                              },
+                              {
+                                "type": "span",
+                                "props": {
+                                  "children": "2kg"
+                                },
+                                "_store": {}
+                              }
+                            ]
+                          },
+                          "_store": {}
+                        }
+                      ]
+                    },
+                    "_store": {}
+                  }
+                },
+                "rendered": {
+                  "nodeType": "host",
+                  "type": "ol",
+                  "props": {
+                    "children": [
+                      {
+                        "type": "li",
+                        "props": {
+                          "children": [
+                            {
+                              "type": "span",
+                              "props": {
+                                "children": [
+                                  "Rice",
+                                  " - "
+                                ]
+                              },
+                              "_store": {}
+                            },
+                            {
+                              "type": "span",
+                              "props": {
+                                "children": "1kg"
+                              },
+                              "_store": {}
+                            }
+                          ]
+                        },
+                        "_store": {}
+                      },
+                      {
+                        "type": "li",
+                        "props": {
+                          "children": [
+                            {
+                              "type": "span",
+                              "props": {
+                                "children": [
+                                  "Beans",
+                                  " - "
+                                ]
+                              },
+                              "_store": {}
+                            },
+                            {
+                              "type": "span",
+                              "props": {
+                                "children": "2kg"
+                              },
+                              "_store": {}
+                            }
+                          ]
+                        },
+                        "_store": {}
+                      }
+                    ]
+                  },
+                  "rendered": [
+                    {
+                      "nodeType": "host",
+                      "type": "li",
+                      "props": {
+                        "children": [
+                          {
+                            "type": "span",
+                            "props": {
+                              "children": [
+                                "Rice",
+                                " - "
+                              ]
+                            },
+                            "_store": {}
+                          },
+                          {
+                            "type": "span",
+                            "props": {
+                              "children": "1kg"
+                            },
+                            "_store": {}
+                          }
+                        ]
+                      },
+                      "rendered": [
+                        {
+                          "nodeType": "host",
+                          "type": "span",
+                          "props": {
+                            "children": [
+                              "Rice",
+                              " - "
+                            ]
+                          },
+                          "rendered": [
+                            "Rice",
+                            " - "
+                          ]
+                        },
+                        {
+                          "nodeType": "host",
+                          "type": "span",
+                          "props": {
+                            "children": "1kg"
+                          },
+                          "rendered": "1kg"
+                        }
+                      ]
+                    },
+                    {
+                      "nodeType": "host",
+                      "type": "li",
+                      "props": {
+                        "children": [
+                          {
+                            "type": "span",
+                            "props": {
+                              "children": [
+                                "Beans",
+                                " - "
+                              ]
+                            },
+                            "_store": {}
+                          },
+                          {
+                            "type": "span",
+                            "props": {
+                              "children": "2kg"
+                            },
+                            "_store": {}
+                          }
+                        ]
+                      },
+                      "rendered": [
+                        {
+                          "nodeType": "host",
+                          "type": "span",
+                          "props": {
+                            "children": [
+                              "Beans",
+                              " - "
+                            ]
+                          },
+                          "rendered": [
+                            "Beans",
+                            " - "
+                          ]
+                        },
+                        {
+                          "nodeType": "host",
+                          "type": "span",
+                          "props": {
+                            "children": "2kg"
+                          },
+                          "rendered": "2kg"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              "type": "div",
+              "props": {
+                "className": "ingredients"
+              },
+              "children": [
+                {
+                  "node": {
+                    "nodeType": "host",
+                    "type": "ol",
+                    "props": {
+                      "children": [
+                        {
+                          "type": "li",
+                          "props": {
+                            "children": [
+                              {
+                                "type": "span",
+                                "props": {
+                                  "children": [
+                                    "Rice",
+                                    " - "
+                                  ]
+                                },
+                                "_store": {}
+                              },
+                              {
+                                "type": "span",
+                                "props": {
+                                  "children": "1kg"
+                                },
+                                "_store": {}
+                              }
+                            ]
+                          },
+                          "_store": {}
+                        },
+                        {
+                          "type": "li",
+                          "props": {
+                            "children": [
+                              {
+                                "type": "span",
+                                "props": {
+                                  "children": [
+                                    "Beans",
+                                    " - "
+                                  ]
+                                },
+                                "_store": {}
+                              },
+                              {
+                                "type": "span",
+                                "props": {
+                                  "children": "2kg"
+                                },
+                                "_store": {}
+                              }
+                            ]
+                          },
+                          "_store": {}
+                        }
+                      ]
+                    },
+                    "rendered": [
+                      {
+                        "nodeType": "host",
+                        "type": "li",
+                        "props": {
+                          "children": [
+                            {
+                              "type": "span",
+                              "props": {
+                                "children": [
+                                  "Rice",
+                                  " - "
+                                ]
+                              },
+                              "_store": {}
+                            },
+                            {
+                              "type": "span",
+                              "props": {
+                                "children": "1kg"
+                              },
+                              "_store": {}
+                            }
+                          ]
+                        },
+                        "rendered": [
+                          {
+                            "nodeType": "host",
+                            "type": "span",
+                            "props": {
+                              "children": [
+                                "Rice",
+                                " - "
+                              ]
+                            },
+                            "rendered": [
+                              "Rice",
+                              " - "
+                            ]
+                          },
+                          {
+                            "nodeType": "host",
+                            "type": "span",
+                            "props": {
+                              "children": "1kg"
+                            },
+                            "rendered": "1kg"
+                          }
+                        ]
+                      },
+                      {
+                        "nodeType": "host",
+                        "type": "li",
+                        "props": {
+                          "children": [
+                            {
+                              "type": "span",
+                              "props": {
+                                "children": [
+                                  "Beans",
+                                  " - "
+                                ]
+                              },
+                              "_store": {}
+                            },
+                            {
+                              "type": "span",
+                              "props": {
+                                "children": "2kg"
+                              },
+                              "_store": {}
+                            }
+                          ]
+                        },
+                        "rendered": [
+                          {
+                            "nodeType": "host",
+                            "type": "span",
+                            "props": {
+                              "children": [
+                                "Beans",
+                                " - "
+                              ]
+                            },
+                            "rendered": [
+                              "Beans",
+                              " - "
+                            ]
+                          },
+                          {
+                            "nodeType": "host",
+                            "type": "span",
+                            "props": {
+                              "children": "2kg"
+                            },
+                            "rendered": "2kg"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "type": "ol",
+                  "props": {},
+                  "children": [
+                    {
+                      "node": {
+                        "nodeType": "host",
+                        "type": "li",
+                        "props": {
+                          "children": [
+                            {
+                              "type": "span",
+                              "props": {
+                                "children": [
+                                  "Rice",
+                                  " - "
+                                ]
+                              },
+                              "_store": {}
+                            },
+                            {
+                              "type": "span",
+                              "props": {
+                                "children": "1kg"
+                              },
+                              "_store": {}
+                            }
+                          ]
+                        },
+                        "rendered": [
+                          {
+                            "nodeType": "host",
+                            "type": "span",
+                            "props": {
+                              "children": [
+                                "Rice",
+                                " - "
+                              ]
+                            },
+                            "rendered": [
+                              "Rice",
+                              " - "
+                            ]
+                          },
+                          {
+                            "nodeType": "host",
+                            "type": "span",
+                            "props": {
+                              "children": "1kg"
+                            },
+                            "rendered": "1kg"
+                          }
+                        ]
+                      },
+                      "type": "li",
+                      "props": {},
+                      "children": [
+                        {
+                          "node": {
+                            "nodeType": "host",
+                            "type": "span",
+                            "props": {
+                              "children": [
+                                "Rice",
+                                " - "
+                              ]
+                            },
+                            "rendered": [
+                              "Rice",
+                              " - "
+                            ]
+                          },
+                          "type": "span",
+                          "props": {},
+                          "children": [
+                            "Rice",
+                            " - "
+                          ]
+                        },
+                        {
+                          "node": {
+                            "nodeType": "host",
+                            "type": "span",
+                            "props": {
+                              "children": "1kg"
+                            },
+                            "rendered": "1kg"
+                          },
+                          "type": "span",
+                          "props": {},
+                          "children": [
+                            "1kg"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "node": {
+                        "nodeType": "host",
+                        "type": "li",
+                        "props": {
+                          "children": [
+                            {
+                              "type": "span",
+                              "props": {
+                                "children": [
+                                  "Beans",
+                                  " - "
+                                ]
+                              },
+                              "_store": {}
+                            },
+                            {
+                              "type": "span",
+                              "props": {
+                                "children": "2kg"
+                              },
+                              "_store": {}
+                            }
+                          ]
+                        },
+                        "rendered": [
+                          {
+                            "nodeType": "host",
+                            "type": "span",
+                            "props": {
+                              "children": [
+                                "Beans",
+                                " - "
+                              ]
+                            },
+                            "rendered": [
+                              "Beans",
+                              " - "
+                            ]
+                          },
+                          {
+                            "nodeType": "host",
+                            "type": "span",
+                            "props": {
+                              "children": "2kg"
+                            },
+                            "rendered": "2kg"
+                          }
+                        ]
+                      },
+                      "type": "li",
+                      "props": {},
+                      "children": [
+                        {
+                          "node": {
+                            "nodeType": "host",
+                            "type": "span",
+                            "props": {
+                              "children": [
+                                "Beans",
+                                " - "
+                              ]
+                            },
+                            "rendered": [
+                              "Beans",
+                              " - "
+                            ]
+                          },
+                          "type": "span",
+                          "props": {},
+                          "children": [
+                            "Beans",
+                            " - "
+                          ]
+                        },
+                        {
+                          "node": {
+                            "nodeType": "host",
+                            "type": "span",
+                            "props": {
+                              "children": "2kg"
+                            },
+                            "rendered": "2kg"
+                          },
+                          "type": "span",
+                          "props": {},
+                          "children": [
+                            "2kg"
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "node": {
+            "nodeType": "host",
+            "type": "label",
+            "props": {
+              "htmlFor": "stepsCheck_001",
+              "className": "preparation",
+              "children": [
+                {
+                  "type": "div",
+                  "props": {
+                    "className": "cardTitle",
+                    "children": "Steps"
+                  },
+                  "_store": {}
+                },
+                {
+                  "type": "div",
+                  "props": {
+                    "className": "preparation",
+                    "children": {
+                      "type": "ol",
+                      "props": {
+                        "children": [
+                          {
+                            "type": "li",
+                            "props": {
+                              "className": "step",
+                              "children": "Gather"
+                            },
+                            "_store": {}
+                          },
+                          {
+                            "type": "li",
+                            "props": {
+                              "className": "step",
+                              "children": "Mix"
+                            },
+                            "_store": {}
+                          },
+                          {
+                            "type": "li",
+                            "props": {
+                              "className": "step",
+                              "children": "Cook"
+                            },
+                            "_store": {}
+                          }
+                        ]
+                      },
+                      "_store": {}
+                    }
+                  },
+                  "_store": {}
+                }
+              ]
+            },
+            "rendered": [
+              {
+                "nodeType": "host",
+                "type": "div",
+                "props": {
+                  "className": "cardTitle",
+                  "children": "Steps"
+                },
+                "rendered": "Steps"
+              },
+              {
+                "nodeType": "host",
+                "type": "div",
+                "props": {
+                  "className": "preparation",
+                  "children": {
+                    "type": "ol",
+                    "props": {
+                      "children": [
+                        {
+                          "type": "li",
+                          "props": {
+                            "className": "step",
+                            "children": "Gather"
+                          },
+                          "_store": {}
+                        },
+                        {
+                          "type": "li",
+                          "props": {
+                            "className": "step",
+                            "children": "Mix"
+                          },
+                          "_store": {}
+                        },
+                        {
+                          "type": "li",
+                          "props": {
+                            "className": "step",
+                            "children": "Cook"
+                          },
+                          "_store": {}
+                        }
+                      ]
+                    },
+                    "_store": {}
+                  }
+                },
+                "rendered": {
+                  "nodeType": "host",
+                  "type": "ol",
+                  "props": {
+                    "children": [
+                      {
+                        "type": "li",
+                        "props": {
+                          "className": "step",
+                          "children": "Gather"
+                        },
+                        "_store": {}
+                      },
+                      {
+                        "type": "li",
+                        "props": {
+                          "className": "step",
+                          "children": "Mix"
+                        },
+                        "_store": {}
+                      },
+                      {
+                        "type": "li",
+                        "props": {
+                          "className": "step",
+                          "children": "Cook"
+                        },
+                        "_store": {}
+                      }
+                    ]
+                  },
+                  "rendered": [
+                    {
+                      "nodeType": "host",
+                      "type": "li",
+                      "props": {
+                        "className": "step",
+                        "children": "Gather"
+                      },
+                      "rendered": "Gather"
+                    },
+                    {
+                      "nodeType": "host",
+                      "type": "li",
+                      "props": {
+                        "className": "step",
+                        "children": "Mix"
+                      },
+                      "rendered": "Mix"
+                    },
+                    {
+                      "nodeType": "host",
+                      "type": "li",
+                      "props": {
+                        "className": "step",
+                        "children": "Cook"
+                      },
+                      "rendered": "Cook"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "type": "label",
+          "props": {
+            "htmlFor": "stepsCheck_001",
+            "className": "preparation"
+          },
+          "children": [
+            {
+              "node": {
+                "nodeType": "host",
+                "type": "div",
+                "props": {
+                  "className": "cardTitle",
+                  "children": "Steps"
+                },
+                "rendered": "Steps"
+              },
+              "type": "div",
+              "props": {
+                "className": "cardTitle"
+              },
+              "children": [
+                "Steps"
+              ]
+            },
+            {
+              "node": {
+                "nodeType": "host",
+                "type": "div",
+                "props": {
+                  "className": "preparation",
+                  "children": {
+                    "type": "ol",
+                    "props": {
+                      "children": [
+                        {
+                          "type": "li",
+                          "props": {
+                            "className": "step",
+                            "children": "Gather"
+                          },
+                          "_store": {}
+                        },
+                        {
+                          "type": "li",
+                          "props": {
+                            "className": "step",
+                            "children": "Mix"
+                          },
+                          "_store": {}
+                        },
+                        {
+                          "type": "li",
+                          "props": {
+                            "className": "step",
+                            "children": "Cook"
+                          },
+                          "_store": {}
+                        }
+                      ]
+                    },
+                    "_store": {}
+                  }
+                },
+                "rendered": {
+                  "nodeType": "host",
+                  "type": "ol",
+                  "props": {
+                    "children": [
+                      {
+                        "type": "li",
+                        "props": {
+                          "className": "step",
+                          "children": "Gather"
+                        },
+                        "_store": {}
+                      },
+                      {
+                        "type": "li",
+                        "props": {
+                          "className": "step",
+                          "children": "Mix"
+                        },
+                        "_store": {}
+                      },
+                      {
+                        "type": "li",
+                        "props": {
+                          "className": "step",
+                          "children": "Cook"
+                        },
+                        "_store": {}
+                      }
+                    ]
+                  },
+                  "rendered": [
+                    {
+                      "nodeType": "host",
+                      "type": "li",
+                      "props": {
+                        "className": "step",
+                        "children": "Gather"
+                      },
+                      "rendered": "Gather"
+                    },
+                    {
+                      "nodeType": "host",
+                      "type": "li",
+                      "props": {
+                        "className": "step",
+                        "children": "Mix"
+                      },
+                      "rendered": "Mix"
+                    },
+                    {
+                      "nodeType": "host",
+                      "type": "li",
+                      "props": {
+                        "className": "step",
+                        "children": "Cook"
+                      },
+                      "rendered": "Cook"
+                    }
+                  ]
+                }
+              },
+              "type": "div",
+              "props": {
+                "className": "preparation"
+              },
+              "children": [
+                {
+                  "node": {
+                    "nodeType": "host",
+                    "type": "ol",
+                    "props": {
+                      "children": [
+                        {
+                          "type": "li",
+                          "props": {
+                            "className": "step",
+                            "children": "Gather"
+                          },
+                          "_store": {}
+                        },
+                        {
+                          "type": "li",
+                          "props": {
+                            "className": "step",
+                            "children": "Mix"
+                          },
+                          "_store": {}
+                        },
+                        {
+                          "type": "li",
+                          "props": {
+                            "className": "step",
+                            "children": "Cook"
+                          },
+                          "_store": {}
+                        }
+                      ]
+                    },
+                    "rendered": [
+                      {
+                        "nodeType": "host",
+                        "type": "li",
+                        "props": {
+                          "className": "step",
+                          "children": "Gather"
+                        },
+                        "rendered": "Gather"
+                      },
+                      {
+                        "nodeType": "host",
+                        "type": "li",
+                        "props": {
+                          "className": "step",
+                          "children": "Mix"
+                        },
+                        "rendered": "Mix"
+                      },
+                      {
+                        "nodeType": "host",
+                        "type": "li",
+                        "props": {
+                          "className": "step",
+                          "children": "Cook"
+                        },
+                        "rendered": "Cook"
+                      }
+                    ]
+                  },
+                  "type": "ol",
+                  "props": {},
+                  "children": [
+                    {
+                      "node": {
+                        "nodeType": "host",
+                        "type": "li",
+                        "props": {
+                          "className": "step",
+                          "children": "Gather"
+                        },
+                        "rendered": "Gather"
+                      },
+                      "type": "li",
+                      "props": {
+                        "className": "step"
+                      },
+                      "children": [
+                        "Gather"
+                      ]
+                    },
+                    {
+                      "node": {
+                        "nodeType": "host",
+                        "type": "li",
+                        "props": {
+                          "className": "step",
+                          "children": "Mix"
+                        },
+                        "rendered": "Mix"
+                      },
+                      "type": "li",
+                      "props": {
+                        "className": "step"
+                      },
+                      "children": [
+                        "Mix"
+                      ]
+                    },
+                    {
+                      "node": {
+                        "nodeType": "host",
+                        "type": "li",
+                        "props": {
+                          "className": "step",
+                          "children": "Cook"
+                        },
+                        "rendered": "Cook"
+                      },
+                      "type": "li",
+                      "props": {
+                        "className": "step"
+                      },
+                      "children": [
+                        "Cook"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+};
+
+exports["should match the spapshot with no recipes(0)"] = {
+  "node": {
+    "nodeType": "host",
+    "type": "div",
+    "props": {
+      "className": "recipes",
+      "children": []
+    },
+    "rendered": []
+  },
+  "type": "div",
+  "props": {
+    "className": "recipes"
+  }
+};
+

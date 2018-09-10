@@ -1,0 +1,653 @@
+exports["should match the snapshot(0)"] = {
+  "node": {
+    "nodeType": "host",
+    "type": "div",
+    "props": {
+      "className": "navBar",
+      "children": [
+        {
+          "type": "div",
+          "props": {
+            "className": "menu",
+            "children": [
+              {
+                "type": "a",
+                "key": "nav_test",
+                "props": {
+                  "href": "#/test",
+                  "className": "selected",
+                  "children": "A Nav Link"
+                },
+                "_store": {}
+              },
+              {
+                "type": "a",
+                "key": "nav_home",
+                "props": {
+                  "href": "#/",
+                  "children": "Home"
+                },
+                "_store": {}
+              }
+            ]
+          },
+          "_store": {}
+        },
+        {
+          "type": "div",
+          "props": {
+            "className": "sessionActions",
+            "children": [
+              null,
+              {
+                "type": "button",
+                "props": {
+                  "className": "logout fa fa",
+                  "onClick": "bound logout"
+                },
+                "_store": {}
+              }
+            ]
+          },
+          "_store": {}
+        }
+      ]
+    },
+    "rendered": [
+      {
+        "nodeType": "host",
+        "type": "div",
+        "props": {
+          "className": "menu",
+          "children": [
+            {
+              "type": "a",
+              "key": "nav_test",
+              "props": {
+                "href": "#/test",
+                "className": "selected",
+                "children": "A Nav Link"
+              },
+              "_store": {}
+            },
+            {
+              "type": "a",
+              "key": "nav_home",
+              "props": {
+                "href": "#/",
+                "children": "Home"
+              },
+              "_store": {}
+            }
+          ]
+        },
+        "rendered": [
+          {
+            "nodeType": "host",
+            "type": "a",
+            "props": {
+              "href": "#/test",
+              "className": "selected",
+              "children": "A Nav Link"
+            },
+            "key": "nav_test",
+            "rendered": "A Nav Link"
+          },
+          {
+            "nodeType": "host",
+            "type": "a",
+            "props": {
+              "href": "#/",
+              "children": "Home"
+            },
+            "key": "nav_home",
+            "rendered": "Home"
+          }
+        ]
+      },
+      {
+        "nodeType": "host",
+        "type": "div",
+        "props": {
+          "className": "sessionActions",
+          "children": [
+            null,
+            {
+              "type": "button",
+              "props": {
+                "className": "logout fa fa",
+                "onClick": "bound logout"
+              },
+              "_store": {}
+            }
+          ]
+        },
+        "rendered": [
+          null,
+          {
+            "nodeType": "host",
+            "type": "button",
+            "props": {
+              "className": "logout fa fa",
+              "onClick": "bound logout"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "type": "div",
+  "props": {
+    "className": "navBar"
+  },
+  "children": [
+    {
+      "node": {
+        "nodeType": "host",
+        "type": "div",
+        "props": {
+          "className": "menu",
+          "children": [
+            {
+              "type": "a",
+              "key": "nav_test",
+              "props": {
+                "href": "#/test",
+                "className": "selected",
+                "children": "A Nav Link"
+              },
+              "_store": {}
+            },
+            {
+              "type": "a",
+              "key": "nav_home",
+              "props": {
+                "href": "#/",
+                "children": "Home"
+              },
+              "_store": {}
+            }
+          ]
+        },
+        "rendered": [
+          {
+            "nodeType": "host",
+            "type": "a",
+            "props": {
+              "href": "#/test",
+              "className": "selected",
+              "children": "A Nav Link"
+            },
+            "key": "nav_test",
+            "rendered": "A Nav Link"
+          },
+          {
+            "nodeType": "host",
+            "type": "a",
+            "props": {
+              "href": "#/",
+              "children": "Home"
+            },
+            "key": "nav_home",
+            "rendered": "Home"
+          }
+        ]
+      },
+      "type": "div",
+      "props": {
+        "className": "menu"
+      },
+      "children": [
+        {
+          "node": {
+            "nodeType": "host",
+            "type": "a",
+            "props": {
+              "href": "#/test",
+              "className": "selected",
+              "children": "A Nav Link"
+            },
+            "key": "nav_test",
+            "rendered": "A Nav Link"
+          },
+          "type": "a",
+          "props": {
+            "href": "#/test",
+            "className": "selected",
+            "key": "nav_test"
+          },
+          "children": [
+            "A Nav Link"
+          ]
+        },
+        {
+          "node": {
+            "nodeType": "host",
+            "type": "a",
+            "props": {
+              "href": "#/",
+              "children": "Home"
+            },
+            "key": "nav_home",
+            "rendered": "Home"
+          },
+          "type": "a",
+          "props": {
+            "href": "#/",
+            "key": "nav_home"
+          },
+          "children": [
+            "Home"
+          ]
+        }
+      ]
+    },
+    {
+      "node": {
+        "nodeType": "host",
+        "type": "div",
+        "props": {
+          "className": "sessionActions",
+          "children": [
+            null,
+            {
+              "type": "button",
+              "props": {
+                "className": "logout fa fa",
+                "onClick": "bound logout"
+              },
+              "_store": {}
+            }
+          ]
+        },
+        "rendered": [
+          null,
+          {
+            "nodeType": "host",
+            "type": "button",
+            "props": {
+              "className": "logout fa fa",
+              "onClick": "bound logout"
+            }
+          }
+        ]
+      },
+      "type": "div",
+      "props": {
+        "className": "sessionActions"
+      },
+      "children": [
+        {
+          "node": {
+            "nodeType": "host",
+            "type": "button",
+            "props": {
+              "className": "logout fa fa",
+              "onClick": "bound logout"
+            }
+          },
+          "type": "button",
+          "props": {
+            "className": "logout fa fa",
+            "onClick": "bound logout"
+          }
+        }
+      ]
+    }
+  ]
+};
+
+exports["should match the spapshot with session details(0)"] = {
+  "node": {
+    "nodeType": "host",
+    "type": "div",
+    "props": {
+      "className": "navBar",
+      "children": [
+        {
+          "type": "div",
+          "props": {
+            "className": "menu",
+            "children": [
+              {
+                "type": "a",
+                "key": "nav_test",
+                "props": {
+                  "href": "#/test",
+                  "className": "selected",
+                  "children": "A Nav Link"
+                },
+                "_store": {}
+              },
+              {
+                "type": "a",
+                "key": "nav_home",
+                "props": {
+                  "href": "#/",
+                  "children": "Home"
+                },
+                "_store": {}
+              }
+            ]
+          },
+          "_store": {}
+        },
+        {
+          "type": "div",
+          "props": {
+            "className": "sessionActions",
+            "children": [
+              {
+                "type": "label",
+                "props": {
+                  "className": "user",
+                  "children": "Andres Blanco"
+                },
+                "_store": {}
+              },
+              {
+                "type": "button",
+                "props": {
+                  "className": "logout fa fa",
+                  "onClick": "bound logout"
+                },
+                "_store": {}
+              }
+            ]
+          },
+          "_store": {}
+        }
+      ]
+    },
+    "rendered": [
+      {
+        "nodeType": "host",
+        "type": "div",
+        "props": {
+          "className": "menu",
+          "children": [
+            {
+              "type": "a",
+              "key": "nav_test",
+              "props": {
+                "href": "#/test",
+                "className": "selected",
+                "children": "A Nav Link"
+              },
+              "_store": {}
+            },
+            {
+              "type": "a",
+              "key": "nav_home",
+              "props": {
+                "href": "#/",
+                "children": "Home"
+              },
+              "_store": {}
+            }
+          ]
+        },
+        "rendered": [
+          {
+            "nodeType": "host",
+            "type": "a",
+            "props": {
+              "href": "#/test",
+              "className": "selected",
+              "children": "A Nav Link"
+            },
+            "key": "nav_test",
+            "rendered": "A Nav Link"
+          },
+          {
+            "nodeType": "host",
+            "type": "a",
+            "props": {
+              "href": "#/",
+              "children": "Home"
+            },
+            "key": "nav_home",
+            "rendered": "Home"
+          }
+        ]
+      },
+      {
+        "nodeType": "host",
+        "type": "div",
+        "props": {
+          "className": "sessionActions",
+          "children": [
+            {
+              "type": "label",
+              "props": {
+                "className": "user",
+                "children": "Andres Blanco"
+              },
+              "_store": {}
+            },
+            {
+              "type": "button",
+              "props": {
+                "className": "logout fa fa",
+                "onClick": "bound logout"
+              },
+              "_store": {}
+            }
+          ]
+        },
+        "rendered": [
+          {
+            "nodeType": "host",
+            "type": "label",
+            "props": {
+              "className": "user",
+              "children": "Andres Blanco"
+            },
+            "rendered": "Andres Blanco"
+          },
+          {
+            "nodeType": "host",
+            "type": "button",
+            "props": {
+              "className": "logout fa fa",
+              "onClick": "bound logout"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "type": "div",
+  "props": {
+    "className": "navBar"
+  },
+  "children": [
+    {
+      "node": {
+        "nodeType": "host",
+        "type": "div",
+        "props": {
+          "className": "menu",
+          "children": [
+            {
+              "type": "a",
+              "key": "nav_test",
+              "props": {
+                "href": "#/test",
+                "className": "selected",
+                "children": "A Nav Link"
+              },
+              "_store": {}
+            },
+            {
+              "type": "a",
+              "key": "nav_home",
+              "props": {
+                "href": "#/",
+                "children": "Home"
+              },
+              "_store": {}
+            }
+          ]
+        },
+        "rendered": [
+          {
+            "nodeType": "host",
+            "type": "a",
+            "props": {
+              "href": "#/test",
+              "className": "selected",
+              "children": "A Nav Link"
+            },
+            "key": "nav_test",
+            "rendered": "A Nav Link"
+          },
+          {
+            "nodeType": "host",
+            "type": "a",
+            "props": {
+              "href": "#/",
+              "children": "Home"
+            },
+            "key": "nav_home",
+            "rendered": "Home"
+          }
+        ]
+      },
+      "type": "div",
+      "props": {
+        "className": "menu"
+      },
+      "children": [
+        {
+          "node": {
+            "nodeType": "host",
+            "type": "a",
+            "props": {
+              "href": "#/test",
+              "className": "selected",
+              "children": "A Nav Link"
+            },
+            "key": "nav_test",
+            "rendered": "A Nav Link"
+          },
+          "type": "a",
+          "props": {
+            "href": "#/test",
+            "className": "selected",
+            "key": "nav_test"
+          },
+          "children": [
+            "A Nav Link"
+          ]
+        },
+        {
+          "node": {
+            "nodeType": "host",
+            "type": "a",
+            "props": {
+              "href": "#/",
+              "children": "Home"
+            },
+            "key": "nav_home",
+            "rendered": "Home"
+          },
+          "type": "a",
+          "props": {
+            "href": "#/",
+            "key": "nav_home"
+          },
+          "children": [
+            "Home"
+          ]
+        }
+      ]
+    },
+    {
+      "node": {
+        "nodeType": "host",
+        "type": "div",
+        "props": {
+          "className": "sessionActions",
+          "children": [
+            {
+              "type": "label",
+              "props": {
+                "className": "user",
+                "children": "Andres Blanco"
+              },
+              "_store": {}
+            },
+            {
+              "type": "button",
+              "props": {
+                "className": "logout fa fa",
+                "onClick": "bound logout"
+              },
+              "_store": {}
+            }
+          ]
+        },
+        "rendered": [
+          {
+            "nodeType": "host",
+            "type": "label",
+            "props": {
+              "className": "user",
+              "children": "Andres Blanco"
+            },
+            "rendered": "Andres Blanco"
+          },
+          {
+            "nodeType": "host",
+            "type": "button",
+            "props": {
+              "className": "logout fa fa",
+              "onClick": "bound logout"
+            }
+          }
+        ]
+      },
+      "type": "div",
+      "props": {
+        "className": "sessionActions"
+      },
+      "children": [
+        {
+          "node": {
+            "nodeType": "host",
+            "type": "label",
+            "props": {
+              "className": "user",
+              "children": "Andres Blanco"
+            },
+            "rendered": "Andres Blanco"
+          },
+          "type": "label",
+          "props": {
+            "className": "user"
+          },
+          "children": [
+            "Andres Blanco"
+          ]
+        },
+        {
+          "node": {
+            "nodeType": "host",
+            "type": "button",
+            "props": {
+              "className": "logout fa fa",
+              "onClick": "bound logout"
+            }
+          },
+          "type": "button",
+          "props": {
+            "className": "logout fa fa",
+            "onClick": "bound logout"
+          }
+        }
+      ]
+    }
+  ]
+};
+
