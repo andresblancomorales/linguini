@@ -1,4 +1,5 @@
 import './assets/styles/main.scss';
+require('offline-plugin/runtime').install();
 
 import React from 'react';
 import ReactDOM from 'react-dom';

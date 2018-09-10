@@ -1,11 +1,7 @@
 import React, {Component} from 'react';
 import {connect} from "react-redux";
-import {bindActionCreators} from 'redux';
-import {recipeActions} from '../instanceProvider';
-import PropTypes from 'prop-types';
 import RecipesView from "../recipesView";
 import {Route, Switch} from 'react-router';
-import * as _ from '../../../utils/utilities';
 import '@fortawesome/fontawesome-free';
 import NavBar from "./navBar";
 

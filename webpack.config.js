@@ -3,6 +3,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const webpack = require('webpack');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const OfflinePlugin = require('offline-plugin');
+const WebpackPwaManifest = require('webpack-pwa-manifest');
 
 module.exports = (env, arguments) => {
   const isDevMode = arguments.mode !== 'production';
@@ -49,12 +51,24 @@ module.exports = (env, arguments) => {
         'process.env': {
           NODE_ENV: JSON.stringify(arguments.mode)
         },
-        GUSTEAU_URL: isDevMode ? "'http://192.168.11.19:3000'" : "'http://www.gusteau.com'"
+        GUSTEAU_URL: isDevMode ? "'http://localhost:3000'" : "'http://www.gusteau.com"
       }),
       new webpack.optimize.SplitChunksPlugin({
         names: ['login'],
         minChunks: Infinity,
-      })
+      }),
+      new OfflinePlugin({
+        relativePaths: false,
+        publicPath: '/',
+        appShell: '/'
+      }),
+      new WebpackPwaManifest({
+        name: 'Linguini',
+        short_name: 'Linguini',
+        description: 'A cookbook',
+        background_color: '#fafafa',
+        theme_color: '#8fa08d'
+      }),
     ],
     module: {
       rules: [

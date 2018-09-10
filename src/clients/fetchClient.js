@@ -1,4 +1,7 @@
 import * as _ from '../utils/utilities';
+import localforage from 'localforage';
+
+localforage.setDriver(localforage.INDEXEDDB);
 
 export class NoTokenProvidedException extends Error {
   constructor() {
@@ -6,6 +9,7 @@ export class NoTokenProvidedException extends Error {
     this.name = NoTokenProvidedException.Name;
   }
 }
+
 NoTokenProvidedException.Name = 'NoTokenProvidedException';
 
 export default class FetchClient {
@@ -24,22 +28,22 @@ export default class FetchClient {
 
   async configureAndFetch(request, method) {
     if (_.isDefined(this.bearerTokenProvider) && !request.skipBearer) {
-        try {
-          let token = await this.bearerTokenProvider.getToken();
+      try {
+        let token = await this.bearerTokenProvider.getToken();
 
-          request.headers = {
-            ...request.headers,
-            'Authorization': `Bearer ${token}`
-          };
+        request.headers = {
+          ...request.headers,
+          'Authorization': `Bearer ${token}`
+        };
 
-          return this.executeFetch(request, method);
-        } catch(error) {
-          if (_.isDefined(this.authenticationListener)) {
-            this.authenticationListener();
-          }
-
-          throw new NoTokenProvidedException();
+        return this.executeFetch(request, method);
+      } catch (error) {
+        if (_.isDefined(this.authenticationListener)) {
+          this.authenticationListener();
         }
+
+        throw new NoTokenProvidedException();
+      }
     } else {
       return this.executeFetch(request, method);
     }
@@ -53,23 +57,36 @@ export default class FetchClient {
         body: JSON.stringify(request.body),
       };
       // if (!(request.body instanceof FormData)) {
-        fetchRequest.headers = {
-          ...request.headers,
-          'Content-Type': 'application/json',
-        }
+      fetchRequest.headers = {
+        ...request.headers,
+        'Content-Type': 'application/json',
+      }
       // }
     }
 
-    let response = await fetch(this.url + request.path, fetchRequest);
+    let response;
+
+    try {
+      response = await fetch(this.url + request.path, fetchRequest);
+    } catch (error) {
+
+      let cachedResult = await localforage.getItem(request.cache);
+      return {status: 200, body: cachedResult};
+    }
     if (response.ok) {
       if (request.deserialize) {
         let body = await response.json();
-        return { status: response.status, body: body};
+
+        if (request.cache) {
+          localforage.setItem(request.cache, body);
+        }
+
+        return {status: response.status, body: body};
       } else {
-        return { status: response.status };
+        return {status: response.status};
       }
     } else {
-      switch(response.status) {
+      switch (response.status) {
         case 401:
           if (_.isFunction(this.authenticationListener)) {
             this.authenticationListener();
@@ -85,7 +102,7 @@ export default class FetchClient {
       try {
         let error = await response.json();
         return Promise.reject({status: response.status, error: error});
-      } catch(error) {
+      } catch (error) {
         return Promise.reject({status: response.status})
       }
     }

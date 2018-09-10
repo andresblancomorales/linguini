@@ -3,6 +3,7 @@
 $fa-font-path: '~@fortawesome/fontawesome-free/webfonts';
 @import '~@fortawesome/fontawesome-free/scss/solid.scss';
 @import '~@fortawesome/fontawesome-free/scss/fontawesome.scss';
+@import 'recipes.scss';
 
 body {
   background-color: white;
@@ -14,12 +15,7 @@ body {
 }
 
 .shell {
-  //display: grid;
-  //grid-template-areas:
-  //        "top-bar"
-  //        "content";
-  //grid-template-rows: 1fr auto;
-  //height: 100%;
+
 }
 
 .content {
@@ -41,7 +37,6 @@ body {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
   background-color: $main-color;
-  //background-color: transparent;
   height: 6rem;
   box-shadow: 0rem 0.8rem 1rem -1rem rgba(124, 123, 123, 1);
 }
@@ -173,196 +168,10 @@ body {
   right: -1.5rem;
 }
 
-:root {
-  --recipe-card-width: 45vw;
-  --active-card-width: calc((45vw / 5) * 4);
-  --hidden-card-width: calc(45vw / 5);
-  --recipe-card-height: 20rem;
-}
-
-$card-transition: width 0.25s ease-out;
-$card-shadow: -1rem 0.1rem 1rem 0rem rgba(0, 0, 0, 0.15);
-
-.recipes {
-  display: grid;
-  align-content: center;
-  align-items: center;
-  justify-content: center;
-  grid-template-columns: repeat(auto-fit, minmax(var(--recipe-card-width), 1fr));
-  //grid-template-rows: repeat(auto-fit, minmax(var(--recipe-card-height), var(--recipe-card-height)));
-  grid-column-gap: 0.5rem;
-  grid-row-gap: 0.5rem;
-  height: 100%;
-}
-
-.recipeCard {
-  place-self: center;
-  display: flex;
-  flex-direction: row;
-  background-color: white;
-  border: 0.2rem solid $error-color;
-  width: var(--recipe-card-width);
-  height: var(--recipe-card-height);
-  overflow: hidden;
-}
-
-.imageCard {
-  z-index: 0;
-  background-color: $third-color;
-}
-
-.ingredientsCard {
-  z-index: 1;
-}
-
-.preparation_steps {
-  z-index: 2;
-}
-
-.ingredientsCard, .imageCard, .preparation_steps {
-  display: block;
-  overflow: hidden;
-  transition: width 0.25s ease-in;
-  box-shadow: $card-shadow;
-  position: relative;
-
-  * {
-    cursor: pointer;
-  }
-}
-.ingredientsCard {
-  width: var(--active-card-width);
-}
-
-.ingredientsCard::before, .preparation_steps::before {
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2rem;
-  position: absolute;
-  top: 0;
-  left: 0;
-  writing-mode: vertical-lr;
-  text-orientation: sideways;
-  height: var(--recipe-card-height);
-  width: var(--hidden-card-width);
-  text-align: center;
-  vertical-align: middle;
-  transition: width 0.25s ease-in;
-  overflow: hidden;
-  padding-left: -1rem;
-}
-
-.ingredientsCard::before {
-  color: $font-color;
-  content: 'Ingredients';
-  background-color: $main-color;
-}
-
-.preparation_steps::before {
-  color: white;
-  content: 'Preparation';
-  background-color: $font-color;
-}
-
-.imageCard img {
-  width: var(--active-card-width);
-  height: 100%;
-  object-fit: cover; //fill, contain, cover, scale-down
-  box-sizing: content-box;
-}
-
-.preparation_steps {
-  width: var(--hidden-card-width);
-}
-
-input[id^=imgCheck] {
-  display: none;
-
-  &:checked ~ .imageCard {
-    width: var(--active-card-width);
-    transition: $card-transition;
-  }
-
-  &:checked ~ .ingredientsCard, &:checked ~ .preparation_steps {
-    width: var(--hidden-card-width);
-    transition: $card-transition;
-  }
-}
-
-input[id^=ingredientsCheck] {
-  display: none;
-
-  &:checked ~ .ingredientsCard {
-    width: var(--active-card-width);
-    transition: $card-transition;
-  }
-
-  &:checked ~ .imageCard, &:checked ~ .preparation_steps {
-    width: var(--hidden-card-width);
-    transition: $card-transition;
-  }
-
-  &:checked ~ .ingredientsCard::before {
-    width: 0;
-    transition: width 0.25s ease-in;
-  }
-}
-
-input[id^=stepsCheck]{
-  display: none;
-
-  &:checked ~ .preparation_steps {
-    width: var(--active-card-width);
-    transition: $card-transition;
-  }
-
-  &:checked ~ .imageCard, &:checked ~ .ingredientsCard {
-    width: var(--hidden-card-width);
-    transition: $card-transition;
-  }
-
-  &:checked ~ .preparation_steps::before {
-    width: 0;
-    transition: width 0.25s ease-in;
-  }
-}
-
-.ingredients {
-  width: var(--active-card-width);
-  padding: 1rem;
-
-  .recipeName {
-    font-size: 1.5rem;
-    //text-decoration: underline;
-    background-color: $main-color;
-    color: white;
-    padding: 0.3rem;
-    margin-bottom: 0.1rem;
-  }
-}
-
-.preparation {
-  padding: 1rem;
-  background-color: $font-color;
-  width: var(--active-card-width);
-  height: 100%;
-}
-
-.preparation .step {
-  color: white;
-}
-
 @media only screen and (max-width: 800px) {
-  :root {
-    --recipe-card-width: calc(90vw);
-    --active-card-width: calc(90vw);
-    --hidden-card-width: calc(10vw);
-  }
 
   * {
-    font-size: 10px;
+    font-size: 12px;
   }
 
   .content {

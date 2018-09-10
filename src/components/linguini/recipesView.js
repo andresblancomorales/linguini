@@ -31,36 +31,42 @@ export class RecipesView extends Component {
         {this.props.recipes.all.map(recipe => {
           return (
             <div key={recipe._id} className='recipeCard'>
-              <input name={`cardSelector_${recipe._id}`} id={`imgCheck_${recipe._id}`} type='radio' defaultChecked={true}/>
-              <input name={`cardSelector_${recipe._id}`} id={`ingredientsCheck_${recipe._id}`} type='radio' />
+              <input name={`cardSelector_${recipe._id}`} id={`imgCheck_${recipe._id}`} type='radio'
+                     defaultChecked={true}/>
+              <input name={`cardSelector_${recipe._id}`} id={`ingredientsCheck_${recipe._id}`} type='radio'/>
               <input name={`cardSelector_${recipe._id}`} id={`stepsCheck_${recipe._id}`} type='radio'/>
               <label htmlFor={`imgCheck_${recipe._id}`} className='imageCard'>
-                <label htmlFor={`imgCheck_${recipe._id}`} >
-                       <img src={_.isDefined(recipe.pictureUrl) ? recipe.pictureUrl : require('../../assets/images/default.png')}/>
-                </label>
+                <div className='recipeImage'>
+                  <div className='cardTitle'>{recipe.name}</div>
+                  <img
+                    src={_.isDefined(recipe.pictureUrl) ? recipe.pictureUrl : require('../../assets/images/default.png')}/>
+                </div>
               </label>
               <label htmlFor={`ingredientsCheck_${recipe._id}`} className='ingredientsCard'>
-                  <div className='ingredients'>
-                    <div className='recipeName'>{recipe.name}</div>
-                    <div>{recipe.ingredients.map(ingredient => {
-                      return (
-                        <div>
-                          <div>{ingredient.name}</div>
-                          <div>{ingredient.amount}</div>
-                        </div>
-                      )
-                    })}</div>
-                  </div>
+                <div className='cardTitle'>Ingredients</div>
+                <div className='ingredients'>
+                  <ol>
+                    {recipe.ingredients.map(ingredient => {
+                    return (
+                      <li>
+                        <span>{ingredient.name} - </span>
+                        <span>{ingredient.amount}</span>
+                      </li>
+                    )
+                  })}</ol>
+                </div>
               </label>
               <label htmlFor={`stepsCheck_${recipe._id}`} className='preparation_steps'>
-                  <div className='preparation'>
-                    <div>Steps</div>
-                    {recipe.preparation.map(step => {
-                      return (
-                        <div className='step'>{step}</div>
-                      )
-                    })}
-                  </div>
+                <div className='cardTitle'>Steps</div>
+                <div className='preparation'>
+                  <ol>
+                  {recipe.preparation.map(step => {
+                    return (
+                      <li className='step'>{step}</li>
+                    )
+                  })}
+                  </ol>
+                </div>
               </label>
             </div>
           )

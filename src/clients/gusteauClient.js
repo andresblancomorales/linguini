@@ -38,7 +38,8 @@ export default class GusteauClient extends FetchClient {
   getRecipes(offset) {
     let request = {
       path: !isDefined(offset)? '/recipes': `/recipes?offset=${offset}`,
-      deserialize: true
+      deserialize: true,
+      cache: 'recipes'
     };
 
     return this.doGet(request);

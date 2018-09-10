@@ -46,7 +46,8 @@ describe('GusteauClient', () => {
     sinon.stub(client, 'doGet')
       .withArgs({
         path: '/recipes',
-        deserialize: true
+        deserialize: true,
+        cache: 'recipes'
       })
       .returns(Promise.resolve({
         status: 200,
@@ -66,7 +67,8 @@ describe('GusteauClient', () => {
     sinon.stub(client, 'doGet')
       .withArgs({
         path: '/recipes?offset=001',
-        deserialize: true
+        deserialize: true,
+        cache: 'recipes'
       })
       .returns(Promise.resolve({
         status: 200,
