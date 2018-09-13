@@ -13,20 +13,21 @@ $card-shadow: -1rem 0.1rem 1rem 0rem rgba(0, 0, 0, 0.15);
 $transparent-main-color: rgba(143, 160, 141, 0.80);
 $transparent-font-color: rgba(104, 96, 85, 0.80);
 $transparent-third-color: rgba(144, 161, 186, 0.95);
+$transparent-black: rgba(0, 0, 0, 0);
 
 .recipes {
   display: grid;
-  align-content: center;
+  padding: 1rem;
   align-items: center;
   justify-content: center;
   grid-template-columns: repeat(auto-fit, minmax(var(--recipe-card-width), var(--recipe-card-width)));
   grid-column-gap: 1rem;
   grid-row-gap: 1rem;
-  height: 100%;
+  height: calc(100vh - 6rem);
+  overflow-y: auto;
 }
 
 .recipeCard {
-  place-self: center;
   display: flex;
   flex-direction: row;
   background-color: white;
@@ -64,7 +65,7 @@ $transparent-third-color: rgba(144, 161, 186, 0.95);
   width: var(--active-card-width);
 
   .cardTitle {
-    background-color: $transparent-main-color;
+    background-color: $main-color;
   }
 }
 
@@ -198,6 +199,7 @@ input[id^=stepsCheck]{
   font-size: 1.5rem;
   color: white;
   padding: 0.75rem;
+  margin-bottom: -0.25rem;
 }
 
 .recipeImage {
@@ -205,7 +207,17 @@ input[id^=stepsCheck]{
   height: 100%;
 
   .cardTitle {
-    background-color: $transparent-third-color;
+    font-size: 3rem;
+    background-image: linear-gradient(to top, black, $transparent-black);
+    --webkit-text-stroke-width: 5px;
+    text-shadow:
+            -1px -1px 0 #000,
+            1px -1px 0 #000,
+            -1px 1px 0 #000,
+            1px 1px 0 #000;
+
+    //background-color: black;
+    //mix-blend-mode: multiply;
   }
 
   img {
@@ -232,7 +244,7 @@ input[id^=stepsCheck]{
   color: $font-color;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1200px) {
   :root {
     --recipe-card-width: calc(90vw);
     --active-card-width: calc(90vw);

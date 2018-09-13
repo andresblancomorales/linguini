@@ -19,11 +19,11 @@ body {
 }
 
 .content {
-  padding: 1rem;
+  position: relative;
   margin: 0;
   margin-top: 6rem;
   max-height: calc(100vh - 6rem);
-  overflow-y: auto;
+  overflow: hidden;
 }
 
 .topBar {
@@ -166,6 +166,31 @@ body {
   box-shadow: 0.3rem 0.3rem 0rem 0rem $font-color;
   bottom: -0.1rem;
   right: -1.5rem;
+}
+
+.loading {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: $main-color;
+  height: 3rem;
+  z-index: 999;
+  opacity: 1;
+  transition: opacity 1s linear;
+}
+
+.spinner {
+  font-size: 2rem;
+  animation: spin 1s ease-in-out infinite;
+}
+
+.hidden {
+  opacity: 0;
+  transition: opacity 1s linear;
 }
 
 @media only screen and (max-width: 800px) {

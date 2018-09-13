@@ -16,12 +16,21 @@ export const recipesReducer = (state = initialState, action) => {
       };
       break;
     case RecipeActions.Actions.GOT_RECIPES:
-      state = {
-        ...state,
-        all: action.recipes,
-        loading: false,
-        error: undefined,
-      };
+      if (action.offset) {
+        state = {
+          ...state,
+          all: [...state.all, ...action.recipes],
+          loading: false,
+          error: undefined,
+        };
+      } else {
+        state = {
+          ...state,
+          all: action.recipes,
+          loading: false,
+          error: undefined,
+        };
+      }
       break;
     case RecipeActions.Actions.GET_RECIPES_FAILED:
       state = {

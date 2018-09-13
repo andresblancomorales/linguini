@@ -68,7 +68,7 @@ describe('GusteauClient', () => {
       .withArgs({
         path: '/recipes?offset=001',
         deserialize: true,
-        cache: 'recipes'
+        cache: undefined
       })
       .returns(Promise.resolve({
         status: 200,

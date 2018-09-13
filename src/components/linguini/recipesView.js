@@ -3,13 +3,14 @@ import {connect} from "react-redux";
 import {bindActionCreators} from 'redux';
 import * as _ from '../../utils/utilities'
 import PropTypes from 'prop-types';
+import Spinner from './layout/spinner';
 
 const instanceProvider = _.getLinguiniInstanceProvider();
 const recipeActions = instanceProvider.recipeActions;
 
 const mapStateToProps = state => {
   return {
-    recipes: state.recipes
+    recipes: state.recipes.all
   };
 };
 
@@ -19,16 +20,25 @@ const mapActionsToProps = dispatch => {
   };
 };
 
+const RecipesSpinner = _.reduxConnect(Spinner, state => {return { isLoading: state.recipes.loading }});
+
 export class RecipesView extends Component {
 
   componentWillMount() {
     this.props.actions.getRecipes();
+    this.content = React.createRef();
+  }
+
+  onScroll(e) {
+    if ((e.currentTarget.scrollTop + this.content.current.offsetHeight) === this.content.current.scrollHeight) {
+      this.props.actions.getRecipes(this.props.recipes[this.props.recipes.length - 1]._id);
+    }
   }
 
   render() {
     return (
-      <div className='recipes'>
-        {this.props.recipes.all.map(recipe => {
+      <div className='recipes' ref={this.content} onScroll={this.onScroll.bind(this)}>
+        {this.props.recipes.map(recipe => {
           return (
             <div key={recipe._id} className='recipeCard'>
               <input name={`cardSelector_${recipe._id}`} id={`imgCheck_${recipe._id}`} type='radio'
@@ -39,7 +49,7 @@ export class RecipesView extends Component {
                 <div className='recipeImage'>
                   <div className='cardTitle'>{recipe.name}</div>
                   <img
-                    src={_.isDefined(recipe.pictureUrl) ? recipe.pictureUrl : require('../../assets/images/default.png')}/>
+                    src={_.isDefined(recipe.pictureUrl) ? recipe.pictureUrl : require('../../assets/images/default.jpg')}/>
                 </div>
               </label>
               <label htmlFor={`ingredientsCheck_${recipe._id}`} className='ingredientsCard'>
@@ -71,6 +81,7 @@ export class RecipesView extends Component {
             </div>
           )
         })}
+        <RecipesSpinner/>
       </div>
     )
   }

@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import {connect} from "react-redux";
 import RecipesView from "../recipesView";
 import {Route, Switch} from 'react-router';
-import '@fortawesome/fontawesome-free';
 import NavBar from "./navBar";
 
 const mapStateToProps = state => {
@@ -13,6 +12,11 @@ const mapStateToProps = state => {
 };
 
 export class Shell extends Component {
+
+  constructor(props) {
+    super(props);
+  }
+
   render() {
     return (
       <div className='shell'>

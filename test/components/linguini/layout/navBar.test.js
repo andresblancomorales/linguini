@@ -24,7 +24,7 @@ describe('<NavBar />', () => {
     _.getLinguiniInstanceProvider.restore();
   });
 
-  it('should match the spapshot with session details', done => {
+  it('should match the snapshot with session details', done => {
     let menuItems = [
       {name: 'nav_test', href: '#/test', description: 'A Nav Link'},
       {name: 'nav_home', href: '#/', description: 'Home'}

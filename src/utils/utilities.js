@@ -1,5 +1,6 @@
 import Cookies from 'js-cookie';
 import url from 'url';
+import {connect} from "react-redux";
 
 export function isDefined(variable) {
   return typeof variable !== 'undefined' && variable !== null;
@@ -35,3 +36,6 @@ export function getLinguiniInstanceProvider() {
   return require('../components/linguini/instanceProvider');
 }
 
+export function reduxConnect(component, mapStateToProps, mapActionsToProps) {
+  return connect(mapStateToProps, mapActionsToProps)(component);
+}
