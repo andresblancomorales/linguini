@@ -44,4 +44,14 @@ export default class GusteauClient extends FetchClient {
 
     return this.doGet(request);
   }
+
+  getCategories() {
+    let request = {
+      path: '/categories',
+      deserialize: true,
+      cache: 'categories'
+    };
+
+    return this.doGet(request);
+  }
 }

@@ -9,7 +9,8 @@ describe('RecipesReducer', () =>{
     expect(state).to.deep.equal({
       all: [],
       loading: false,
-      error: undefined
+      error: undefined,
+      categories: []
     });
 
     done();
@@ -58,6 +59,24 @@ describe('RecipesReducer', () =>{
       all: [{_id: '001', name: 'Rice n Beans'}],
       loading: false,
       error: 'Failed to load recipes'
+    });
+
+    done();
+  });
+
+  it('should set the categories', done => {
+    let state = recipesReducer({
+      all: [{_id: '001', name: 'Rice n Beans'}],
+      loading: false,
+      error: undefined,
+      categories: []
+    }, {type: RecipeActions.Actions.GOT_CATEGORIES, categories: [{_id: '001', name: 'pasta', description: 'Pasta'}]});
+
+    expect(state).to.deep.equal({
+      all: [{_id: '001', name: 'Rice n Beans'}],
+      loading: false,
+      error: undefined,
+      categories: [{_id: '001', name: 'pasta', description: 'Pasta'}]
     });
 
     done();

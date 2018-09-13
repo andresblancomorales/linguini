@@ -23,6 +23,7 @@ module.exports = (env, arguments) => {
     },
     optimization: {
       splitChunks: {
+        maxSize: 244000,
         chunks: 'all'
       },
       minimizer: isDevMode ? undefined : [new UglifyJsPlugin()]
@@ -54,7 +55,7 @@ module.exports = (env, arguments) => {
         GUSTEAU_URL: isDevMode ? "'http://localhost:3000'" : "'http://localhost:3000'"
       }),
       new webpack.optimize.SplitChunksPlugin({
-        names: ['login'],
+        names: ['login', 'linguini'],
         minChunks: Infinity,
       }),
       new OfflinePlugin({

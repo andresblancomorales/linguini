@@ -11,11 +11,18 @@ describe('RecipeActions', () => {
     let gusteauClient = new GusteauClient('http://www.gusteau.com');
     sinon.stub(gusteauClient, 'getRecipes')
       .withArgs()
-      .returns(Promise.resolve({status: 200, body: [{_id: '001', name: 'Rice n Beans'}, {_id: '002', name: 'Chifrijo'}]}));
+      .returns(Promise.resolve({
+        status: 200,
+        body: [{_id: '001', name: 'Rice n Beans'}, {_id: '002', name: 'Chifrijo'}]
+      }));
 
     let expectedActions = [
       {type: RecipeActions.Actions.GETTING_RECIPES, offset: undefined},
-      {type: RecipeActions.Actions.GOT_RECIPES, offset: undefined, recipes: [{_id: '001', name: 'Rice n Beans'}, {_id: '002', name: 'Chifrijo'}]}
+      {
+        type: RecipeActions.Actions.GOT_RECIPES,
+        offset: undefined,
+        recipes: [{_id: '001', name: 'Rice n Beans'}, {_id: '002', name: 'Chifrijo'}]
+      }
     ];
 
     let store = mockStore({});
@@ -72,4 +79,59 @@ describe('RecipeActions', () => {
         done();
       });
   });
+
+  it('should get all categories and dispatch the correct events', done => {
+    let gusteauClient = new GusteauClient('http://www.gusteau.com');
+    sinon.stub(gusteauClient, 'getCategories')
+      .withArgs()
+      .returns(Promise.resolve({
+        status: 200,
+        body: [{_id: '001', name: 'pasta', description: 'Pasta'}, {_id: '002', name: 'pizza', description: 'Pasta'}]
+      }));
+
+    let expectedActions = [
+      {type: RecipeActions.Actions.GETTING_CATEGORIES},
+      {
+        type: RecipeActions.Actions.GOT_CATEGORIES,
+        categories: [{_id: '001', name: 'pasta', description: 'Pasta'}, {
+          _id: '002',
+          name: 'pizza',
+          description: 'Pasta'
+        }]
+      }
+    ];
+
+    let store = mockStore({});
+
+    let recipeActions = new RecipeActions(gusteauClient);
+
+    store.dispatch(recipeActions.getCategories())
+      .then(() => {
+        expect(store.getActions()).to.deep.equal(expectedActions);
+        done();
+      });
+  });
+
+  it('should try to get all categories and dispatch the correct events if it fails', done => {
+    let gusteauClient = new GusteauClient('http://www.gusteau.com');
+    sinon.stub(gusteauClient, 'getCategories')
+      .withArgs()
+      .returns(Promise.reject());
+
+    let expectedActions = [
+      {type: RecipeActions.Actions.GETTING_CATEGORIES},
+      {type: RecipeActions.Actions.GET_CATEGORIES_FAILED}
+    ];
+
+    let store = mockStore({});
+
+    let recipeActions = new RecipeActions(gusteauClient);
+
+    store.dispatch(recipeActions.getCategories())
+      .then(() => {
+        expect(store.getActions()).to.deep.equal(expectedActions);
+        done();
+      });
+  });
+
 });

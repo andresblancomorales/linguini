@@ -3,7 +3,8 @@ import RecipeActions from '../actions/recipeActions';
 const initialState = {
   all: [],
   loading: false,
-  error: undefined
+  error: undefined,
+  categories: []
 };
 
 export const recipesReducer = (state = initialState, action) => {
@@ -37,6 +38,12 @@ export const recipesReducer = (state = initialState, action) => {
         ...state,
         loading: false,
         error: 'Failed to load recipes'
+      };
+      break;
+    case RecipeActions.Actions.GOT_CATEGORIES:
+      state = {
+        ...state,
+        categories: action.categories
       };
       break;
   }
