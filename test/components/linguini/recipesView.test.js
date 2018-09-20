@@ -30,7 +30,7 @@ describe('<RecipesView/>', () => {
     _.reduxConnect.restore();
   });
 
-  it('should match the spapshot with no recipes', done => {
+  it('should match the snapshot with no recipes', done => {
     let getRecipes = sinon.spy();
     const wrapper =shallow(<RecipesView recipes={[]} actions={{ getRecipes: getRecipes }}/>);
 

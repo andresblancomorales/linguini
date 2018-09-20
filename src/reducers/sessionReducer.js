@@ -4,6 +4,7 @@ const initialState = {
   session: undefined,
   loading: false,
   error: undefined,
+  isOnline: true,
 };
 
 export const sessionReducer = (state = initialState, action) => {
@@ -29,6 +30,12 @@ export const sessionReducer = (state = initialState, action) => {
         session: action.session,
         loading: false,
         error: undefined
+      };
+      break;
+    case SessionActions.Actions.TOGGLE_CONNECTIVITY:
+      state = {
+        ...state,
+        isOnline: action.online
       };
       break;
   }

@@ -207,14 +207,18 @@ input[id^=stepsCheck]{
   height: 100%;
 
   .cardTitle {
+    font-family: "Fascinate", cursive;
     font-size: 3rem;
+    color: white;
     background-image: linear-gradient(to top, black, $transparent-black);
     --webkit-text-stroke-width: 5px;
     text-shadow:
-            -1px -1px 0 #000,
-            1px -1px 0 #000,
-            -1px 1px 0 #000,
-            1px 1px 0 #000;
+            -1px -1px 0 $error-color,
+            1px -1px 0 $error-color,
+            -1px 1px 0 $error-color,
+            1px 1px 0 $error-color;
+    text-decoration: underline;
+    text-decoration-color: $error-color;
 
     //background-color: black;
     //mix-blend-mode: multiply;
@@ -242,6 +246,37 @@ input[id^=stepsCheck]{
 
 .preparation .step {
   color: $font-color;
+}
+
+.actionButton {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  right: 0;
+  width: 5rem;
+  height: 5rem;
+  background-color: $secondary-color;
+  border-radius: 50%;
+  z-index: 999;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+  cursor: pointer;
+  box-shadow: -0.5rem 1rem 1rem -1rem rgba(0, 0, 0, 0.5);
+
+  span {
+    font-size: 2.5rem;
+    color: white;
+  }
+
+  &:active {
+    box-shadow: none;
+
+    span {
+      font-size: 2.3rem;
+    }
+  }
 }
 
 @media only screen and (max-width: 1200px) {

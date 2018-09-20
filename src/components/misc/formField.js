@@ -25,7 +25,7 @@ export default class FormField extends Component {
       this.props.value !== this.state.value) {
       this.setState({
         ...this.state,
-        value: _.isDefined(this.props.field.value) ? this.props.field.value : ''
+        value: _.isDefined(this.props.value) ? this.props.value : ''
       });
     }
   }
@@ -52,17 +52,30 @@ export default class FormField extends Component {
   }
 
   render() {
-    return (
-      <div className="form_field">
-        <input type={this.props.type}
-               placeholder={this.props.placeholder}
-               autoComplete={this.props.autoComplete}
-               disabled={this.props.disabled}
-               onChange={this.handleChange.bind(this)}
-               value={this.props.value}/>
-        <div className="underline" data-placeholder={this.props.placeholder}/>
-      </div>
-    )
+    if (this.props.multiline) {
+      return (
+        <div className={`form_field ${_.isDefined(this.props.className) ? this.props.className : ''}`}>
+          <div data-placeholder={this.props.placeholder}/>
+          <textarea placeholder={this.props.placeholder}
+                    disabled={this.props.disabled}
+                    onChange={this.handleChange.bind(this)}
+                    value={this.state.value}/>
+          <div className="underline" data-placeholder={this.props.placeholder}/>
+        </div>
+      )
+    } else {
+      return (
+        <div className={`form_field ${_.isDefined(this.props.className) ? this.props.className : ''}`}>
+          <input type={this.props.type}
+                 placeholder={this.props.placeholder}
+                 autoComplete={this.props.autoComplete}
+                 disabled={this.props.disabled}
+                 onChange={this.handleChange.bind(this)}
+                 value={this.state.value}/>
+          <div className="underline" data-placeholder={this.props.placeholder}/>
+        </div>
+      )
+    }
   }
 }
 

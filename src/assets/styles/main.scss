@@ -1,9 +1,12 @@
 @import 'main-styles';
 @import 'animations.scss';
+
 $fa-font-path: '~@fortawesome/fontawesome-free/webfonts';
 @import '~@fortawesome/fontawesome-free/scss/solid.scss';
 @import '~@fortawesome/fontawesome-free/scss/fontawesome.scss';
 @import 'recipes.scss';
+@import 'formField';
+@import 'newRecipe';
 
 body {
   background-color: white;
@@ -118,6 +121,24 @@ body {
 
 .navBar .menu a + a {
   margin-left: 2rem;
+}
+
+.navBar .menu a.subMenu {
+  margin-left: 0.5rem;
+  font-size: 1.25rem;
+
+  &::after {
+    content: none;
+  }
+
+  &::before {
+    content: '>';
+    margin-right: 0.5rem;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    color: white;
+  }
 }
 
 .navBar .user {

@@ -15,7 +15,7 @@ exports["should match the snapshot(0)"] = {
                 "key": "nav_test",
                 "props": {
                   "href": "#/test",
-                  "className": "selected",
+                  "className": "selected subMenu",
                   "children": "A Nav Link"
                 },
                 "_store": {}
@@ -25,6 +25,7 @@ exports["should match the snapshot(0)"] = {
                 "key": "nav_home",
                 "props": {
                   "href": "#/",
+                  "className": " ",
                   "children": "Home"
                 },
                 "_store": {}
@@ -65,7 +66,7 @@ exports["should match the snapshot(0)"] = {
               "key": "nav_test",
               "props": {
                 "href": "#/test",
-                "className": "selected",
+                "className": "selected subMenu",
                 "children": "A Nav Link"
               },
               "_store": {}
@@ -75,6 +76,7 @@ exports["should match the snapshot(0)"] = {
               "key": "nav_home",
               "props": {
                 "href": "#/",
+                "className": " ",
                 "children": "Home"
               },
               "_store": {}
@@ -87,7 +89,7 @@ exports["should match the snapshot(0)"] = {
             "type": "a",
             "props": {
               "href": "#/test",
-              "className": "selected",
+              "className": "selected subMenu",
               "children": "A Nav Link"
             },
             "key": "nav_test",
@@ -98,6 +100,7 @@ exports["should match the snapshot(0)"] = {
             "type": "a",
             "props": {
               "href": "#/",
+              "className": " ",
               "children": "Home"
             },
             "key": "nav_home",
@@ -153,7 +156,7 @@ exports["should match the snapshot(0)"] = {
               "key": "nav_test",
               "props": {
                 "href": "#/test",
-                "className": "selected",
+                "className": "selected subMenu",
                 "children": "A Nav Link"
               },
               "_store": {}
@@ -163,6 +166,7 @@ exports["should match the snapshot(0)"] = {
               "key": "nav_home",
               "props": {
                 "href": "#/",
+                "className": " ",
                 "children": "Home"
               },
               "_store": {}
@@ -175,7 +179,7 @@ exports["should match the snapshot(0)"] = {
             "type": "a",
             "props": {
               "href": "#/test",
-              "className": "selected",
+              "className": "selected subMenu",
               "children": "A Nav Link"
             },
             "key": "nav_test",
@@ -186,6 +190,7 @@ exports["should match the snapshot(0)"] = {
             "type": "a",
             "props": {
               "href": "#/",
+              "className": " ",
               "children": "Home"
             },
             "key": "nav_home",
@@ -204,7 +209,7 @@ exports["should match the snapshot(0)"] = {
             "type": "a",
             "props": {
               "href": "#/test",
-              "className": "selected",
+              "className": "selected subMenu",
               "children": "A Nav Link"
             },
             "key": "nav_test",
@@ -213,7 +218,7 @@ exports["should match the snapshot(0)"] = {
           "type": "a",
           "props": {
             "href": "#/test",
-            "className": "selected",
+            "className": "selected subMenu",
             "key": "nav_test"
           },
           "children": [
@@ -226,6 +231,7 @@ exports["should match the snapshot(0)"] = {
             "type": "a",
             "props": {
               "href": "#/",
+              "className": " ",
               "children": "Home"
             },
             "key": "nav_home",
@@ -234,6 +240,7 @@ exports["should match the snapshot(0)"] = {
           "type": "a",
           "props": {
             "href": "#/",
+            "className": " ",
             "key": "nav_home"
           },
           "children": [
@@ -668,7 +675,7 @@ exports["should match the snapshot with session details(0)"] = {
                 "key": "nav_test",
                 "props": {
                   "href": "#/test",
-                  "className": "selected",
+                  "className": "selected subMenu",
                   "children": "A Nav Link"
                 },
                 "_store": {}
@@ -678,6 +685,7 @@ exports["should match the snapshot with session details(0)"] = {
                 "key": "nav_home",
                 "props": {
                   "href": "#/",
+                  "className": " ",
                   "children": "Home"
                 },
                 "_store": {}
@@ -725,7 +733,7 @@ exports["should match the snapshot with session details(0)"] = {
               "key": "nav_test",
               "props": {
                 "href": "#/test",
-                "className": "selected",
+                "className": "selected subMenu",
                 "children": "A Nav Link"
               },
               "_store": {}
@@ -735,6 +743,7 @@ exports["should match the snapshot with session details(0)"] = {
               "key": "nav_home",
               "props": {
                 "href": "#/",
+                "className": " ",
                 "children": "Home"
               },
               "_store": {}
@@ -747,7 +756,7 @@ exports["should match the snapshot with session details(0)"] = {
             "type": "a",
             "props": {
               "href": "#/test",
-              "className": "selected",
+              "className": "selected subMenu",
               "children": "A Nav Link"
             },
             "key": "nav_test",
@@ -758,6 +767,7 @@ exports["should match the snapshot with session details(0)"] = {
             "type": "a",
             "props": {
               "href": "#/",
+              "className": " ",
               "children": "Home"
             },
             "key": "nav_home",
@@ -828,7 +838,7 @@ exports["should match the snapshot with session details(0)"] = {
               "key": "nav_test",
               "props": {
                 "href": "#/test",
-                "className": "selected",
+                "className": "selected subMenu",
                 "children": "A Nav Link"
               },
               "_store": {}
@@ -838,6 +848,7 @@ exports["should match the snapshot with session details(0)"] = {
               "key": "nav_home",
               "props": {
                 "href": "#/",
+                "className": " ",
                 "children": "Home"
               },
               "_store": {}
@@ -850,7 +861,7 @@ exports["should match the snapshot with session details(0)"] = {
             "type": "a",
             "props": {
               "href": "#/test",
-              "className": "selected",
+              "className": "selected subMenu",
               "children": "A Nav Link"
             },
             "key": "nav_test",
@@ -861,6 +872,7 @@ exports["should match the snapshot with session details(0)"] = {
             "type": "a",
             "props": {
               "href": "#/",
+              "className": " ",
               "children": "Home"
             },
             "key": "nav_home",
@@ -879,7 +891,7 @@ exports["should match the snapshot with session details(0)"] = {
             "type": "a",
             "props": {
               "href": "#/test",
-              "className": "selected",
+              "className": "selected subMenu",
               "children": "A Nav Link"
             },
             "key": "nav_test",
@@ -888,7 +900,7 @@ exports["should match the snapshot with session details(0)"] = {
           "type": "a",
           "props": {
             "href": "#/test",
-            "className": "selected",
+            "className": "selected subMenu",
             "key": "nav_test"
           },
           "children": [
@@ -901,6 +913,7 @@ exports["should match the snapshot with session details(0)"] = {
             "type": "a",
             "props": {
               "href": "#/",
+              "className": " ",
               "children": "Home"
             },
             "key": "nav_home",
@@ -909,6 +922,7 @@ exports["should match the snapshot with session details(0)"] = {
           "type": "a",
           "props": {
             "href": "#/",
+            "className": " ",
             "key": "nav_home"
           },
           "children": [

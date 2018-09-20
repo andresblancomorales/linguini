@@ -7,7 +7,7 @@ $error-color: #BE9087;
 $font-color: #686055;
 $transparent-error: rgba(190,144,135, 0);
 
-@import url('https://fonts.googleapis.com/css?family=Fascinate|Poppins');
+@import url('https://fonts.googleapis.com/css?family=Fascinate|Poppins|Gloria+Hallelujah|Indie+Flower|Shadows+Into+Light');
 $font-family: 'Poppins', sans-serif;
 $title-font: 'Fascinate', cursive;
 
@@ -28,4 +28,24 @@ html {
 body {
   height: calc(100vh);
   margin: 0;
+}
+
+button {
+  background-color: $main-color;
+  color: white;
+  border-radius: 0.25rem;
+  border-width: 0;
+  font-weight: bold;
+  padding: 0.5rem;
+  cursor: pointer;
+  align-self: flex-end;
+}
+
+button:active {
+  background-color: $main-color-selected;
+}
+
+button:disabled {
+  background-color: $third-color;
+  cursor: auto;
 }

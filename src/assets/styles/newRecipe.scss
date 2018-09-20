@@ -1,0 +1,353 @@
+$fa-font-path: '~@fortawesome/fontawesome-free/webfonts';
+@import '~@fortawesome/fontawesome-free/scss/solid.scss';
+@import '~@fortawesome/fontawesome-free/scss/fontawesome.scss';
+@import 'main-styles';
+
+.newRecipe {
+  display: flex;
+  position: relative;
+  width: 100%;
+  z-index: 0;
+}
+
+.bubbleContainer {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 6rem);
+  overflow-y: auto;
+  overflow-x: hidden;
+  width: 100%;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.25;
+    background: url('../images/kitchen.png') no-repeat center center fixed;
+    background-size: cover;
+    z-index: -1;
+  }
+}
+
+.bubble {
+  display: flex;
+  flex-direction: column;
+
+  margin: 2rem auto;
+
+  border-radius: 1rem;
+  min-height: 8rem;
+  max-width: 30rem;
+  background-color: white;
+  padding: 2rem;
+  position: relative;
+  animation: fadeIn 0.75s ease-out;
+  box-shadow: 0rem 1rem 1rem -1rem rgba(124, 123, 123, 1);
+
+  a {
+    color: $third-color;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+}
+
+.bubble-content {
+  margin: auto;
+  height: 100%;
+  z-index: 1;
+}
+
+.bubble-right {
+  border: 0.2rem solid $main-color;
+}
+
+.bubble-left {
+  border: 0.2rem solid $third-color;
+}
+
+.bubble::after {
+  content: '';
+  box-sizing: border-box;
+  height: 3rem;
+  width: 3rem;
+  background-color: white;
+  top: calc(50% - 1.5rem);
+  position: absolute;
+  transform: rotate(45deg);
+}
+
+.bubble-right::after {
+  right: -1.6rem;
+  border-right: 0.2rem solid $main-color;
+  border-top: 0.2rem solid $main-color;
+}
+
+.bubble-left::after {
+  left: -1.6rem;
+  border-left: 0.2rem solid $third-color;
+  border-bottom: 0.2rem solid $third-color;
+}
+
+.recipeNameForm {
+  border: 0.2rem solid $main-color;
+  box-shadow: 0rem 1rem 1rem -1rem rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  background-color: white;
+  margin: auto;
+  padding: 2rem 2rem 2rem 2rem;
+  position: relative;
+
+  span {
+    font-size: 1.5rem;
+  }
+
+  .form {
+    margin-top: 5rem;
+  }
+}
+
+.recipeNameForm::after {
+  content: '';
+  box-sizing: border-box;
+  height: 5rem;
+  width: 5rem;
+  background-color: white;
+  top: calc(50% - 2.5rem);
+  right: -2.5rem;
+  position: absolute;
+  transform: rotate(45deg);
+  border-right: 0.2rem solid $main-color;
+  border-top: 0.2rem solid $main-color;
+}
+
+.notepad {
+  width: 80%;
+  background-color: #fcf8c8;
+  padding: 1rem 1rem 1rem 4.1rem;
+  margin: 2rem auto;
+  box-shadow: 0rem 1rem 1rem -1rem rgba(0, 0, 0, 0.25);
+  position: relative;
+  animation: fadeIn 0.75s ease-out;
+
+  &:empty {
+    display: none;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 0.1rem;
+    background-color: $error-color;
+    top: 0;
+    left: 5rem;
+  }
+
+  &::after {
+    content: 'Ingredients';
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-family: 'Gloria Hallelujah', cursive;
+    padding: 1rem;
+    transform: rotate(15deg);
+  }
+
+  li {
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 1.2rem;
+    word-wrap: break-word;
+  }
+
+  .deleteButton {
+    background-color: transparent;
+    border: none;
+    color: $error-color;
+  }
+}
+
+.ingredients_notepad {
+  &::after {
+    content: 'Ingredients'
+  }
+}
+
+.preparation_notepad {
+  padding: 0;
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+
+  li {
+    display: inline;
+  }
+  &::after {
+    content: 'Preparation';
+    transform: rotate(5deg);
+  }
+  &::before {
+    left: 4rem;
+  }
+}
+
+.ingredientForm {
+  display: grid;
+  grid-template-columns: 2fr 1fr auto;
+  grid-template-areas: 'name quantity submit';
+  grid-column-gap: 0.5rem;
+
+  .ingredientName {
+    grid-area: name;
+  }
+
+  .ingredientQuantity {
+    grid-area: quantity;
+  }
+
+  .ingredientSubmit {
+    align-self: center;
+    grid-area: submit;
+  }
+}
+
+.ingredientsBubble {
+  min-height: 12rem;
+}
+
+.stepForm {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-areas: 'step'
+                       'submit';
+  grid-column-gap: 0.5rem;
+
+  .preparationStep {
+    grid-area: step;
+  }
+
+  .stepSubmit {
+    align-self: center;
+    grid-area: submit;
+  }
+}
+
+.stepBubble {
+  min-height: 16rem;
+}
+
+.stepDetail {
+  display: grid;
+  grid-template-columns: 4rem 1fr 4rem;
+  grid-template-areas: 'actions description down';
+  margin-top: 1rem;
+
+  .actions {
+    grid-area: actions;
+    align-self: center;
+    justify-self: center;
+    display: flex;
+    flex-direction: row;
+    width: 5rem;
+    cursor: all-scroll;
+  }
+
+  .action {
+    height: 2rem;
+    width: 2rem;
+    border: 0.05rem solid $error-color;
+    color: $error-color;
+    background-color: transparent;
+    border-radius: 25%;
+    margin: auto;
+    cursor: all-scroll;
+  }
+
+  .stepDescription {
+    padding-left: 1rem;
+    grid-area: description;
+    cursor: all-scroll;
+    align-self: center;
+  }
+
+  .delete {
+    border: none;
+    background-color: transparent;
+    color: $error-color;
+    align-self: center;
+    justify-self: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+
+.dragOverHigh {
+  .stepDescription {
+    border-top: 0.1rem solid $error-color;
+  }
+}
+
+.dragOverLow {
+  .stepDescription {
+    border-bottom: 0.1rem solid $error-color;
+  }
+}
+
+.dragging {
+  .stepDescription {
+    background-color: #FCE69C;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .bubble {
+    max-width: 20rem;
+  }
+
+  .ingredientForm {
+    grid-template-columns: 1fr auto;
+    grid-template-areas: 'name submit'
+                         'quantity submit';
+
+    .ingredientSubmit {
+      align-self: end;
+      margin-bottom: 1rem;
+    }
+  }
+
+  .ingredientsBubble {
+    min-height: 18rem;
+  }
+
+  .stepBubble {
+    //min-width: 20rem;
+  }
+
+  .notepad {
+    padding-left: 1rem;
+
+    &::before {
+      left: 2.5rem;
+    }
+  }
+
+  .preparation_notepad {
+    padding: 1rem 0;
+
+    &::before {
+      left: 4rem;
+    }
+
+    &::after {
+      top: -1rem;
+      transform: rotate(0deg);
+    }
+  }
+
+  .stepDetail {
+    .actions {
+      width: 4.5rem;
+    }
+  }
+}

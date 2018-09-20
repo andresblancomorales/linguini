@@ -96,4 +96,14 @@ describe('SessionActions', () => {
       });
   });
 
+  it('should create a connectivity changed action', done => {
+    let sessionActions = new SessionActions();
+
+    let action = sessionActions.toggleConnectivity(true);
+
+    expect(action).to.deep.equal({type: SessionActions.Actions.TOGGLE_CONNECTIVITY, online: true});
+
+    done();
+  });
+
 });

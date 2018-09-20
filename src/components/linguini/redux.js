@@ -6,11 +6,13 @@ import {createLogger} from 'redux-logger';
 import {recipesReducer} from '../../reducers/recipesReducer';
 import {tokenReducer} from '../../reducers/tokenReducer';
 import {redirector} from '../../middlewares/redirector';
+import {sessionReducer} from "../../reducers/sessionReducer";
 
 export const history = createHashHistory();
 
 const reducers = combineReducers({
   recipes: recipesReducer,
+  session: sessionReducer,
   token: tokenReducer
 });
 

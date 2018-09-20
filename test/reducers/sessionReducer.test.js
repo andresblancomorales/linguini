@@ -9,7 +9,8 @@ describe('SessionReducer', () => {
     expect(state).to.deep.equal({
       session: undefined,
       loading: false,
-      error: undefined
+      error: undefined,
+      isOnline: true
     });
 
     done();
@@ -70,6 +71,28 @@ describe('SessionReducer', () => {
       session: {access_token: '70k3n'},
       loading: false,
       error: undefined
+    });
+
+    done();
+  });
+
+  it('should set the connectivity state', done => {
+    let state = sessionReducer({
+        session: undefined,
+        loading: false,
+        error: undefined,
+        isOnline: true
+      }, {
+        type: SessionActions.Actions.TOGGLE_CONNECTIVITY,
+        online: false
+      }
+    );
+
+    expect(state).to.deep.equal({
+      session: undefined,
+      loading: false,
+      error: undefined,
+      isOnline: false,
     });
 
     done();

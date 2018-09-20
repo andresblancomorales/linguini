@@ -10,7 +10,8 @@ const recipeActions = instanceProvider.recipeActions;
 
 const mapStateToProps = state => {
   return {
-    recipes: state.recipes.all
+    recipes: state.recipes.all,
+    isOnline: state.session.isOnline
   };
 };
 
@@ -82,6 +83,11 @@ export class RecipesView extends Component {
           )
         })}
         <RecipesSpinner/>
+        {!this.props.isOnline ? null :
+          <a href='#/new' className='actionButton'>
+            <span className="fa fa-utensils"></span>
+          </a>
+        }
       </div>
     )
   }

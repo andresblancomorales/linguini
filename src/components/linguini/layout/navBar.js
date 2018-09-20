@@ -29,9 +29,13 @@ export class NavBar extends Component {
               this.props.menuItems.map(link => {
                 let href = link.href.startsWith('#') ? link.href.slice(1, link.href.length) : link.href;
                 let isSelected = href === this.props.location.pathname;
+
+                if (link.isSubMenu && !isSelected) {
+                  return null;
+                }
                 return (
                   <a key={link.name} href={link.href}
-                     className={isSelected ? 'selected' : undefined}>{link.description}</a>
+                     className={`${isSelected ? 'selected' : ''} ${link.isSubMenu ? 'subMenu' : ''}`}>{link.description}</a>
                 )
               })
           }

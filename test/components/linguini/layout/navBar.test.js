@@ -26,7 +26,7 @@ describe('<NavBar />', () => {
 
   it('should match the snapshot with session details', done => {
     let menuItems = [
-      {name: 'nav_test', href: '#/test', description: 'A Nav Link'},
+      {name: 'nav_test', href: '#/test', description: 'A Nav Link', isSubMenu: true},
       {name: 'nav_home', href: '#/', description: 'Home'}
     ];
     const wrapper = shallow(<NavBar menuItems={menuItems}
@@ -44,7 +44,7 @@ describe('<NavBar />', () => {
 
   it('should match the snapshot', done => {
     let menuItems = [
-      {name: 'nav_test', href: '#/test', description: 'A Nav Link'},
+      {name: 'nav_test', href: '#/test', description: 'A Nav Link', isSubMenu: true},
       {name: 'nav_home', href: '#/', description: 'Home'}
     ];
     const wrapper = shallow(<NavBar menuItems={menuItems}
@@ -61,7 +61,7 @@ describe('<NavBar />', () => {
 
   it('should create the nav links and show the username', done => {
     let menuItems = [
-      {name: 'nav_test', href: '#/test', description: 'A Nav Link'},
+      {name: 'nav_test', href: '#/test', description: 'A Nav Link', isSubMenu: true},
       {name: 'nav_home', href: '#/', description: 'Home'}
     ];
     const wrapper = shallow(<NavBar menuItems={menuItems}

@@ -14,7 +14,8 @@ export default class SessionActions {
     GOT_TOKEN: 'GOT_TOKEN',
     LOGGING_OUT: 'LOGGING_OUT',
     LOGGED_OUT: 'LOGGED_OUT',
-    LOG_OUT_FAILED: 'LOG_OUT_FAILED'
+    LOG_OUT_FAILED: 'LOG_OUT_FAILED',
+    TOGGLE_CONNECTIVITY: 'TOGGLE_CONNECTIVITY'
   };
 
   getToken(username, password) {
@@ -56,5 +57,12 @@ export default class SessionActions {
         });
       }
     }
+  }
+
+  toggleConnectivity(online) {
+    return {
+      type: SessionActions.Actions.TOGGLE_CONNECTIVITY,
+      online: online
+    };
   }
 }
