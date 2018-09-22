@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {isDefined, isFunction} from "../../utils/utilities";
+import {isFunction} from "../../utils/utilities";
 
 const UPDATE_GAUGE = 5;
 
@@ -60,7 +60,7 @@ export default class TouchDraggable extends Component {
     }
   }
 
-  onTouchCancel(ev) {
+  onTouchCancel() {
     this.setState({
       ...this.state,
       isTouching: false,
@@ -69,9 +69,13 @@ export default class TouchDraggable extends Component {
       positionX: undefined,
       positionY: undefined
     });
+
+    if (isFunction(this.props.onTouchCancel)) {
+      this.props.onTouchCancel();
+    }
   }
 
-  onTouchEnd(ev) {
+  onTouchEnd() {
     if (isFunction(this.props.onTouchEnd)) {
       this.props.onTouchEnd({
         positionX: this.state.positionX,
@@ -82,9 +86,10 @@ export default class TouchDraggable extends Component {
     this.setState({
       ...this.state,
       isTouching: false,
-      dragIndex: undefined,
-      dragOver: undefined,
-      touchDrag: undefined
+      initialX: undefined,
+      initialY: undefined,
+      positionX: undefined,
+      positionY: undefined
     });
   }
 

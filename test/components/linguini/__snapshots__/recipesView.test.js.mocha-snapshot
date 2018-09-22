@@ -3682,7 +3682,8 @@ exports["should match the snapshot with recipes(0)"] = {
           "type": "Spinner",
           "props": {},
           "_store": {}
-        }
+        },
+        null
       ]
     },
     "ref": {},
@@ -4490,7 +4491,8 @@ exports["should match the snapshot with recipes(0)"] = {
         "nodeType": "class",
         "type": "Spinner",
         "props": {}
-      }
+      },
+      null
     ]
   },
   "type": "div",
@@ -6871,6 +6873,51 @@ exports["should match the snapshot with recipes(0)"] = {
         }
       ]
     },
+    {
+      "node": {
+        "nodeType": "class",
+        "type": "Spinner",
+        "props": {}
+      },
+      "type": "Spinner",
+      "props": {}
+    }
+  ]
+};
+
+exports["should match the snapshot with no recipes(0)"] = {
+  "node": {
+    "nodeType": "host",
+    "type": "div",
+    "props": {
+      "className": "recipes",
+      "onScroll": "bound onScroll",
+      "children": [
+        [],
+        {
+          "type": "Spinner",
+          "props": {},
+          "_store": {}
+        },
+        null
+      ]
+    },
+    "ref": {},
+    "rendered": [
+      {
+        "nodeType": "class",
+        "type": "Spinner",
+        "props": {}
+      },
+      null
+    ]
+  },
+  "type": "div",
+  "props": {
+    "className": "recipes",
+    "onScroll": "bound onScroll"
+  },
+  "children": [
     {
       "node": {
         "nodeType": "class",
