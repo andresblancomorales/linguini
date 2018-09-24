@@ -1,0 +1,4123 @@
+exports["should match the snapshot(0)"] = {
+  "node": {
+    "nodeType": "host",
+    "type": "div",
+    "props": {
+      "className": "bubbleContainer",
+      "children": [
+        {
+          "type": "Bubble",
+          "props": {
+            "direction": "right",
+            "children": {
+              "type": "span",
+              "props": {
+                "children": [
+                  "Let me write down the ingredients chef... I can't wait to cook ",
+                  {
+                    "type": "strong",
+                    "props": {
+                      "children": "Awesome Pizza!"
+                    },
+                    "_store": {}
+                  },
+                  "!"
+                ]
+              },
+              "_store": {}
+            }
+          },
+          "_store": {}
+        },
+        {
+          "type": "div",
+          "props": {
+            "className": "notepad ingredients",
+            "children": {
+              "type": "ul",
+              "props": {
+                "children": [
+                  {
+                    "type": "li",
+                    "key": "ingredient_0",
+                    "props": {
+                      "children": [
+                        "Rice",
+                        " - ",
+                        "1 cup",
+                        {
+                          "type": "button",
+                          "props": {
+                            "className": "deleteButton fa fa",
+                            "onClick": "bound handleIngredientRemoved"
+                          },
+                          "_store": {}
+                        }
+                      ]
+                    },
+                    "_store": {}
+                  }
+                ]
+              },
+              "_store": {}
+            }
+          },
+          "_store": {}
+        },
+        {
+          "type": "Bubble",
+          "props": {
+            "direction": "left",
+            "className": "ingredientsBubble",
+            "children": [
+              {
+                "type": "NewIngredient",
+                "props": {
+                  "onSubmit": "bound handleIngredientAdded"
+                },
+                "_store": {}
+              },
+              {
+                "type": "span",
+                "props": {
+                  "children": [
+                    "That's it, no more ingredients. ",
+                    {
+                      "type": "a",
+                      "props": {
+                        "onClick": "bound handleOnSubmit",
+                        "children": "Let's continue"
+                      },
+                      "_store": {}
+                    }
+                  ]
+                },
+                "_store": {}
+              }
+            ]
+          },
+          "_store": {}
+        }
+      ]
+    },
+    "ref": "ref",
+    "rendered": [
+      {
+        "nodeType": "class",
+        "type": "Bubble",
+        "props": {
+          "direction": "right",
+          "children": {
+            "type": "span",
+            "props": {
+              "children": [
+                "Let me write down the ingredients chef... I can't wait to cook ",
+                {
+                  "type": "strong",
+                  "props": {
+                    "children": "Awesome Pizza!"
+                  },
+                  "_store": {}
+                },
+                "!"
+              ]
+            },
+            "_store": {}
+          }
+        },
+        "rendered": {
+          "nodeType": "host",
+          "type": "span",
+          "props": {
+            "children": [
+              "Let me write down the ingredients chef... I can't wait to cook ",
+              {
+                "type": "strong",
+                "props": {
+                  "children": "Awesome Pizza!"
+                },
+                "_store": {}
+              },
+              "!"
+            ]
+          },
+          "rendered": [
+            "Let me write down the ingredients chef... I can't wait to cook ",
+            {
+              "nodeType": "host",
+              "type": "strong",
+              "props": {
+                "children": "Awesome Pizza!"
+              },
+              "rendered": "Awesome Pizza!"
+            },
+            "!"
+          ]
+        }
+      },
+      {
+        "nodeType": "host",
+        "type": "div",
+        "props": {
+          "className": "notepad ingredients",
+          "children": {
+            "type": "ul",
+            "props": {
+              "children": [
+                {
+                  "type": "li",
+                  "key": "ingredient_0",
+                  "props": {
+                    "children": [
+                      "Rice",
+                      " - ",
+                      "1 cup",
+                      {
+                        "type": "button",
+                        "props": {
+                          "className": "deleteButton fa fa",
+                          "onClick": "bound handleIngredientRemoved"
+                        },
+                        "_store": {}
+                      }
+                    ]
+                  },
+                  "_store": {}
+                }
+              ]
+            },
+            "_store": {}
+          }
+        },
+        "rendered": {
+          "nodeType": "host",
+          "type": "ul",
+          "props": {
+            "children": [
+              {
+                "type": "li",
+                "key": "ingredient_0",
+                "props": {
+                  "children": [
+                    "Rice",
+                    " - ",
+                    "1 cup",
+                    {
+                      "type": "button",
+                      "props": {
+                        "className": "deleteButton fa fa",
+                        "onClick": "bound handleIngredientRemoved"
+                      },
+                      "_store": {}
+                    }
+                  ]
+                },
+                "_store": {}
+              }
+            ]
+          },
+          "rendered": [
+            {
+              "nodeType": "host",
+              "type": "li",
+              "props": {
+                "children": [
+                  "Rice",
+                  " - ",
+                  "1 cup",
+                  {
+                    "type": "button",
+                    "props": {
+                      "className": "deleteButton fa fa",
+                      "onClick": "bound handleIngredientRemoved"
+                    },
+                    "_store": {}
+                  }
+                ]
+              },
+              "key": "ingredient_0",
+              "rendered": [
+                "Rice",
+                " - ",
+                "1 cup",
+                {
+                  "nodeType": "host",
+                  "type": "button",
+                  "props": {
+                    "className": "deleteButton fa fa",
+                    "onClick": "bound handleIngredientRemoved"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "nodeType": "class",
+        "type": "Bubble",
+        "props": {
+          "direction": "left",
+          "className": "ingredientsBubble",
+          "children": [
+            {
+              "type": "NewIngredient",
+              "props": {
+                "onSubmit": "bound handleIngredientAdded"
+              },
+              "_store": {}
+            },
+            {
+              "type": "span",
+              "props": {
+                "children": [
+                  "That's it, no more ingredients. ",
+                  {
+                    "type": "a",
+                    "props": {
+                      "onClick": "bound handleOnSubmit",
+                      "children": "Let's continue"
+                    },
+                    "_store": {}
+                  }
+                ]
+              },
+              "_store": {}
+            }
+          ]
+        },
+        "rendered": [
+          {
+            "nodeType": "class",
+            "type": "NewIngredient",
+            "props": {
+              "onSubmit": "bound handleIngredientAdded"
+            }
+          },
+          {
+            "nodeType": "host",
+            "type": "span",
+            "props": {
+              "children": [
+                "That's it, no more ingredients. ",
+                {
+                  "type": "a",
+                  "props": {
+                    "onClick": "bound handleOnSubmit",
+                    "children": "Let's continue"
+                  },
+                  "_store": {}
+                }
+              ]
+            },
+            "rendered": [
+              "That's it, no more ingredients. ",
+              {
+                "nodeType": "host",
+                "type": "a",
+                "props": {
+                  "onClick": "bound handleOnSubmit",
+                  "children": "Let's continue"
+                },
+                "rendered": "Let's continue"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "type": "div",
+  "props": {
+    "className": "bubbleContainer"
+  },
+  "children": [
+    {
+      "node": {
+        "nodeType": "class",
+        "type": "Bubble",
+        "props": {
+          "direction": "right",
+          "children": {
+            "type": "span",
+            "props": {
+              "children": [
+                "Let me write down the ingredients chef... I can't wait to cook ",
+                {
+                  "type": "strong",
+                  "props": {
+                    "children": "Awesome Pizza!"
+                  },
+                  "_store": {}
+                },
+                "!"
+              ]
+            },
+            "_store": {}
+          }
+        },
+        "rendered": {
+          "nodeType": "host",
+          "type": "span",
+          "props": {
+            "children": [
+              "Let me write down the ingredients chef... I can't wait to cook ",
+              {
+                "type": "strong",
+                "props": {
+                  "children": "Awesome Pizza!"
+                },
+                "_store": {}
+              },
+              "!"
+            ]
+          },
+          "rendered": [
+            "Let me write down the ingredients chef... I can't wait to cook ",
+            {
+              "nodeType": "host",
+              "type": "strong",
+              "props": {
+                "children": "Awesome Pizza!"
+              },
+              "rendered": "Awesome Pizza!"
+            },
+            "!"
+          ]
+        }
+      },
+      "type": "Bubble",
+      "props": {
+        "direction": "right"
+      },
+      "children": [
+        {
+          "node": {
+            "nodeType": "host",
+            "type": "span",
+            "props": {
+              "children": [
+                "Let me write down the ingredients chef... I can't wait to cook ",
+                {
+                  "type": "strong",
+                  "props": {
+                    "children": "Awesome Pizza!"
+                  },
+                  "_store": {}
+                },
+                "!"
+              ]
+            },
+            "rendered": [
+              "Let me write down the ingredients chef... I can't wait to cook ",
+              {
+                "nodeType": "host",
+                "type": "strong",
+                "props": {
+                  "children": "Awesome Pizza!"
+                },
+                "rendered": "Awesome Pizza!"
+              },
+              "!"
+            ]
+          },
+          "type": "span",
+          "props": {},
+          "children": [
+            "Let me write down the ingredients chef... I can't wait to cook ",
+            {
+              "node": {
+                "nodeType": "host",
+                "type": "strong",
+                "props": {
+                  "children": "Awesome Pizza!"
+                },
+                "rendered": "Awesome Pizza!"
+              },
+              "type": "strong",
+              "props": {},
+              "children": [
+                "Awesome Pizza!"
+              ]
+            },
+            "!"
+          ]
+        }
+      ]
+    },
+    {
+      "node": {
+        "nodeType": "host",
+        "type": "div",
+        "props": {
+          "className": "notepad ingredients",
+          "children": {
+            "type": "ul",
+            "props": {
+              "children": [
+                {
+                  "type": "li",
+                  "key": "ingredient_0",
+                  "props": {
+                    "children": [
+                      "Rice",
+                      " - ",
+                      "1 cup",
+                      {
+                        "type": "button",
+                        "props": {
+                          "className": "deleteButton fa fa",
+                          "onClick": "bound handleIngredientRemoved"
+                        },
+                        "_store": {}
+                      }
+                    ]
+                  },
+                  "_store": {}
+                }
+              ]
+            },
+            "_store": {}
+          }
+        },
+        "rendered": {
+          "nodeType": "host",
+          "type": "ul",
+          "props": {
+            "children": [
+              {
+                "type": "li",
+                "key": "ingredient_0",
+                "props": {
+                  "children": [
+                    "Rice",
+                    " - ",
+                    "1 cup",
+                    {
+                      "type": "button",
+                      "props": {
+                        "className": "deleteButton fa fa",
+                        "onClick": "bound handleIngredientRemoved"
+                      },
+                      "_store": {}
+                    }
+                  ]
+                },
+                "_store": {}
+              }
+            ]
+          },
+          "rendered": [
+            {
+              "nodeType": "host",
+              "type": "li",
+              "props": {
+                "children": [
+                  "Rice",
+                  " - ",
+                  "1 cup",
+                  {
+                    "type": "button",
+                    "props": {
+                      "className": "deleteButton fa fa",
+                      "onClick": "bound handleIngredientRemoved"
+                    },
+                    "_store": {}
+                  }
+                ]
+              },
+              "key": "ingredient_0",
+              "rendered": [
+                "Rice",
+                " - ",
+                "1 cup",
+                {
+                  "nodeType": "host",
+                  "type": "button",
+                  "props": {
+                    "className": "deleteButton fa fa",
+                    "onClick": "bound handleIngredientRemoved"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "type": "div",
+      "props": {
+        "className": "notepad ingredients"
+      },
+      "children": [
+        {
+          "node": {
+            "nodeType": "host",
+            "type": "ul",
+            "props": {
+              "children": [
+                {
+                  "type": "li",
+                  "key": "ingredient_0",
+                  "props": {
+                    "children": [
+                      "Rice",
+                      " - ",
+                      "1 cup",
+                      {
+                        "type": "button",
+                        "props": {
+                          "className": "deleteButton fa fa",
+                          "onClick": "bound handleIngredientRemoved"
+                        },
+                        "_store": {}
+                      }
+                    ]
+                  },
+                  "_store": {}
+                }
+              ]
+            },
+            "rendered": [
+              {
+                "nodeType": "host",
+                "type": "li",
+                "props": {
+                  "children": [
+                    "Rice",
+                    " - ",
+                    "1 cup",
+                    {
+                      "type": "button",
+                      "props": {
+                        "className": "deleteButton fa fa",
+                        "onClick": "bound handleIngredientRemoved"
+                      },
+                      "_store": {}
+                    }
+                  ]
+                },
+                "key": "ingredient_0",
+                "rendered": [
+                  "Rice",
+                  " - ",
+                  "1 cup",
+                  {
+                    "nodeType": "host",
+                    "type": "button",
+                    "props": {
+                      "className": "deleteButton fa fa",
+                      "onClick": "bound handleIngredientRemoved"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "ul",
+          "props": {},
+          "children": [
+            {
+              "node": {
+                "nodeType": "host",
+                "type": "li",
+                "props": {
+                  "children": [
+                    "Rice",
+                    " - ",
+                    "1 cup",
+                    {
+                      "type": "button",
+                      "props": {
+                        "className": "deleteButton fa fa",
+                        "onClick": "bound handleIngredientRemoved"
+                      },
+                      "_store": {}
+                    }
+                  ]
+                },
+                "key": "ingredient_0",
+                "rendered": [
+                  "Rice",
+                  " - ",
+                  "1 cup",
+                  {
+                    "nodeType": "host",
+                    "type": "button",
+                    "props": {
+                      "className": "deleteButton fa fa",
+                      "onClick": "bound handleIngredientRemoved"
+                    }
+                  }
+                ]
+              },
+              "type": "li",
+              "props": {
+                "key": "ingredient_0"
+              },
+              "children": [
+                "Rice",
+                " - ",
+                "1 cup",
+                {
+                  "node": {
+                    "nodeType": "host",
+                    "type": "button",
+                    "props": {
+                      "className": "deleteButton fa fa",
+                      "onClick": "bound handleIngredientRemoved"
+                    }
+                  },
+                  "type": "button",
+                  "props": {
+                    "className": "deleteButton fa fa",
+                    "onClick": "bound handleIngredientRemoved"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "node": {
+        "nodeType": "class",
+        "type": "Bubble",
+        "props": {
+          "direction": "left",
+          "className": "ingredientsBubble",
+          "children": [
+            {
+              "type": "NewIngredient",
+              "props": {
+                "onSubmit": "bound handleIngredientAdded"
+              },
+              "_store": {}
+            },
+            {
+              "type": "span",
+              "props": {
+                "children": [
+                  "That's it, no more ingredients. ",
+                  {
+                    "type": "a",
+                    "props": {
+                      "onClick": "bound handleOnSubmit",
+                      "children": "Let's continue"
+                    },
+                    "_store": {}
+                  }
+                ]
+              },
+              "_store": {}
+            }
+          ]
+        },
+        "rendered": [
+          {
+            "nodeType": "class",
+            "type": "NewIngredient",
+            "props": {
+              "onSubmit": "bound handleIngredientAdded"
+            }
+          },
+          {
+            "nodeType": "host",
+            "type": "span",
+            "props": {
+              "children": [
+                "That's it, no more ingredients. ",
+                {
+                  "type": "a",
+                  "props": {
+                    "onClick": "bound handleOnSubmit",
+                    "children": "Let's continue"
+                  },
+                  "_store": {}
+                }
+              ]
+            },
+            "rendered": [
+              "That's it, no more ingredients. ",
+              {
+                "nodeType": "host",
+                "type": "a",
+                "props": {
+                  "onClick": "bound handleOnSubmit",
+                  "children": "Let's continue"
+                },
+                "rendered": "Let's continue"
+              }
+            ]
+          }
+        ]
+      },
+      "type": "Bubble",
+      "props": {
+        "direction": "left",
+        "className": "ingredientsBubble"
+      },
+      "children": [
+        {
+          "node": {
+            "nodeType": "class",
+            "type": "NewIngredient",
+            "props": {
+              "onSubmit": "bound handleIngredientAdded"
+            }
+          },
+          "type": "NewIngredient",
+          "props": {
+            "onSubmit": "bound handleIngredientAdded"
+          }
+        },
+        {
+          "node": {
+            "nodeType": "host",
+            "type": "span",
+            "props": {
+              "children": [
+                "That's it, no more ingredients. ",
+                {
+                  "type": "a",
+                  "props": {
+                    "onClick": "bound handleOnSubmit",
+                    "children": "Let's continue"
+                  },
+                  "_store": {}
+                }
+              ]
+            },
+            "rendered": [
+              "That's it, no more ingredients. ",
+              {
+                "nodeType": "host",
+                "type": "a",
+                "props": {
+                  "onClick": "bound handleOnSubmit",
+                  "children": "Let's continue"
+                },
+                "rendered": "Let's continue"
+              }
+            ]
+          },
+          "type": "span",
+          "props": {},
+          "children": [
+            "That's it, no more ingredients. ",
+            {
+              "node": {
+                "nodeType": "host",
+                "type": "a",
+                "props": {
+                  "onClick": "bound handleOnSubmit",
+                  "children": "Let's continue"
+                },
+                "rendered": "Let's continue"
+              },
+              "type": "a",
+              "props": {
+                "onClick": "bound handleOnSubmit"
+              },
+              "children": [
+                "Let's continue"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+};
+
+exports["should match the snapshot when 10 ingredients are added(0)"] = {
+  "node": {
+    "nodeType": "host",
+    "type": "div",
+    "props": {
+      "className": "bubbleContainer",
+      "children": [
+        {
+          "type": "Bubble",
+          "props": {
+            "direction": "right",
+            "children": {
+              "type": "span",
+              "props": {
+                "children": [
+                  "Let me write down the ingredients chef... I can't wait to cook ",
+                  {
+                    "type": "strong",
+                    "props": {
+                      "children": "Awesome Pizza!"
+                    },
+                    "_store": {}
+                  },
+                  "!"
+                ]
+              },
+              "_store": {}
+            }
+          },
+          "_store": {}
+        },
+        {
+          "type": "div",
+          "props": {
+            "className": "notepad ingredients",
+            "children": {
+              "type": "ul",
+              "props": {
+                "children": [
+                  {
+                    "type": "li",
+                    "key": "ingredient_0",
+                    "props": {
+                      "children": [
+                        "Rice",
+                        " - ",
+                        "1 cup",
+                        {
+                          "type": "button",
+                          "props": {
+                            "className": "deleteButton fa fa",
+                            "onClick": "bound handleIngredientRemoved"
+                          },
+                          "_store": {}
+                        }
+                      ]
+                    },
+                    "_store": {}
+                  },
+                  {
+                    "type": "li",
+                    "key": "ingredient_1",
+                    "props": {
+                      "children": [
+                        "Salt",
+                        " - ",
+                        "1 tbsp",
+                        {
+                          "type": "button",
+                          "props": {
+                            "className": "deleteButton fa fa",
+                            "onClick": "bound handleIngredientRemoved"
+                          },
+                          "_store": {}
+                        }
+                      ]
+                    },
+                    "_store": {}
+                  },
+                  {
+                    "type": "li",
+                    "key": "ingredient_2",
+                    "props": {
+                      "children": [
+                        "Water",
+                        " - ",
+                        "1/2 cup",
+                        {
+                          "type": "button",
+                          "props": {
+                            "className": "deleteButton fa fa",
+                            "onClick": "bound handleIngredientRemoved"
+                          },
+                          "_store": {}
+                        }
+                      ]
+                    },
+                    "_store": {}
+                  },
+                  {
+                    "type": "li",
+                    "key": "ingredient_3",
+                    "props": {
+                      "children": [
+                        "Pepper",
+                        " - ",
+                        "1 tbsp",
+                        {
+                          "type": "button",
+                          "props": {
+                            "className": "deleteButton fa fa",
+                            "onClick": "bound handleIngredientRemoved"
+                          },
+                          "_store": {}
+                        }
+                      ]
+                    },
+                    "_store": {}
+                  },
+                  {
+                    "type": "li",
+                    "key": "ingredient_4",
+                    "props": {
+                      "children": [
+                        "Paprika",
+                        " - ",
+                        "1 tbsp",
+                        {
+                          "type": "button",
+                          "props": {
+                            "className": "deleteButton fa fa",
+                            "onClick": "bound handleIngredientRemoved"
+                          },
+                          "_store": {}
+                        }
+                      ]
+                    },
+                    "_store": {}
+                  },
+                  {
+                    "type": "li",
+                    "key": "ingredient_5",
+                    "props": {
+                      "children": [
+                        "Onion",
+                        " - ",
+                        "1 unit",
+                        {
+                          "type": "button",
+                          "props": {
+                            "className": "deleteButton fa fa",
+                            "onClick": "bound handleIngredientRemoved"
+                          },
+                          "_store": {}
+                        }
+                      ]
+                    },
+                    "_store": {}
+                  },
+                  {
+                    "type": "li",
+                    "key": "ingredient_6",
+                    "props": {
+                      "children": [
+                        "Garlic",
+                        " - ",
+                        "1 unit",
+                        {
+                          "type": "button",
+                          "props": {
+                            "className": "deleteButton fa fa",
+                            "onClick": "bound handleIngredientRemoved"
+                          },
+                          "_store": {}
+                        }
+                      ]
+                    },
+                    "_store": {}
+                  },
+                  {
+                    "type": "li",
+                    "key": "ingredient_7",
+                    "props": {
+                      "children": [
+                        "Chicken",
+                        " - ",
+                        "1 whole chicken",
+                        {
+                          "type": "button",
+                          "props": {
+                            "className": "deleteButton fa fa",
+                            "onClick": "bound handleIngredientRemoved"
+                          },
+                          "_store": {}
+                        }
+                      ]
+                    },
+                    "_store": {}
+                  },
+                  {
+                    "type": "li",
+                    "key": "ingredient_8",
+                    "props": {
+                      "children": [
+                        "Chilli",
+                        " - ",
+                        "1 tbsp",
+                        {
+                          "type": "button",
+                          "props": {
+                            "className": "deleteButton fa fa",
+                            "onClick": "bound handleIngredientRemoved"
+                          },
+                          "_store": {}
+                        }
+                      ]
+                    },
+                    "_store": {}
+                  },
+                  {
+                    "type": "li",
+                    "key": "ingredient_9",
+                    "props": {
+                      "children": [
+                        "Oregano",
+                        " - ",
+                        "1 unit",
+                        {
+                          "type": "button",
+                          "props": {
+                            "className": "deleteButton fa fa",
+                            "onClick": "bound handleIngredientRemoved"
+                          },
+                          "_store": {}
+                        }
+                      ]
+                    },
+                    "_store": {}
+                  }
+                ]
+              },
+              "_store": {}
+            }
+          },
+          "_store": {}
+        },
+        {
+          "type": "Bubble",
+          "props": {
+            "direction": "left",
+            "className": "ingredientsBubble",
+            "children": [
+              null,
+              {
+                "type": "span",
+                "props": {
+                  "children": [
+                    "That's it, no more ingredients. ",
+                    {
+                      "type": "a",
+                      "props": {
+                        "onClick": "bound handleOnSubmit",
+                        "children": "Let's continue"
+                      },
+                      "_store": {}
+                    }
+                  ]
+                },
+                "_store": {}
+              }
+            ]
+          },
+          "_store": {}
+        }
+      ]
+    },
+    "ref": "ref",
+    "rendered": [
+      {
+        "nodeType": "class",
+        "type": "Bubble",
+        "props": {
+          "direction": "right",
+          "children": {
+            "type": "span",
+            "props": {
+              "children": [
+                "Let me write down the ingredients chef... I can't wait to cook ",
+                {
+                  "type": "strong",
+                  "props": {
+                    "children": "Awesome Pizza!"
+                  },
+                  "_store": {}
+                },
+                "!"
+              ]
+            },
+            "_store": {}
+          }
+        },
+        "rendered": {
+          "nodeType": "host",
+          "type": "span",
+          "props": {
+            "children": [
+              "Let me write down the ingredients chef... I can't wait to cook ",
+              {
+                "type": "strong",
+                "props": {
+                  "children": "Awesome Pizza!"
+                },
+                "_store": {}
+              },
+              "!"
+            ]
+          },
+          "rendered": [
+            "Let me write down the ingredients chef... I can't wait to cook ",
+            {
+              "nodeType": "host",
+              "type": "strong",
+              "props": {
+                "children": "Awesome Pizza!"
+              },
+              "rendered": "Awesome Pizza!"
+            },
+            "!"
+          ]
+        }
+      },
+      {
+        "nodeType": "host",
+        "type": "div",
+        "props": {
+          "className": "notepad ingredients",
+          "children": {
+            "type": "ul",
+            "props": {
+              "children": [
+                {
+                  "type": "li",
+                  "key": "ingredient_0",
+                  "props": {
+                    "children": [
+                      "Rice",
+                      " - ",
+                      "1 cup",
+                      {
+                        "type": "button",
+                        "props": {
+                          "className": "deleteButton fa fa",
+                          "onClick": "bound handleIngredientRemoved"
+                        },
+                        "_store": {}
+                      }
+                    ]
+                  },
+                  "_store": {}
+                },
+                {
+                  "type": "li",
+                  "key": "ingredient_1",
+                  "props": {
+                    "children": [
+                      "Salt",
+                      " - ",
+                      "1 tbsp",
+                      {
+                        "type": "button",
+                        "props": {
+                          "className": "deleteButton fa fa",
+                          "onClick": "bound handleIngredientRemoved"
+                        },
+                        "_store": {}
+                      }
+                    ]
+                  },
+                  "_store": {}
+                },
+                {
+                  "type": "li",
+                  "key": "ingredient_2",
+                  "props": {
+                    "children": [
+                      "Water",
+                      " - ",
+                      "1/2 cup",
+                      {
+                        "type": "button",
+                        "props": {
+                          "className": "deleteButton fa fa",
+                          "onClick": "bound handleIngredientRemoved"
+                        },
+                        "_store": {}
+                      }
+                    ]
+                  },
+                  "_store": {}
+                },
+                {
+                  "type": "li",
+                  "key": "ingredient_3",
+                  "props": {
+                    "children": [
+                      "Pepper",
+                      " - ",
+                      "1 tbsp",
+                      {
+                        "type": "button",
+                        "props": {
+                          "className": "deleteButton fa fa",
+                          "onClick": "bound handleIngredientRemoved"
+                        },
+                        "_store": {}
+                      }
+                    ]
+                  },
+                  "_store": {}
+                },
+                {
+                  "type": "li",
+                  "key": "ingredient_4",
+                  "props": {
+                    "children": [
+                      "Paprika",
+                      " - ",
+                      "1 tbsp",
+                      {
+                        "type": "button",
+                        "props": {
+                          "className": "deleteButton fa fa",
+                          "onClick": "bound handleIngredientRemoved"
+                        },
+                        "_store": {}
+                      }
+                    ]
+                  },
+                  "_store": {}
+                },
+                {
+                  "type": "li",
+                  "key": "ingredient_5",
+                  "props": {
+                    "children": [
+                      "Onion",
+                      " - ",
+                      "1 unit",
+                      {
+                        "type": "button",
+                        "props": {
+                          "className": "deleteButton fa fa",
+                          "onClick": "bound handleIngredientRemoved"
+                        },
+                        "_store": {}
+                      }
+                    ]
+                  },
+                  "_store": {}
+                },
+                {
+                  "type": "li",
+                  "key": "ingredient_6",
+                  "props": {
+                    "children": [
+                      "Garlic",
+                      " - ",
+                      "1 unit",
+                      {
+                        "type": "button",
+                        "props": {
+                          "className": "deleteButton fa fa",
+                          "onClick": "bound handleIngredientRemoved"
+                        },
+                        "_store": {}
+                      }
+                    ]
+                  },
+                  "_store": {}
+                },
+                {
+                  "type": "li",
+                  "key": "ingredient_7",
+                  "props": {
+                    "children": [
+                      "Chicken",
+                      " - ",
+                      "1 whole chicken",
+                      {
+                        "type": "button",
+                        "props": {
+                          "className": "deleteButton fa fa",
+                          "onClick": "bound handleIngredientRemoved"
+                        },
+                        "_store": {}
+                      }
+                    ]
+                  },
+                  "_store": {}
+                },
+                {
+                  "type": "li",
+                  "key": "ingredient_8",
+                  "props": {
+                    "children": [
+                      "Chilli",
+                      " - ",
+                      "1 tbsp",
+                      {
+                        "type": "button",
+                        "props": {
+                          "className": "deleteButton fa fa",
+                          "onClick": "bound handleIngredientRemoved"
+                        },
+                        "_store": {}
+                      }
+                    ]
+                  },
+                  "_store": {}
+                },
+                {
+                  "type": "li",
+                  "key": "ingredient_9",
+                  "props": {
+                    "children": [
+                      "Oregano",
+                      " - ",
+                      "1 unit",
+                      {
+                        "type": "button",
+                        "props": {
+                          "className": "deleteButton fa fa",
+                          "onClick": "bound handleIngredientRemoved"
+                        },
+                        "_store": {}
+                      }
+                    ]
+                  },
+                  "_store": {}
+                }
+              ]
+            },
+            "_store": {}
+          }
+        },
+        "rendered": {
+          "nodeType": "host",
+          "type": "ul",
+          "props": {
+            "children": [
+              {
+                "type": "li",
+                "key": "ingredient_0",
+                "props": {
+                  "children": [
+                    "Rice",
+                    " - ",
+                    "1 cup",
+                    {
+                      "type": "button",
+                      "props": {
+                        "className": "deleteButton fa fa",
+                        "onClick": "bound handleIngredientRemoved"
+                      },
+                      "_store": {}
+                    }
+                  ]
+                },
+                "_store": {}
+              },
+              {
+                "type": "li",
+                "key": "ingredient_1",
+                "props": {
+                  "children": [
+                    "Salt",
+                    " - ",
+                    "1 tbsp",
+                    {
+                      "type": "button",
+                      "props": {
+                        "className": "deleteButton fa fa",
+                        "onClick": "bound handleIngredientRemoved"
+                      },
+                      "_store": {}
+                    }
+                  ]
+                },
+                "_store": {}
+              },
+              {
+                "type": "li",
+                "key": "ingredient_2",
+                "props": {
+                  "children": [
+                    "Water",
+                    " - ",
+                    "1/2 cup",
+                    {
+                      "type": "button",
+                      "props": {
+                        "className": "deleteButton fa fa",
+                        "onClick": "bound handleIngredientRemoved"
+                      },
+                      "_store": {}
+                    }
+                  ]
+                },
+                "_store": {}
+              },
+              {
+                "type": "li",
+                "key": "ingredient_3",
+                "props": {
+                  "children": [
+                    "Pepper",
+                    " - ",
+                    "1 tbsp",
+                    {
+                      "type": "button",
+                      "props": {
+                        "className": "deleteButton fa fa",
+                        "onClick": "bound handleIngredientRemoved"
+                      },
+                      "_store": {}
+                    }
+                  ]
+                },
+                "_store": {}
+              },
+              {
+                "type": "li",
+                "key": "ingredient_4",
+                "props": {
+                  "children": [
+                    "Paprika",
+                    " - ",
+                    "1 tbsp",
+                    {
+                      "type": "button",
+                      "props": {
+                        "className": "deleteButton fa fa",
+                        "onClick": "bound handleIngredientRemoved"
+                      },
+                      "_store": {}
+                    }
+                  ]
+                },
+                "_store": {}
+              },
+              {
+                "type": "li",
+                "key": "ingredient_5",
+                "props": {
+                  "children": [
+                    "Onion",
+                    " - ",
+                    "1 unit",
+                    {
+                      "type": "button",
+                      "props": {
+                        "className": "deleteButton fa fa",
+                        "onClick": "bound handleIngredientRemoved"
+                      },
+                      "_store": {}
+                    }
+                  ]
+                },
+                "_store": {}
+              },
+              {
+                "type": "li",
+                "key": "ingredient_6",
+                "props": {
+                  "children": [
+                    "Garlic",
+                    " - ",
+                    "1 unit",
+                    {
+                      "type": "button",
+                      "props": {
+                        "className": "deleteButton fa fa",
+                        "onClick": "bound handleIngredientRemoved"
+                      },
+                      "_store": {}
+                    }
+                  ]
+                },
+                "_store": {}
+              },
+              {
+                "type": "li",
+                "key": "ingredient_7",
+                "props": {
+                  "children": [
+                    "Chicken",
+                    " - ",
+                    "1 whole chicken",
+                    {
+                      "type": "button",
+                      "props": {
+                        "className": "deleteButton fa fa",
+                        "onClick": "bound handleIngredientRemoved"
+                      },
+                      "_store": {}
+                    }
+                  ]
+                },
+                "_store": {}
+              },
+              {
+                "type": "li",
+                "key": "ingredient_8",
+                "props": {
+                  "children": [
+                    "Chilli",
+                    " - ",
+                    "1 tbsp",
+                    {
+                      "type": "button",
+                      "props": {
+                        "className": "deleteButton fa fa",
+                        "onClick": "bound handleIngredientRemoved"
+                      },
+                      "_store": {}
+                    }
+                  ]
+                },
+                "_store": {}
+              },
+              {
+                "type": "li",
+                "key": "ingredient_9",
+                "props": {
+                  "children": [
+                    "Oregano",
+                    " - ",
+                    "1 unit",
+                    {
+                      "type": "button",
+                      "props": {
+                        "className": "deleteButton fa fa",
+                        "onClick": "bound handleIngredientRemoved"
+                      },
+                      "_store": {}
+                    }
+                  ]
+                },
+                "_store": {}
+              }
+            ]
+          },
+          "rendered": [
+            {
+              "nodeType": "host",
+              "type": "li",
+              "props": {
+                "children": [
+                  "Rice",
+                  " - ",
+                  "1 cup",
+                  {
+                    "type": "button",
+                    "props": {
+                      "className": "deleteButton fa fa",
+                      "onClick": "bound handleIngredientRemoved"
+                    },
+                    "_store": {}
+                  }
+                ]
+              },
+              "key": "ingredient_0",
+              "rendered": [
+                "Rice",
+                " - ",
+                "1 cup",
+                {
+                  "nodeType": "host",
+                  "type": "button",
+                  "props": {
+                    "className": "deleteButton fa fa",
+                    "onClick": "bound handleIngredientRemoved"
+                  }
+                }
+              ]
+            },
+            {
+              "nodeType": "host",
+              "type": "li",
+              "props": {
+                "children": [
+                  "Salt",
+                  " - ",
+                  "1 tbsp",
+                  {
+                    "type": "button",
+                    "props": {
+                      "className": "deleteButton fa fa",
+                      "onClick": "bound handleIngredientRemoved"
+                    },
+                    "_store": {}
+                  }
+                ]
+              },
+              "key": "ingredient_1",
+              "rendered": [
+                "Salt",
+                " - ",
+                "1 tbsp",
+                {
+                  "nodeType": "host",
+                  "type": "button",
+                  "props": {
+                    "className": "deleteButton fa fa",
+                    "onClick": "bound handleIngredientRemoved"
+                  }
+                }
+              ]
+            },
+            {
+              "nodeType": "host",
+              "type": "li",
+              "props": {
+                "children": [
+                  "Water",
+                  " - ",
+                  "1/2 cup",
+                  {
+                    "type": "button",
+                    "props": {
+                      "className": "deleteButton fa fa",
+                      "onClick": "bound handleIngredientRemoved"
+                    },
+                    "_store": {}
+                  }
+                ]
+              },
+              "key": "ingredient_2",
+              "rendered": [
+                "Water",
+                " - ",
+                "1/2 cup",
+                {
+                  "nodeType": "host",
+                  "type": "button",
+                  "props": {
+                    "className": "deleteButton fa fa",
+                    "onClick": "bound handleIngredientRemoved"
+                  }
+                }
+              ]
+            },
+            {
+              "nodeType": "host",
+              "type": "li",
+              "props": {
+                "children": [
+                  "Pepper",
+                  " - ",
+                  "1 tbsp",
+                  {
+                    "type": "button",
+                    "props": {
+                      "className": "deleteButton fa fa",
+                      "onClick": "bound handleIngredientRemoved"
+                    },
+                    "_store": {}
+                  }
+                ]
+              },
+              "key": "ingredient_3",
+              "rendered": [
+                "Pepper",
+                " - ",
+                "1 tbsp",
+                {
+                  "nodeType": "host",
+                  "type": "button",
+                  "props": {
+                    "className": "deleteButton fa fa",
+                    "onClick": "bound handleIngredientRemoved"
+                  }
+                }
+              ]
+            },
+            {
+              "nodeType": "host",
+              "type": "li",
+              "props": {
+                "children": [
+                  "Paprika",
+                  " - ",
+                  "1 tbsp",
+                  {
+                    "type": "button",
+                    "props": {
+                      "className": "deleteButton fa fa",
+                      "onClick": "bound handleIngredientRemoved"
+                    },
+                    "_store": {}
+                  }
+                ]
+              },
+              "key": "ingredient_4",
+              "rendered": [
+                "Paprika",
+                " - ",
+                "1 tbsp",
+                {
+                  "nodeType": "host",
+                  "type": "button",
+                  "props": {
+                    "className": "deleteButton fa fa",
+                    "onClick": "bound handleIngredientRemoved"
+                  }
+                }
+              ]
+            },
+            {
+              "nodeType": "host",
+              "type": "li",
+              "props": {
+                "children": [
+                  "Onion",
+                  " - ",
+                  "1 unit",
+                  {
+                    "type": "button",
+                    "props": {
+                      "className": "deleteButton fa fa",
+                      "onClick": "bound handleIngredientRemoved"
+                    },
+                    "_store": {}
+                  }
+                ]
+              },
+              "key": "ingredient_5",
+              "rendered": [
+                "Onion",
+                " - ",
+                "1 unit",
+                {
+                  "nodeType": "host",
+                  "type": "button",
+                  "props": {
+                    "className": "deleteButton fa fa",
+                    "onClick": "bound handleIngredientRemoved"
+                  }
+                }
+              ]
+            },
+            {
+              "nodeType": "host",
+              "type": "li",
+              "props": {
+                "children": [
+                  "Garlic",
+                  " - ",
+                  "1 unit",
+                  {
+                    "type": "button",
+                    "props": {
+                      "className": "deleteButton fa fa",
+                      "onClick": "bound handleIngredientRemoved"
+                    },
+                    "_store": {}
+                  }
+                ]
+              },
+              "key": "ingredient_6",
+              "rendered": [
+                "Garlic",
+                " - ",
+                "1 unit",
+                {
+                  "nodeType": "host",
+                  "type": "button",
+                  "props": {
+                    "className": "deleteButton fa fa",
+                    "onClick": "bound handleIngredientRemoved"
+                  }
+                }
+              ]
+            },
+            {
+              "nodeType": "host",
+              "type": "li",
+              "props": {
+                "children": [
+                  "Chicken",
+                  " - ",
+                  "1 whole chicken",
+                  {
+                    "type": "button",
+                    "props": {
+                      "className": "deleteButton fa fa",
+                      "onClick": "bound handleIngredientRemoved"
+                    },
+                    "_store": {}
+                  }
+                ]
+              },
+              "key": "ingredient_7",
+              "rendered": [
+                "Chicken",
+                " - ",
+                "1 whole chicken",
+                {
+                  "nodeType": "host",
+                  "type": "button",
+                  "props": {
+                    "className": "deleteButton fa fa",
+                    "onClick": "bound handleIngredientRemoved"
+                  }
+                }
+              ]
+            },
+            {
+              "nodeType": "host",
+              "type": "li",
+              "props": {
+                "children": [
+                  "Chilli",
+                  " - ",
+                  "1 tbsp",
+                  {
+                    "type": "button",
+                    "props": {
+                      "className": "deleteButton fa fa",
+                      "onClick": "bound handleIngredientRemoved"
+                    },
+                    "_store": {}
+                  }
+                ]
+              },
+              "key": "ingredient_8",
+              "rendered": [
+                "Chilli",
+                " - ",
+                "1 tbsp",
+                {
+                  "nodeType": "host",
+                  "type": "button",
+                  "props": {
+                    "className": "deleteButton fa fa",
+                    "onClick": "bound handleIngredientRemoved"
+                  }
+                }
+              ]
+            },
+            {
+              "nodeType": "host",
+              "type": "li",
+              "props": {
+                "children": [
+                  "Oregano",
+                  " - ",
+                  "1 unit",
+                  {
+                    "type": "button",
+                    "props": {
+                      "className": "deleteButton fa fa",
+                      "onClick": "bound handleIngredientRemoved"
+                    },
+                    "_store": {}
+                  }
+                ]
+              },
+              "key": "ingredient_9",
+              "rendered": [
+                "Oregano",
+                " - ",
+                "1 unit",
+                {
+                  "nodeType": "host",
+                  "type": "button",
+                  "props": {
+                    "className": "deleteButton fa fa",
+                    "onClick": "bound handleIngredientRemoved"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "nodeType": "class",
+        "type": "Bubble",
+        "props": {
+          "direction": "left",
+          "className": "ingredientsBubble",
+          "children": [
+            null,
+            {
+              "type": "span",
+              "props": {
+                "children": [
+                  "That's it, no more ingredients. ",
+                  {
+                    "type": "a",
+                    "props": {
+                      "onClick": "bound handleOnSubmit",
+                      "children": "Let's continue"
+                    },
+                    "_store": {}
+                  }
+                ]
+              },
+              "_store": {}
+            }
+          ]
+        },
+        "rendered": [
+          null,
+          {
+            "nodeType": "host",
+            "type": "span",
+            "props": {
+              "children": [
+                "That's it, no more ingredients. ",
+                {
+                  "type": "a",
+                  "props": {
+                    "onClick": "bound handleOnSubmit",
+                    "children": "Let's continue"
+                  },
+                  "_store": {}
+                }
+              ]
+            },
+            "rendered": [
+              "That's it, no more ingredients. ",
+              {
+                "nodeType": "host",
+                "type": "a",
+                "props": {
+                  "onClick": "bound handleOnSubmit",
+                  "children": "Let's continue"
+                },
+                "rendered": "Let's continue"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "type": "div",
+  "props": {
+    "className": "bubbleContainer"
+  },
+  "children": [
+    {
+      "node": {
+        "nodeType": "class",
+        "type": "Bubble",
+        "props": {
+          "direction": "right",
+          "children": {
+            "type": "span",
+            "props": {
+              "children": [
+                "Let me write down the ingredients chef... I can't wait to cook ",
+                {
+                  "type": "strong",
+                  "props": {
+                    "children": "Awesome Pizza!"
+                  },
+                  "_store": {}
+                },
+                "!"
+              ]
+            },
+            "_store": {}
+          }
+        },
+        "rendered": {
+          "nodeType": "host",
+          "type": "span",
+          "props": {
+            "children": [
+              "Let me write down the ingredients chef... I can't wait to cook ",
+              {
+                "type": "strong",
+                "props": {
+                  "children": "Awesome Pizza!"
+                },
+                "_store": {}
+              },
+              "!"
+            ]
+          },
+          "rendered": [
+            "Let me write down the ingredients chef... I can't wait to cook ",
+            {
+              "nodeType": "host",
+              "type": "strong",
+              "props": {
+                "children": "Awesome Pizza!"
+              },
+              "rendered": "Awesome Pizza!"
+            },
+            "!"
+          ]
+        }
+      },
+      "type": "Bubble",
+      "props": {
+        "direction": "right"
+      },
+      "children": [
+        {
+          "node": {
+            "nodeType": "host",
+            "type": "span",
+            "props": {
+              "children": [
+                "Let me write down the ingredients chef... I can't wait to cook ",
+                {
+                  "type": "strong",
+                  "props": {
+                    "children": "Awesome Pizza!"
+                  },
+                  "_store": {}
+                },
+                "!"
+              ]
+            },
+            "rendered": [
+              "Let me write down the ingredients chef... I can't wait to cook ",
+              {
+                "nodeType": "host",
+                "type": "strong",
+                "props": {
+                  "children": "Awesome Pizza!"
+                },
+                "rendered": "Awesome Pizza!"
+              },
+              "!"
+            ]
+          },
+          "type": "span",
+          "props": {},
+          "children": [
+            "Let me write down the ingredients chef... I can't wait to cook ",
+            {
+              "node": {
+                "nodeType": "host",
+                "type": "strong",
+                "props": {
+                  "children": "Awesome Pizza!"
+                },
+                "rendered": "Awesome Pizza!"
+              },
+              "type": "strong",
+              "props": {},
+              "children": [
+                "Awesome Pizza!"
+              ]
+            },
+            "!"
+          ]
+        }
+      ]
+    },
+    {
+      "node": {
+        "nodeType": "host",
+        "type": "div",
+        "props": {
+          "className": "notepad ingredients",
+          "children": {
+            "type": "ul",
+            "props": {
+              "children": [
+                {
+                  "type": "li",
+                  "key": "ingredient_0",
+                  "props": {
+                    "children": [
+                      "Rice",
+                      " - ",
+                      "1 cup",
+                      {
+                        "type": "button",
+                        "props": {
+                          "className": "deleteButton fa fa",
+                          "onClick": "bound handleIngredientRemoved"
+                        },
+                        "_store": {}
+                      }
+                    ]
+                  },
+                  "_store": {}
+                },
+                {
+                  "type": "li",
+                  "key": "ingredient_1",
+                  "props": {
+                    "children": [
+                      "Salt",
+                      " - ",
+                      "1 tbsp",
+                      {
+                        "type": "button",
+                        "props": {
+                          "className": "deleteButton fa fa",
+                          "onClick": "bound handleIngredientRemoved"
+                        },
+                        "_store": {}
+                      }
+                    ]
+                  },
+                  "_store": {}
+                },
+                {
+                  "type": "li",
+                  "key": "ingredient_2",
+                  "props": {
+                    "children": [
+                      "Water",
+                      " - ",
+                      "1/2 cup",
+                      {
+                        "type": "button",
+                        "props": {
+                          "className": "deleteButton fa fa",
+                          "onClick": "bound handleIngredientRemoved"
+                        },
+                        "_store": {}
+                      }
+                    ]
+                  },
+                  "_store": {}
+                },
+                {
+                  "type": "li",
+                  "key": "ingredient_3",
+                  "props": {
+                    "children": [
+                      "Pepper",
+                      " - ",
+                      "1 tbsp",
+                      {
+                        "type": "button",
+                        "props": {
+                          "className": "deleteButton fa fa",
+                          "onClick": "bound handleIngredientRemoved"
+                        },
+                        "_store": {}
+                      }
+                    ]
+                  },
+                  "_store": {}
+                },
+                {
+                  "type": "li",
+                  "key": "ingredient_4",
+                  "props": {
+                    "children": [
+                      "Paprika",
+                      " - ",
+                      "1 tbsp",
+                      {
+                        "type": "button",
+                        "props": {
+                          "className": "deleteButton fa fa",
+                          "onClick": "bound handleIngredientRemoved"
+                        },
+                        "_store": {}
+                      }
+                    ]
+                  },
+                  "_store": {}
+                },
+                {
+                  "type": "li",
+                  "key": "ingredient_5",
+                  "props": {
+                    "children": [
+                      "Onion",
+                      " - ",
+                      "1 unit",
+                      {
+                        "type": "button",
+                        "props": {
+                          "className": "deleteButton fa fa",
+                          "onClick": "bound handleIngredientRemoved"
+                        },
+                        "_store": {}
+                      }
+                    ]
+                  },
+                  "_store": {}
+                },
+                {
+                  "type": "li",
+                  "key": "ingredient_6",
+                  "props": {
+                    "children": [
+                      "Garlic",
+                      " - ",
+                      "1 unit",
+                      {
+                        "type": "button",
+                        "props": {
+                          "className": "deleteButton fa fa",
+                          "onClick": "bound handleIngredientRemoved"
+                        },
+                        "_store": {}
+                      }
+                    ]
+                  },
+                  "_store": {}
+                },
+                {
+                  "type": "li",
+                  "key": "ingredient_7",
+                  "props": {
+                    "children": [
+                      "Chicken",
+                      " - ",
+                      "1 whole chicken",
+                      {
+                        "type": "button",
+                        "props": {
+                          "className": "deleteButton fa fa",
+                          "onClick": "bound handleIngredientRemoved"
+                        },
+                        "_store": {}
+                      }
+                    ]
+                  },
+                  "_store": {}
+                },
+                {
+                  "type": "li",
+                  "key": "ingredient_8",
+                  "props": {
+                    "children": [
+                      "Chilli",
+                      " - ",
+                      "1 tbsp",
+                      {
+                        "type": "button",
+                        "props": {
+                          "className": "deleteButton fa fa",
+                          "onClick": "bound handleIngredientRemoved"
+                        },
+                        "_store": {}
+                      }
+                    ]
+                  },
+                  "_store": {}
+                },
+                {
+                  "type": "li",
+                  "key": "ingredient_9",
+                  "props": {
+                    "children": [
+                      "Oregano",
+                      " - ",
+                      "1 unit",
+                      {
+                        "type": "button",
+                        "props": {
+                          "className": "deleteButton fa fa",
+                          "onClick": "bound handleIngredientRemoved"
+                        },
+                        "_store": {}
+                      }
+                    ]
+                  },
+                  "_store": {}
+                }
+              ]
+            },
+            "_store": {}
+          }
+        },
+        "rendered": {
+          "nodeType": "host",
+          "type": "ul",
+          "props": {
+            "children": [
+              {
+                "type": "li",
+                "key": "ingredient_0",
+                "props": {
+                  "children": [
+                    "Rice",
+                    " - ",
+                    "1 cup",
+                    {
+                      "type": "button",
+                      "props": {
+                        "className": "deleteButton fa fa",
+                        "onClick": "bound handleIngredientRemoved"
+                      },
+                      "_store": {}
+                    }
+                  ]
+                },
+                "_store": {}
+              },
+              {
+                "type": "li",
+                "key": "ingredient_1",
+                "props": {
+                  "children": [
+                    "Salt",
+                    " - ",
+                    "1 tbsp",
+                    {
+                      "type": "button",
+                      "props": {
+                        "className": "deleteButton fa fa",
+                        "onClick": "bound handleIngredientRemoved"
+                      },
+                      "_store": {}
+                    }
+                  ]
+                },
+                "_store": {}
+              },
+              {
+                "type": "li",
+                "key": "ingredient_2",
+                "props": {
+                  "children": [
+                    "Water",
+                    " - ",
+                    "1/2 cup",
+                    {
+                      "type": "button",
+                      "props": {
+                        "className": "deleteButton fa fa",
+                        "onClick": "bound handleIngredientRemoved"
+                      },
+                      "_store": {}
+                    }
+                  ]
+                },
+                "_store": {}
+              },
+              {
+                "type": "li",
+                "key": "ingredient_3",
+                "props": {
+                  "children": [
+                    "Pepper",
+                    " - ",
+                    "1 tbsp",
+                    {
+                      "type": "button",
+                      "props": {
+                        "className": "deleteButton fa fa",
+                        "onClick": "bound handleIngredientRemoved"
+                      },
+                      "_store": {}
+                    }
+                  ]
+                },
+                "_store": {}
+              },
+              {
+                "type": "li",
+                "key": "ingredient_4",
+                "props": {
+                  "children": [
+                    "Paprika",
+                    " - ",
+                    "1 tbsp",
+                    {
+                      "type": "button",
+                      "props": {
+                        "className": "deleteButton fa fa",
+                        "onClick": "bound handleIngredientRemoved"
+                      },
+                      "_store": {}
+                    }
+                  ]
+                },
+                "_store": {}
+              },
+              {
+                "type": "li",
+                "key": "ingredient_5",
+                "props": {
+                  "children": [
+                    "Onion",
+                    " - ",
+                    "1 unit",
+                    {
+                      "type": "button",
+                      "props": {
+                        "className": "deleteButton fa fa",
+                        "onClick": "bound handleIngredientRemoved"
+                      },
+                      "_store": {}
+                    }
+                  ]
+                },
+                "_store": {}
+              },
+              {
+                "type": "li",
+                "key": "ingredient_6",
+                "props": {
+                  "children": [
+                    "Garlic",
+                    " - ",
+                    "1 unit",
+                    {
+                      "type": "button",
+                      "props": {
+                        "className": "deleteButton fa fa",
+                        "onClick": "bound handleIngredientRemoved"
+                      },
+                      "_store": {}
+                    }
+                  ]
+                },
+                "_store": {}
+              },
+              {
+                "type": "li",
+                "key": "ingredient_7",
+                "props": {
+                  "children": [
+                    "Chicken",
+                    " - ",
+                    "1 whole chicken",
+                    {
+                      "type": "button",
+                      "props": {
+                        "className": "deleteButton fa fa",
+                        "onClick": "bound handleIngredientRemoved"
+                      },
+                      "_store": {}
+                    }
+                  ]
+                },
+                "_store": {}
+              },
+              {
+                "type": "li",
+                "key": "ingredient_8",
+                "props": {
+                  "children": [
+                    "Chilli",
+                    " - ",
+                    "1 tbsp",
+                    {
+                      "type": "button",
+                      "props": {
+                        "className": "deleteButton fa fa",
+                        "onClick": "bound handleIngredientRemoved"
+                      },
+                      "_store": {}
+                    }
+                  ]
+                },
+                "_store": {}
+              },
+              {
+                "type": "li",
+                "key": "ingredient_9",
+                "props": {
+                  "children": [
+                    "Oregano",
+                    " - ",
+                    "1 unit",
+                    {
+                      "type": "button",
+                      "props": {
+                        "className": "deleteButton fa fa",
+                        "onClick": "bound handleIngredientRemoved"
+                      },
+                      "_store": {}
+                    }
+                  ]
+                },
+                "_store": {}
+              }
+            ]
+          },
+          "rendered": [
+            {
+              "nodeType": "host",
+              "type": "li",
+              "props": {
+                "children": [
+                  "Rice",
+                  " - ",
+                  "1 cup",
+                  {
+                    "type": "button",
+                    "props": {
+                      "className": "deleteButton fa fa",
+                      "onClick": "bound handleIngredientRemoved"
+                    },
+                    "_store": {}
+                  }
+                ]
+              },
+              "key": "ingredient_0",
+              "rendered": [
+                "Rice",
+                " - ",
+                "1 cup",
+                {
+                  "nodeType": "host",
+                  "type": "button",
+                  "props": {
+                    "className": "deleteButton fa fa",
+                    "onClick": "bound handleIngredientRemoved"
+                  }
+                }
+              ]
+            },
+            {
+              "nodeType": "host",
+              "type": "li",
+              "props": {
+                "children": [
+                  "Salt",
+                  " - ",
+                  "1 tbsp",
+                  {
+                    "type": "button",
+                    "props": {
+                      "className": "deleteButton fa fa",
+                      "onClick": "bound handleIngredientRemoved"
+                    },
+                    "_store": {}
+                  }
+                ]
+              },
+              "key": "ingredient_1",
+              "rendered": [
+                "Salt",
+                " - ",
+                "1 tbsp",
+                {
+                  "nodeType": "host",
+                  "type": "button",
+                  "props": {
+                    "className": "deleteButton fa fa",
+                    "onClick": "bound handleIngredientRemoved"
+                  }
+                }
+              ]
+            },
+            {
+              "nodeType": "host",
+              "type": "li",
+              "props": {
+                "children": [
+                  "Water",
+                  " - ",
+                  "1/2 cup",
+                  {
+                    "type": "button",
+                    "props": {
+                      "className": "deleteButton fa fa",
+                      "onClick": "bound handleIngredientRemoved"
+                    },
+                    "_store": {}
+                  }
+                ]
+              },
+              "key": "ingredient_2",
+              "rendered": [
+                "Water",
+                " - ",
+                "1/2 cup",
+                {
+                  "nodeType": "host",
+                  "type": "button",
+                  "props": {
+                    "className": "deleteButton fa fa",
+                    "onClick": "bound handleIngredientRemoved"
+                  }
+                }
+              ]
+            },
+            {
+              "nodeType": "host",
+              "type": "li",
+              "props": {
+                "children": [
+                  "Pepper",
+                  " - ",
+                  "1 tbsp",
+                  {
+                    "type": "button",
+                    "props": {
+                      "className": "deleteButton fa fa",
+                      "onClick": "bound handleIngredientRemoved"
+                    },
+                    "_store": {}
+                  }
+                ]
+              },
+              "key": "ingredient_3",
+              "rendered": [
+                "Pepper",
+                " - ",
+                "1 tbsp",
+                {
+                  "nodeType": "host",
+                  "type": "button",
+                  "props": {
+                    "className": "deleteButton fa fa",
+                    "onClick": "bound handleIngredientRemoved"
+                  }
+                }
+              ]
+            },
+            {
+              "nodeType": "host",
+              "type": "li",
+              "props": {
+                "children": [
+                  "Paprika",
+                  " - ",
+                  "1 tbsp",
+                  {
+                    "type": "button",
+                    "props": {
+                      "className": "deleteButton fa fa",
+                      "onClick": "bound handleIngredientRemoved"
+                    },
+                    "_store": {}
+                  }
+                ]
+              },
+              "key": "ingredient_4",
+              "rendered": [
+                "Paprika",
+                " - ",
+                "1 tbsp",
+                {
+                  "nodeType": "host",
+                  "type": "button",
+                  "props": {
+                    "className": "deleteButton fa fa",
+                    "onClick": "bound handleIngredientRemoved"
+                  }
+                }
+              ]
+            },
+            {
+              "nodeType": "host",
+              "type": "li",
+              "props": {
+                "children": [
+                  "Onion",
+                  " - ",
+                  "1 unit",
+                  {
+                    "type": "button",
+                    "props": {
+                      "className": "deleteButton fa fa",
+                      "onClick": "bound handleIngredientRemoved"
+                    },
+                    "_store": {}
+                  }
+                ]
+              },
+              "key": "ingredient_5",
+              "rendered": [
+                "Onion",
+                " - ",
+                "1 unit",
+                {
+                  "nodeType": "host",
+                  "type": "button",
+                  "props": {
+                    "className": "deleteButton fa fa",
+                    "onClick": "bound handleIngredientRemoved"
+                  }
+                }
+              ]
+            },
+            {
+              "nodeType": "host",
+              "type": "li",
+              "props": {
+                "children": [
+                  "Garlic",
+                  " - ",
+                  "1 unit",
+                  {
+                    "type": "button",
+                    "props": {
+                      "className": "deleteButton fa fa",
+                      "onClick": "bound handleIngredientRemoved"
+                    },
+                    "_store": {}
+                  }
+                ]
+              },
+              "key": "ingredient_6",
+              "rendered": [
+                "Garlic",
+                " - ",
+                "1 unit",
+                {
+                  "nodeType": "host",
+                  "type": "button",
+                  "props": {
+                    "className": "deleteButton fa fa",
+                    "onClick": "bound handleIngredientRemoved"
+                  }
+                }
+              ]
+            },
+            {
+              "nodeType": "host",
+              "type": "li",
+              "props": {
+                "children": [
+                  "Chicken",
+                  " - ",
+                  "1 whole chicken",
+                  {
+                    "type": "button",
+                    "props": {
+                      "className": "deleteButton fa fa",
+                      "onClick": "bound handleIngredientRemoved"
+                    },
+                    "_store": {}
+                  }
+                ]
+              },
+              "key": "ingredient_7",
+              "rendered": [
+                "Chicken",
+                " - ",
+                "1 whole chicken",
+                {
+                  "nodeType": "host",
+                  "type": "button",
+                  "props": {
+                    "className": "deleteButton fa fa",
+                    "onClick": "bound handleIngredientRemoved"
+                  }
+                }
+              ]
+            },
+            {
+              "nodeType": "host",
+              "type": "li",
+              "props": {
+                "children": [
+                  "Chilli",
+                  " - ",
+                  "1 tbsp",
+                  {
+                    "type": "button",
+                    "props": {
+                      "className": "deleteButton fa fa",
+                      "onClick": "bound handleIngredientRemoved"
+                    },
+                    "_store": {}
+                  }
+                ]
+              },
+              "key": "ingredient_8",
+              "rendered": [
+                "Chilli",
+                " - ",
+                "1 tbsp",
+                {
+                  "nodeType": "host",
+                  "type": "button",
+                  "props": {
+                    "className": "deleteButton fa fa",
+                    "onClick": "bound handleIngredientRemoved"
+                  }
+                }
+              ]
+            },
+            {
+              "nodeType": "host",
+              "type": "li",
+              "props": {
+                "children": [
+                  "Oregano",
+                  " - ",
+                  "1 unit",
+                  {
+                    "type": "button",
+                    "props": {
+                      "className": "deleteButton fa fa",
+                      "onClick": "bound handleIngredientRemoved"
+                    },
+                    "_store": {}
+                  }
+                ]
+              },
+              "key": "ingredient_9",
+              "rendered": [
+                "Oregano",
+                " - ",
+                "1 unit",
+                {
+                  "nodeType": "host",
+                  "type": "button",
+                  "props": {
+                    "className": "deleteButton fa fa",
+                    "onClick": "bound handleIngredientRemoved"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "type": "div",
+      "props": {
+        "className": "notepad ingredients"
+      },
+      "children": [
+        {
+          "node": {
+            "nodeType": "host",
+            "type": "ul",
+            "props": {
+              "children": [
+                {
+                  "type": "li",
+                  "key": "ingredient_0",
+                  "props": {
+                    "children": [
+                      "Rice",
+                      " - ",
+                      "1 cup",
+                      {
+                        "type": "button",
+                        "props": {
+                          "className": "deleteButton fa fa",
+                          "onClick": "bound handleIngredientRemoved"
+                        },
+                        "_store": {}
+                      }
+                    ]
+                  },
+                  "_store": {}
+                },
+                {
+                  "type": "li",
+                  "key": "ingredient_1",
+                  "props": {
+                    "children": [
+                      "Salt",
+                      " - ",
+                      "1 tbsp",
+                      {
+                        "type": "button",
+                        "props": {
+                          "className": "deleteButton fa fa",
+                          "onClick": "bound handleIngredientRemoved"
+                        },
+                        "_store": {}
+                      }
+                    ]
+                  },
+                  "_store": {}
+                },
+                {
+                  "type": "li",
+                  "key": "ingredient_2",
+                  "props": {
+                    "children": [
+                      "Water",
+                      " - ",
+                      "1/2 cup",
+                      {
+                        "type": "button",
+                        "props": {
+                          "className": "deleteButton fa fa",
+                          "onClick": "bound handleIngredientRemoved"
+                        },
+                        "_store": {}
+                      }
+                    ]
+                  },
+                  "_store": {}
+                },
+                {
+                  "type": "li",
+                  "key": "ingredient_3",
+                  "props": {
+                    "children": [
+                      "Pepper",
+                      " - ",
+                      "1 tbsp",
+                      {
+                        "type": "button",
+                        "props": {
+                          "className": "deleteButton fa fa",
+                          "onClick": "bound handleIngredientRemoved"
+                        },
+                        "_store": {}
+                      }
+                    ]
+                  },
+                  "_store": {}
+                },
+                {
+                  "type": "li",
+                  "key": "ingredient_4",
+                  "props": {
+                    "children": [
+                      "Paprika",
+                      " - ",
+                      "1 tbsp",
+                      {
+                        "type": "button",
+                        "props": {
+                          "className": "deleteButton fa fa",
+                          "onClick": "bound handleIngredientRemoved"
+                        },
+                        "_store": {}
+                      }
+                    ]
+                  },
+                  "_store": {}
+                },
+                {
+                  "type": "li",
+                  "key": "ingredient_5",
+                  "props": {
+                    "children": [
+                      "Onion",
+                      " - ",
+                      "1 unit",
+                      {
+                        "type": "button",
+                        "props": {
+                          "className": "deleteButton fa fa",
+                          "onClick": "bound handleIngredientRemoved"
+                        },
+                        "_store": {}
+                      }
+                    ]
+                  },
+                  "_store": {}
+                },
+                {
+                  "type": "li",
+                  "key": "ingredient_6",
+                  "props": {
+                    "children": [
+                      "Garlic",
+                      " - ",
+                      "1 unit",
+                      {
+                        "type": "button",
+                        "props": {
+                          "className": "deleteButton fa fa",
+                          "onClick": "bound handleIngredientRemoved"
+                        },
+                        "_store": {}
+                      }
+                    ]
+                  },
+                  "_store": {}
+                },
+                {
+                  "type": "li",
+                  "key": "ingredient_7",
+                  "props": {
+                    "children": [
+                      "Chicken",
+                      " - ",
+                      "1 whole chicken",
+                      {
+                        "type": "button",
+                        "props": {
+                          "className": "deleteButton fa fa",
+                          "onClick": "bound handleIngredientRemoved"
+                        },
+                        "_store": {}
+                      }
+                    ]
+                  },
+                  "_store": {}
+                },
+                {
+                  "type": "li",
+                  "key": "ingredient_8",
+                  "props": {
+                    "children": [
+                      "Chilli",
+                      " - ",
+                      "1 tbsp",
+                      {
+                        "type": "button",
+                        "props": {
+                          "className": "deleteButton fa fa",
+                          "onClick": "bound handleIngredientRemoved"
+                        },
+                        "_store": {}
+                      }
+                    ]
+                  },
+                  "_store": {}
+                },
+                {
+                  "type": "li",
+                  "key": "ingredient_9",
+                  "props": {
+                    "children": [
+                      "Oregano",
+                      " - ",
+                      "1 unit",
+                      {
+                        "type": "button",
+                        "props": {
+                          "className": "deleteButton fa fa",
+                          "onClick": "bound handleIngredientRemoved"
+                        },
+                        "_store": {}
+                      }
+                    ]
+                  },
+                  "_store": {}
+                }
+              ]
+            },
+            "rendered": [
+              {
+                "nodeType": "host",
+                "type": "li",
+                "props": {
+                  "children": [
+                    "Rice",
+                    " - ",
+                    "1 cup",
+                    {
+                      "type": "button",
+                      "props": {
+                        "className": "deleteButton fa fa",
+                        "onClick": "bound handleIngredientRemoved"
+                      },
+                      "_store": {}
+                    }
+                  ]
+                },
+                "key": "ingredient_0",
+                "rendered": [
+                  "Rice",
+                  " - ",
+                  "1 cup",
+                  {
+                    "nodeType": "host",
+                    "type": "button",
+                    "props": {
+                      "className": "deleteButton fa fa",
+                      "onClick": "bound handleIngredientRemoved"
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "host",
+                "type": "li",
+                "props": {
+                  "children": [
+                    "Salt",
+                    " - ",
+                    "1 tbsp",
+                    {
+                      "type": "button",
+                      "props": {
+                        "className": "deleteButton fa fa",
+                        "onClick": "bound handleIngredientRemoved"
+                      },
+                      "_store": {}
+                    }
+                  ]
+                },
+                "key": "ingredient_1",
+                "rendered": [
+                  "Salt",
+                  " - ",
+                  "1 tbsp",
+                  {
+                    "nodeType": "host",
+                    "type": "button",
+                    "props": {
+                      "className": "deleteButton fa fa",
+                      "onClick": "bound handleIngredientRemoved"
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "host",
+                "type": "li",
+                "props": {
+                  "children": [
+                    "Water",
+                    " - ",
+                    "1/2 cup",
+                    {
+                      "type": "button",
+                      "props": {
+                        "className": "deleteButton fa fa",
+                        "onClick": "bound handleIngredientRemoved"
+                      },
+                      "_store": {}
+                    }
+                  ]
+                },
+                "key": "ingredient_2",
+                "rendered": [
+                  "Water",
+                  " - ",
+                  "1/2 cup",
+                  {
+                    "nodeType": "host",
+                    "type": "button",
+                    "props": {
+                      "className": "deleteButton fa fa",
+                      "onClick": "bound handleIngredientRemoved"
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "host",
+                "type": "li",
+                "props": {
+                  "children": [
+                    "Pepper",
+                    " - ",
+                    "1 tbsp",
+                    {
+                      "type": "button",
+                      "props": {
+                        "className": "deleteButton fa fa",
+                        "onClick": "bound handleIngredientRemoved"
+                      },
+                      "_store": {}
+                    }
+                  ]
+                },
+                "key": "ingredient_3",
+                "rendered": [
+                  "Pepper",
+                  " - ",
+                  "1 tbsp",
+                  {
+                    "nodeType": "host",
+                    "type": "button",
+                    "props": {
+                      "className": "deleteButton fa fa",
+                      "onClick": "bound handleIngredientRemoved"
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "host",
+                "type": "li",
+                "props": {
+                  "children": [
+                    "Paprika",
+                    " - ",
+                    "1 tbsp",
+                    {
+                      "type": "button",
+                      "props": {
+                        "className": "deleteButton fa fa",
+                        "onClick": "bound handleIngredientRemoved"
+                      },
+                      "_store": {}
+                    }
+                  ]
+                },
+                "key": "ingredient_4",
+                "rendered": [
+                  "Paprika",
+                  " - ",
+                  "1 tbsp",
+                  {
+                    "nodeType": "host",
+                    "type": "button",
+                    "props": {
+                      "className": "deleteButton fa fa",
+                      "onClick": "bound handleIngredientRemoved"
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "host",
+                "type": "li",
+                "props": {
+                  "children": [
+                    "Onion",
+                    " - ",
+                    "1 unit",
+                    {
+                      "type": "button",
+                      "props": {
+                        "className": "deleteButton fa fa",
+                        "onClick": "bound handleIngredientRemoved"
+                      },
+                      "_store": {}
+                    }
+                  ]
+                },
+                "key": "ingredient_5",
+                "rendered": [
+                  "Onion",
+                  " - ",
+                  "1 unit",
+                  {
+                    "nodeType": "host",
+                    "type": "button",
+                    "props": {
+                      "className": "deleteButton fa fa",
+                      "onClick": "bound handleIngredientRemoved"
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "host",
+                "type": "li",
+                "props": {
+                  "children": [
+                    "Garlic",
+                    " - ",
+                    "1 unit",
+                    {
+                      "type": "button",
+                      "props": {
+                        "className": "deleteButton fa fa",
+                        "onClick": "bound handleIngredientRemoved"
+                      },
+                      "_store": {}
+                    }
+                  ]
+                },
+                "key": "ingredient_6",
+                "rendered": [
+                  "Garlic",
+                  " - ",
+                  "1 unit",
+                  {
+                    "nodeType": "host",
+                    "type": "button",
+                    "props": {
+                      "className": "deleteButton fa fa",
+                      "onClick": "bound handleIngredientRemoved"
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "host",
+                "type": "li",
+                "props": {
+                  "children": [
+                    "Chicken",
+                    " - ",
+                    "1 whole chicken",
+                    {
+                      "type": "button",
+                      "props": {
+                        "className": "deleteButton fa fa",
+                        "onClick": "bound handleIngredientRemoved"
+                      },
+                      "_store": {}
+                    }
+                  ]
+                },
+                "key": "ingredient_7",
+                "rendered": [
+                  "Chicken",
+                  " - ",
+                  "1 whole chicken",
+                  {
+                    "nodeType": "host",
+                    "type": "button",
+                    "props": {
+                      "className": "deleteButton fa fa",
+                      "onClick": "bound handleIngredientRemoved"
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "host",
+                "type": "li",
+                "props": {
+                  "children": [
+                    "Chilli",
+                    " - ",
+                    "1 tbsp",
+                    {
+                      "type": "button",
+                      "props": {
+                        "className": "deleteButton fa fa",
+                        "onClick": "bound handleIngredientRemoved"
+                      },
+                      "_store": {}
+                    }
+                  ]
+                },
+                "key": "ingredient_8",
+                "rendered": [
+                  "Chilli",
+                  " - ",
+                  "1 tbsp",
+                  {
+                    "nodeType": "host",
+                    "type": "button",
+                    "props": {
+                      "className": "deleteButton fa fa",
+                      "onClick": "bound handleIngredientRemoved"
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "host",
+                "type": "li",
+                "props": {
+                  "children": [
+                    "Oregano",
+                    " - ",
+                    "1 unit",
+                    {
+                      "type": "button",
+                      "props": {
+                        "className": "deleteButton fa fa",
+                        "onClick": "bound handleIngredientRemoved"
+                      },
+                      "_store": {}
+                    }
+                  ]
+                },
+                "key": "ingredient_9",
+                "rendered": [
+                  "Oregano",
+                  " - ",
+                  "1 unit",
+                  {
+                    "nodeType": "host",
+                    "type": "button",
+                    "props": {
+                      "className": "deleteButton fa fa",
+                      "onClick": "bound handleIngredientRemoved"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "type": "ul",
+          "props": {},
+          "children": [
+            {
+              "node": {
+                "nodeType": "host",
+                "type": "li",
+                "props": {
+                  "children": [
+                    "Rice",
+                    " - ",
+                    "1 cup",
+                    {
+                      "type": "button",
+                      "props": {
+                        "className": "deleteButton fa fa",
+                        "onClick": "bound handleIngredientRemoved"
+                      },
+                      "_store": {}
+                    }
+                  ]
+                },
+                "key": "ingredient_0",
+                "rendered": [
+                  "Rice",
+                  " - ",
+                  "1 cup",
+                  {
+                    "nodeType": "host",
+                    "type": "button",
+                    "props": {
+                      "className": "deleteButton fa fa",
+                      "onClick": "bound handleIngredientRemoved"
+                    }
+                  }
+                ]
+              },
+              "type": "li",
+              "props": {
+                "key": "ingredient_0"
+              },
+              "children": [
+                "Rice",
+                " - ",
+                "1 cup",
+                {
+                  "node": {
+                    "nodeType": "host",
+                    "type": "button",
+                    "props": {
+                      "className": "deleteButton fa fa",
+                      "onClick": "bound handleIngredientRemoved"
+                    }
+                  },
+                  "type": "button",
+                  "props": {
+                    "className": "deleteButton fa fa",
+                    "onClick": "bound handleIngredientRemoved"
+                  }
+                }
+              ]
+            },
+            {
+              "node": {
+                "nodeType": "host",
+                "type": "li",
+                "props": {
+                  "children": [
+                    "Salt",
+                    " - ",
+                    "1 tbsp",
+                    {
+                      "type": "button",
+                      "props": {
+                        "className": "deleteButton fa fa",
+                        "onClick": "bound handleIngredientRemoved"
+                      },
+                      "_store": {}
+                    }
+                  ]
+                },
+                "key": "ingredient_1",
+                "rendered": [
+                  "Salt",
+                  " - ",
+                  "1 tbsp",
+                  {
+                    "nodeType": "host",
+                    "type": "button",
+                    "props": {
+                      "className": "deleteButton fa fa",
+                      "onClick": "bound handleIngredientRemoved"
+                    }
+                  }
+                ]
+              },
+              "type": "li",
+              "props": {
+                "key": "ingredient_1"
+              },
+              "children": [
+                "Salt",
+                " - ",
+                "1 tbsp",
+                {
+                  "node": {
+                    "nodeType": "host",
+                    "type": "button",
+                    "props": {
+                      "className": "deleteButton fa fa",
+                      "onClick": "bound handleIngredientRemoved"
+                    }
+                  },
+                  "type": "button",
+                  "props": {
+                    "className": "deleteButton fa fa",
+                    "onClick": "bound handleIngredientRemoved"
+                  }
+                }
+              ]
+            },
+            {
+              "node": {
+                "nodeType": "host",
+                "type": "li",
+                "props": {
+                  "children": [
+                    "Water",
+                    " - ",
+                    "1/2 cup",
+                    {
+                      "type": "button",
+                      "props": {
+                        "className": "deleteButton fa fa",
+                        "onClick": "bound handleIngredientRemoved"
+                      },
+                      "_store": {}
+                    }
+                  ]
+                },
+                "key": "ingredient_2",
+                "rendered": [
+                  "Water",
+                  " - ",
+                  "1/2 cup",
+                  {
+                    "nodeType": "host",
+                    "type": "button",
+                    "props": {
+                      "className": "deleteButton fa fa",
+                      "onClick": "bound handleIngredientRemoved"
+                    }
+                  }
+                ]
+              },
+              "type": "li",
+              "props": {
+                "key": "ingredient_2"
+              },
+              "children": [
+                "Water",
+                " - ",
+                "1/2 cup",
+                {
+                  "node": {
+                    "nodeType": "host",
+                    "type": "button",
+                    "props": {
+                      "className": "deleteButton fa fa",
+                      "onClick": "bound handleIngredientRemoved"
+                    }
+                  },
+                  "type": "button",
+                  "props": {
+                    "className": "deleteButton fa fa",
+                    "onClick": "bound handleIngredientRemoved"
+                  }
+                }
+              ]
+            },
+            {
+              "node": {
+                "nodeType": "host",
+                "type": "li",
+                "props": {
+                  "children": [
+                    "Pepper",
+                    " - ",
+                    "1 tbsp",
+                    {
+                      "type": "button",
+                      "props": {
+                        "className": "deleteButton fa fa",
+                        "onClick": "bound handleIngredientRemoved"
+                      },
+                      "_store": {}
+                    }
+                  ]
+                },
+                "key": "ingredient_3",
+                "rendered": [
+                  "Pepper",
+                  " - ",
+                  "1 tbsp",
+                  {
+                    "nodeType": "host",
+                    "type": "button",
+                    "props": {
+                      "className": "deleteButton fa fa",
+                      "onClick": "bound handleIngredientRemoved"
+                    }
+                  }
+                ]
+              },
+              "type": "li",
+              "props": {
+                "key": "ingredient_3"
+              },
+              "children": [
+                "Pepper",
+                " - ",
+                "1 tbsp",
+                {
+                  "node": {
+                    "nodeType": "host",
+                    "type": "button",
+                    "props": {
+                      "className": "deleteButton fa fa",
+                      "onClick": "bound handleIngredientRemoved"
+                    }
+                  },
+                  "type": "button",
+                  "props": {
+                    "className": "deleteButton fa fa",
+                    "onClick": "bound handleIngredientRemoved"
+                  }
+                }
+              ]
+            },
+            {
+              "node": {
+                "nodeType": "host",
+                "type": "li",
+                "props": {
+                  "children": [
+                    "Paprika",
+                    " - ",
+                    "1 tbsp",
+                    {
+                      "type": "button",
+                      "props": {
+                        "className": "deleteButton fa fa",
+                        "onClick": "bound handleIngredientRemoved"
+                      },
+                      "_store": {}
+                    }
+                  ]
+                },
+                "key": "ingredient_4",
+                "rendered": [
+                  "Paprika",
+                  " - ",
+                  "1 tbsp",
+                  {
+                    "nodeType": "host",
+                    "type": "button",
+                    "props": {
+                      "className": "deleteButton fa fa",
+                      "onClick": "bound handleIngredientRemoved"
+                    }
+                  }
+                ]
+              },
+              "type": "li",
+              "props": {
+                "key": "ingredient_4"
+              },
+              "children": [
+                "Paprika",
+                " - ",
+                "1 tbsp",
+                {
+                  "node": {
+                    "nodeType": "host",
+                    "type": "button",
+                    "props": {
+                      "className": "deleteButton fa fa",
+                      "onClick": "bound handleIngredientRemoved"
+                    }
+                  },
+                  "type": "button",
+                  "props": {
+                    "className": "deleteButton fa fa",
+                    "onClick": "bound handleIngredientRemoved"
+                  }
+                }
+              ]
+            },
+            {
+              "node": {
+                "nodeType": "host",
+                "type": "li",
+                "props": {
+                  "children": [
+                    "Onion",
+                    " - ",
+                    "1 unit",
+                    {
+                      "type": "button",
+                      "props": {
+                        "className": "deleteButton fa fa",
+                        "onClick": "bound handleIngredientRemoved"
+                      },
+                      "_store": {}
+                    }
+                  ]
+                },
+                "key": "ingredient_5",
+                "rendered": [
+                  "Onion",
+                  " - ",
+                  "1 unit",
+                  {
+                    "nodeType": "host",
+                    "type": "button",
+                    "props": {
+                      "className": "deleteButton fa fa",
+                      "onClick": "bound handleIngredientRemoved"
+                    }
+                  }
+                ]
+              },
+              "type": "li",
+              "props": {
+                "key": "ingredient_5"
+              },
+              "children": [
+                "Onion",
+                " - ",
+                "1 unit",
+                {
+                  "node": {
+                    "nodeType": "host",
+                    "type": "button",
+                    "props": {
+                      "className": "deleteButton fa fa",
+                      "onClick": "bound handleIngredientRemoved"
+                    }
+                  },
+                  "type": "button",
+                  "props": {
+                    "className": "deleteButton fa fa",
+                    "onClick": "bound handleIngredientRemoved"
+                  }
+                }
+              ]
+            },
+            {
+              "node": {
+                "nodeType": "host",
+                "type": "li",
+                "props": {
+                  "children": [
+                    "Garlic",
+                    " - ",
+                    "1 unit",
+                    {
+                      "type": "button",
+                      "props": {
+                        "className": "deleteButton fa fa",
+                        "onClick": "bound handleIngredientRemoved"
+                      },
+                      "_store": {}
+                    }
+                  ]
+                },
+                "key": "ingredient_6",
+                "rendered": [
+                  "Garlic",
+                  " - ",
+                  "1 unit",
+                  {
+                    "nodeType": "host",
+                    "type": "button",
+                    "props": {
+                      "className": "deleteButton fa fa",
+                      "onClick": "bound handleIngredientRemoved"
+                    }
+                  }
+                ]
+              },
+              "type": "li",
+              "props": {
+                "key": "ingredient_6"
+              },
+              "children": [
+                "Garlic",
+                " - ",
+                "1 unit",
+                {
+                  "node": {
+                    "nodeType": "host",
+                    "type": "button",
+                    "props": {
+                      "className": "deleteButton fa fa",
+                      "onClick": "bound handleIngredientRemoved"
+                    }
+                  },
+                  "type": "button",
+                  "props": {
+                    "className": "deleteButton fa fa",
+                    "onClick": "bound handleIngredientRemoved"
+                  }
+                }
+              ]
+            },
+            {
+              "node": {
+                "nodeType": "host",
+                "type": "li",
+                "props": {
+                  "children": [
+                    "Chicken",
+                    " - ",
+                    "1 whole chicken",
+                    {
+                      "type": "button",
+                      "props": {
+                        "className": "deleteButton fa fa",
+                        "onClick": "bound handleIngredientRemoved"
+                      },
+                      "_store": {}
+                    }
+                  ]
+                },
+                "key": "ingredient_7",
+                "rendered": [
+                  "Chicken",
+                  " - ",
+                  "1 whole chicken",
+                  {
+                    "nodeType": "host",
+                    "type": "button",
+                    "props": {
+                      "className": "deleteButton fa fa",
+                      "onClick": "bound handleIngredientRemoved"
+                    }
+                  }
+                ]
+              },
+              "type": "li",
+              "props": {
+                "key": "ingredient_7"
+              },
+              "children": [
+                "Chicken",
+                " - ",
+                "1 whole chicken",
+                {
+                  "node": {
+                    "nodeType": "host",
+                    "type": "button",
+                    "props": {
+                      "className": "deleteButton fa fa",
+                      "onClick": "bound handleIngredientRemoved"
+                    }
+                  },
+                  "type": "button",
+                  "props": {
+                    "className": "deleteButton fa fa",
+                    "onClick": "bound handleIngredientRemoved"
+                  }
+                }
+              ]
+            },
+            {
+              "node": {
+                "nodeType": "host",
+                "type": "li",
+                "props": {
+                  "children": [
+                    "Chilli",
+                    " - ",
+                    "1 tbsp",
+                    {
+                      "type": "button",
+                      "props": {
+                        "className": "deleteButton fa fa",
+                        "onClick": "bound handleIngredientRemoved"
+                      },
+                      "_store": {}
+                    }
+                  ]
+                },
+                "key": "ingredient_8",
+                "rendered": [
+                  "Chilli",
+                  " - ",
+                  "1 tbsp",
+                  {
+                    "nodeType": "host",
+                    "type": "button",
+                    "props": {
+                      "className": "deleteButton fa fa",
+                      "onClick": "bound handleIngredientRemoved"
+                    }
+                  }
+                ]
+              },
+              "type": "li",
+              "props": {
+                "key": "ingredient_8"
+              },
+              "children": [
+                "Chilli",
+                " - ",
+                "1 tbsp",
+                {
+                  "node": {
+                    "nodeType": "host",
+                    "type": "button",
+                    "props": {
+                      "className": "deleteButton fa fa",
+                      "onClick": "bound handleIngredientRemoved"
+                    }
+                  },
+                  "type": "button",
+                  "props": {
+                    "className": "deleteButton fa fa",
+                    "onClick": "bound handleIngredientRemoved"
+                  }
+                }
+              ]
+            },
+            {
+              "node": {
+                "nodeType": "host",
+                "type": "li",
+                "props": {
+                  "children": [
+                    "Oregano",
+                    " - ",
+                    "1 unit",
+                    {
+                      "type": "button",
+                      "props": {
+                        "className": "deleteButton fa fa",
+                        "onClick": "bound handleIngredientRemoved"
+                      },
+                      "_store": {}
+                    }
+                  ]
+                },
+                "key": "ingredient_9",
+                "rendered": [
+                  "Oregano",
+                  " - ",
+                  "1 unit",
+                  {
+                    "nodeType": "host",
+                    "type": "button",
+                    "props": {
+                      "className": "deleteButton fa fa",
+                      "onClick": "bound handleIngredientRemoved"
+                    }
+                  }
+                ]
+              },
+              "type": "li",
+              "props": {
+                "key": "ingredient_9"
+              },
+              "children": [
+                "Oregano",
+                " - ",
+                "1 unit",
+                {
+                  "node": {
+                    "nodeType": "host",
+                    "type": "button",
+                    "props": {
+                      "className": "deleteButton fa fa",
+                      "onClick": "bound handleIngredientRemoved"
+                    }
+                  },
+                  "type": "button",
+                  "props": {
+                    "className": "deleteButton fa fa",
+                    "onClick": "bound handleIngredientRemoved"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "node": {
+        "nodeType": "class",
+        "type": "Bubble",
+        "props": {
+          "direction": "left",
+          "className": "ingredientsBubble",
+          "children": [
+            null,
+            {
+              "type": "span",
+              "props": {
+                "children": [
+                  "That's it, no more ingredients. ",
+                  {
+                    "type": "a",
+                    "props": {
+                      "onClick": "bound handleOnSubmit",
+                      "children": "Let's continue"
+                    },
+                    "_store": {}
+                  }
+                ]
+              },
+              "_store": {}
+            }
+          ]
+        },
+        "rendered": [
+          null,
+          {
+            "nodeType": "host",
+            "type": "span",
+            "props": {
+              "children": [
+                "That's it, no more ingredients. ",
+                {
+                  "type": "a",
+                  "props": {
+                    "onClick": "bound handleOnSubmit",
+                    "children": "Let's continue"
+                  },
+                  "_store": {}
+                }
+              ]
+            },
+            "rendered": [
+              "That's it, no more ingredients. ",
+              {
+                "nodeType": "host",
+                "type": "a",
+                "props": {
+                  "onClick": "bound handleOnSubmit",
+                  "children": "Let's continue"
+                },
+                "rendered": "Let's continue"
+              }
+            ]
+          }
+        ]
+      },
+      "type": "Bubble",
+      "props": {
+        "direction": "left",
+        "className": "ingredientsBubble"
+      },
+      "children": [
+        {
+          "node": {
+            "nodeType": "host",
+            "type": "span",
+            "props": {
+              "children": [
+                "That's it, no more ingredients. ",
+                {
+                  "type": "a",
+                  "props": {
+                    "onClick": "bound handleOnSubmit",
+                    "children": "Let's continue"
+                  },
+                  "_store": {}
+                }
+              ]
+            },
+            "rendered": [
+              "That's it, no more ingredients. ",
+              {
+                "nodeType": "host",
+                "type": "a",
+                "props": {
+                  "onClick": "bound handleOnSubmit",
+                  "children": "Let's continue"
+                },
+                "rendered": "Let's continue"
+              }
+            ]
+          },
+          "type": "span",
+          "props": {},
+          "children": [
+            "That's it, no more ingredients. ",
+            {
+              "node": {
+                "nodeType": "host",
+                "type": "a",
+                "props": {
+                  "onClick": "bound handleOnSubmit",
+                  "children": "Let's continue"
+                },
+                "rendered": "Let's continue"
+              },
+              "type": "a",
+              "props": {
+                "onClick": "bound handleOnSubmit"
+              },
+              "children": [
+                "Let's continue"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+};
+

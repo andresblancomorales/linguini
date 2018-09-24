@@ -12,6 +12,8 @@ export default class DraggableList extends Component {
       dragIndex: undefined,
       dragOver: undefined,
     };
+
+    this.itemControls = {};
   }
 
   onItemDragged(index) {
@@ -81,7 +83,7 @@ export default class DraggableList extends Component {
       }
     });
 
-    let updatedDragOver = isDefined(hoveredControl) ? Number(hoveredControl) : undefined
+    let updatedDragOver = isDefined(hoveredControl) ? Number(hoveredControl) : undefined;
     if (this.state.dragOver !== updatedDragOver) {
       this.setState({
         ...this.state,
@@ -133,7 +135,7 @@ export default class DraggableList extends Component {
         renderParam.isDragged = true;
       }
 
-      itemComponents.push((
+      let component = (
         <TouchDraggable key={`item_${i}`}
                         ref={control => {
                           if (control !== null) this.itemControls[i] = control;
@@ -150,11 +152,15 @@ export default class DraggableList extends Component {
                onDragLeave={this.onItemDragLeave.bind(this, i)}>
             {
               !isFunction(this.props.itemRenderer) ? null :
-                this.props.itemRenderer(this.props.items[i], renderParam)
+                this.props.itemRenderer(this.props.items[i], i, renderParam)
             }
           </div>
         </TouchDraggable>
-      ))
+      );
+
+      itemComponents.push(component);
+
+      this.itemControls[i] = component;
     }
 
     return itemComponents;

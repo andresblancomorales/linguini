@@ -1,0 +1,890 @@
+exports["(0)"] = {
+  "node": {
+    "nodeType": "host",
+    "type": "div",
+    "props": {
+      "children": [
+        {
+          "type": "TouchDraggable",
+          "key": "item_0",
+          "ref": "ref",
+          "props": {
+            "onTouchStart": "bound onTouchStart",
+            "onTouchMove": "bound onTouchMove",
+            "onTouchEnd": "bound onTouchEnd",
+            "onTouchCancel": "bound onTouchCancel",
+            "children": {
+              "type": "div",
+              "props": {
+                "draggable": true,
+                "onDragStart": "bound onItemDragged",
+                "onDragOver": "bound onItemDragOver",
+                "onDrop": "bound onItemDrop",
+                "onDragEnd": "bound onItemDragEnd",
+                "onDragLeave": "bound onItemDragLeave",
+                "children": {
+                  "type": "div",
+                  "props": {
+                    "children": "Item 1"
+                  },
+                  "_store": {}
+                }
+              },
+              "_store": {}
+            }
+          },
+          "_store": {}
+        },
+        {
+          "type": "TouchDraggable",
+          "key": "item_1",
+          "ref": "ref",
+          "props": {
+            "onTouchStart": "bound onTouchStart",
+            "onTouchMove": "bound onTouchMove",
+            "onTouchEnd": "bound onTouchEnd",
+            "onTouchCancel": "bound onTouchCancel",
+            "children": {
+              "type": "div",
+              "props": {
+                "draggable": true,
+                "onDragStart": "bound onItemDragged",
+                "onDragOver": "bound onItemDragOver",
+                "onDrop": "bound onItemDrop",
+                "onDragEnd": "bound onItemDragEnd",
+                "onDragLeave": "bound onItemDragLeave",
+                "children": {
+                  "type": "div",
+                  "props": {
+                    "children": "Item 2"
+                  },
+                  "_store": {}
+                }
+              },
+              "_store": {}
+            }
+          },
+          "_store": {}
+        }
+      ]
+    },
+    "rendered": [
+      {
+        "nodeType": "class",
+        "type": "TouchDraggable",
+        "props": {
+          "onTouchStart": "bound onTouchStart",
+          "onTouchMove": "bound onTouchMove",
+          "onTouchEnd": "bound onTouchEnd",
+          "onTouchCancel": "bound onTouchCancel",
+          "children": {
+            "type": "div",
+            "props": {
+              "draggable": true,
+              "onDragStart": "bound onItemDragged",
+              "onDragOver": "bound onItemDragOver",
+              "onDrop": "bound onItemDrop",
+              "onDragEnd": "bound onItemDragEnd",
+              "onDragLeave": "bound onItemDragLeave",
+              "children": {
+                "type": "div",
+                "props": {
+                  "children": "Item 1"
+                },
+                "_store": {}
+              }
+            },
+            "_store": {}
+          }
+        },
+        "key": "item_0",
+        "ref": "ref",
+        "rendered": {
+          "nodeType": "host",
+          "type": "div",
+          "props": {
+            "draggable": true,
+            "onDragStart": "bound onItemDragged",
+            "onDragOver": "bound onItemDragOver",
+            "onDrop": "bound onItemDrop",
+            "onDragEnd": "bound onItemDragEnd",
+            "onDragLeave": "bound onItemDragLeave",
+            "children": {
+              "type": "div",
+              "props": {
+                "children": "Item 1"
+              },
+              "_store": {}
+            }
+          },
+          "rendered": {
+            "nodeType": "host",
+            "type": "div",
+            "props": {
+              "children": "Item 1"
+            },
+            "rendered": "Item 1"
+          }
+        }
+      },
+      {
+        "nodeType": "class",
+        "type": "TouchDraggable",
+        "props": {
+          "onTouchStart": "bound onTouchStart",
+          "onTouchMove": "bound onTouchMove",
+          "onTouchEnd": "bound onTouchEnd",
+          "onTouchCancel": "bound onTouchCancel",
+          "children": {
+            "type": "div",
+            "props": {
+              "draggable": true,
+              "onDragStart": "bound onItemDragged",
+              "onDragOver": "bound onItemDragOver",
+              "onDrop": "bound onItemDrop",
+              "onDragEnd": "bound onItemDragEnd",
+              "onDragLeave": "bound onItemDragLeave",
+              "children": {
+                "type": "div",
+                "props": {
+                  "children": "Item 2"
+                },
+                "_store": {}
+              }
+            },
+            "_store": {}
+          }
+        },
+        "key": "item_1",
+        "ref": "ref",
+        "rendered": {
+          "nodeType": "host",
+          "type": "div",
+          "props": {
+            "draggable": true,
+            "onDragStart": "bound onItemDragged",
+            "onDragOver": "bound onItemDragOver",
+            "onDrop": "bound onItemDrop",
+            "onDragEnd": "bound onItemDragEnd",
+            "onDragLeave": "bound onItemDragLeave",
+            "children": {
+              "type": "div",
+              "props": {
+                "children": "Item 2"
+              },
+              "_store": {}
+            }
+          },
+          "rendered": {
+            "nodeType": "host",
+            "type": "div",
+            "props": {
+              "children": "Item 2"
+            },
+            "rendered": "Item 2"
+          }
+        }
+      }
+    ]
+  },
+  "type": "div",
+  "props": {},
+  "children": [
+    {
+      "node": {
+        "nodeType": "class",
+        "type": "TouchDraggable",
+        "props": {
+          "onTouchStart": "bound onTouchStart",
+          "onTouchMove": "bound onTouchMove",
+          "onTouchEnd": "bound onTouchEnd",
+          "onTouchCancel": "bound onTouchCancel",
+          "children": {
+            "type": "div",
+            "props": {
+              "draggable": true,
+              "onDragStart": "bound onItemDragged",
+              "onDragOver": "bound onItemDragOver",
+              "onDrop": "bound onItemDrop",
+              "onDragEnd": "bound onItemDragEnd",
+              "onDragLeave": "bound onItemDragLeave",
+              "children": {
+                "type": "div",
+                "props": {
+                  "children": "Item 1"
+                },
+                "_store": {}
+              }
+            },
+            "_store": {}
+          }
+        },
+        "key": "item_0",
+        "ref": "ref",
+        "rendered": {
+          "nodeType": "host",
+          "type": "div",
+          "props": {
+            "draggable": true,
+            "onDragStart": "bound onItemDragged",
+            "onDragOver": "bound onItemDragOver",
+            "onDrop": "bound onItemDrop",
+            "onDragEnd": "bound onItemDragEnd",
+            "onDragLeave": "bound onItemDragLeave",
+            "children": {
+              "type": "div",
+              "props": {
+                "children": "Item 1"
+              },
+              "_store": {}
+            }
+          },
+          "rendered": {
+            "nodeType": "host",
+            "type": "div",
+            "props": {
+              "children": "Item 1"
+            },
+            "rendered": "Item 1"
+          }
+        }
+      },
+      "type": "TouchDraggable",
+      "props": {
+        "onTouchStart": "bound onTouchStart",
+        "onTouchMove": "bound onTouchMove",
+        "onTouchEnd": "bound onTouchEnd",
+        "onTouchCancel": "bound onTouchCancel",
+        "key": "item_0"
+      },
+      "children": [
+        {
+          "node": {
+            "nodeType": "host",
+            "type": "div",
+            "props": {
+              "draggable": true,
+              "onDragStart": "bound onItemDragged",
+              "onDragOver": "bound onItemDragOver",
+              "onDrop": "bound onItemDrop",
+              "onDragEnd": "bound onItemDragEnd",
+              "onDragLeave": "bound onItemDragLeave",
+              "children": {
+                "type": "div",
+                "props": {
+                  "children": "Item 1"
+                },
+                "_store": {}
+              }
+            },
+            "rendered": {
+              "nodeType": "host",
+              "type": "div",
+              "props": {
+                "children": "Item 1"
+              },
+              "rendered": "Item 1"
+            }
+          },
+          "type": "div",
+          "props": {
+            "draggable": true,
+            "onDragStart": "bound onItemDragged",
+            "onDragOver": "bound onItemDragOver",
+            "onDrop": "bound onItemDrop",
+            "onDragEnd": "bound onItemDragEnd",
+            "onDragLeave": "bound onItemDragLeave"
+          },
+          "children": [
+            {
+              "node": {
+                "nodeType": "host",
+                "type": "div",
+                "props": {
+                  "children": "Item 1"
+                },
+                "rendered": "Item 1"
+              },
+              "type": "div",
+              "props": {},
+              "children": [
+                "Item 1"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "node": {
+        "nodeType": "class",
+        "type": "TouchDraggable",
+        "props": {
+          "onTouchStart": "bound onTouchStart",
+          "onTouchMove": "bound onTouchMove",
+          "onTouchEnd": "bound onTouchEnd",
+          "onTouchCancel": "bound onTouchCancel",
+          "children": {
+            "type": "div",
+            "props": {
+              "draggable": true,
+              "onDragStart": "bound onItemDragged",
+              "onDragOver": "bound onItemDragOver",
+              "onDrop": "bound onItemDrop",
+              "onDragEnd": "bound onItemDragEnd",
+              "onDragLeave": "bound onItemDragLeave",
+              "children": {
+                "type": "div",
+                "props": {
+                  "children": "Item 2"
+                },
+                "_store": {}
+              }
+            },
+            "_store": {}
+          }
+        },
+        "key": "item_1",
+        "ref": "ref",
+        "rendered": {
+          "nodeType": "host",
+          "type": "div",
+          "props": {
+            "draggable": true,
+            "onDragStart": "bound onItemDragged",
+            "onDragOver": "bound onItemDragOver",
+            "onDrop": "bound onItemDrop",
+            "onDragEnd": "bound onItemDragEnd",
+            "onDragLeave": "bound onItemDragLeave",
+            "children": {
+              "type": "div",
+              "props": {
+                "children": "Item 2"
+              },
+              "_store": {}
+            }
+          },
+          "rendered": {
+            "nodeType": "host",
+            "type": "div",
+            "props": {
+              "children": "Item 2"
+            },
+            "rendered": "Item 2"
+          }
+        }
+      },
+      "type": "TouchDraggable",
+      "props": {
+        "onTouchStart": "bound onTouchStart",
+        "onTouchMove": "bound onTouchMove",
+        "onTouchEnd": "bound onTouchEnd",
+        "onTouchCancel": "bound onTouchCancel",
+        "key": "item_1"
+      },
+      "children": [
+        {
+          "node": {
+            "nodeType": "host",
+            "type": "div",
+            "props": {
+              "draggable": true,
+              "onDragStart": "bound onItemDragged",
+              "onDragOver": "bound onItemDragOver",
+              "onDrop": "bound onItemDrop",
+              "onDragEnd": "bound onItemDragEnd",
+              "onDragLeave": "bound onItemDragLeave",
+              "children": {
+                "type": "div",
+                "props": {
+                  "children": "Item 2"
+                },
+                "_store": {}
+              }
+            },
+            "rendered": {
+              "nodeType": "host",
+              "type": "div",
+              "props": {
+                "children": "Item 2"
+              },
+              "rendered": "Item 2"
+            }
+          },
+          "type": "div",
+          "props": {
+            "draggable": true,
+            "onDragStart": "bound onItemDragged",
+            "onDragOver": "bound onItemDragOver",
+            "onDrop": "bound onItemDrop",
+            "onDragEnd": "bound onItemDragEnd",
+            "onDragLeave": "bound onItemDragLeave"
+          },
+          "children": [
+            {
+              "node": {
+                "nodeType": "host",
+                "type": "div",
+                "props": {
+                  "children": "Item 2"
+                },
+                "rendered": "Item 2"
+              },
+              "type": "div",
+              "props": {},
+              "children": [
+                "Item 2"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+};
+
+exports["should match the snapshot(0)"] = {
+  "node": {
+    "nodeType": "host",
+    "type": "div",
+    "props": {
+      "children": [
+        {
+          "type": "TouchDraggable",
+          "key": "item_0",
+          "ref": "ref",
+          "props": {
+            "onTouchStart": "bound onTouchStart",
+            "onTouchMove": "bound onTouchMove",
+            "onTouchEnd": "bound onTouchEnd",
+            "onTouchCancel": "bound onTouchCancel",
+            "children": {
+              "type": "div",
+              "props": {
+                "draggable": true,
+                "onDragStart": "bound onItemDragged",
+                "onDragOver": "bound onItemDragOver",
+                "onDrop": "bound onItemDrop",
+                "onDragEnd": "bound onItemDragEnd",
+                "onDragLeave": "bound onItemDragLeave",
+                "children": {
+                  "type": "div",
+                  "props": {
+                    "children": "Item 1"
+                  },
+                  "_store": {}
+                }
+              },
+              "_store": {}
+            }
+          },
+          "_store": {}
+        },
+        {
+          "type": "TouchDraggable",
+          "key": "item_1",
+          "ref": "ref",
+          "props": {
+            "onTouchStart": "bound onTouchStart",
+            "onTouchMove": "bound onTouchMove",
+            "onTouchEnd": "bound onTouchEnd",
+            "onTouchCancel": "bound onTouchCancel",
+            "children": {
+              "type": "div",
+              "props": {
+                "draggable": true,
+                "onDragStart": "bound onItemDragged",
+                "onDragOver": "bound onItemDragOver",
+                "onDrop": "bound onItemDrop",
+                "onDragEnd": "bound onItemDragEnd",
+                "onDragLeave": "bound onItemDragLeave",
+                "children": {
+                  "type": "div",
+                  "props": {
+                    "children": "Item 2"
+                  },
+                  "_store": {}
+                }
+              },
+              "_store": {}
+            }
+          },
+          "_store": {}
+        }
+      ]
+    },
+    "rendered": [
+      {
+        "nodeType": "class",
+        "type": "TouchDraggable",
+        "props": {
+          "onTouchStart": "bound onTouchStart",
+          "onTouchMove": "bound onTouchMove",
+          "onTouchEnd": "bound onTouchEnd",
+          "onTouchCancel": "bound onTouchCancel",
+          "children": {
+            "type": "div",
+            "props": {
+              "draggable": true,
+              "onDragStart": "bound onItemDragged",
+              "onDragOver": "bound onItemDragOver",
+              "onDrop": "bound onItemDrop",
+              "onDragEnd": "bound onItemDragEnd",
+              "onDragLeave": "bound onItemDragLeave",
+              "children": {
+                "type": "div",
+                "props": {
+                  "children": "Item 1"
+                },
+                "_store": {}
+              }
+            },
+            "_store": {}
+          }
+        },
+        "key": "item_0",
+        "ref": "ref",
+        "rendered": {
+          "nodeType": "host",
+          "type": "div",
+          "props": {
+            "draggable": true,
+            "onDragStart": "bound onItemDragged",
+            "onDragOver": "bound onItemDragOver",
+            "onDrop": "bound onItemDrop",
+            "onDragEnd": "bound onItemDragEnd",
+            "onDragLeave": "bound onItemDragLeave",
+            "children": {
+              "type": "div",
+              "props": {
+                "children": "Item 1"
+              },
+              "_store": {}
+            }
+          },
+          "rendered": {
+            "nodeType": "host",
+            "type": "div",
+            "props": {
+              "children": "Item 1"
+            },
+            "rendered": "Item 1"
+          }
+        }
+      },
+      {
+        "nodeType": "class",
+        "type": "TouchDraggable",
+        "props": {
+          "onTouchStart": "bound onTouchStart",
+          "onTouchMove": "bound onTouchMove",
+          "onTouchEnd": "bound onTouchEnd",
+          "onTouchCancel": "bound onTouchCancel",
+          "children": {
+            "type": "div",
+            "props": {
+              "draggable": true,
+              "onDragStart": "bound onItemDragged",
+              "onDragOver": "bound onItemDragOver",
+              "onDrop": "bound onItemDrop",
+              "onDragEnd": "bound onItemDragEnd",
+              "onDragLeave": "bound onItemDragLeave",
+              "children": {
+                "type": "div",
+                "props": {
+                  "children": "Item 2"
+                },
+                "_store": {}
+              }
+            },
+            "_store": {}
+          }
+        },
+        "key": "item_1",
+        "ref": "ref",
+        "rendered": {
+          "nodeType": "host",
+          "type": "div",
+          "props": {
+            "draggable": true,
+            "onDragStart": "bound onItemDragged",
+            "onDragOver": "bound onItemDragOver",
+            "onDrop": "bound onItemDrop",
+            "onDragEnd": "bound onItemDragEnd",
+            "onDragLeave": "bound onItemDragLeave",
+            "children": {
+              "type": "div",
+              "props": {
+                "children": "Item 2"
+              },
+              "_store": {}
+            }
+          },
+          "rendered": {
+            "nodeType": "host",
+            "type": "div",
+            "props": {
+              "children": "Item 2"
+            },
+            "rendered": "Item 2"
+          }
+        }
+      }
+    ]
+  },
+  "type": "div",
+  "props": {},
+  "children": [
+    {
+      "node": {
+        "nodeType": "class",
+        "type": "TouchDraggable",
+        "props": {
+          "onTouchStart": "bound onTouchStart",
+          "onTouchMove": "bound onTouchMove",
+          "onTouchEnd": "bound onTouchEnd",
+          "onTouchCancel": "bound onTouchCancel",
+          "children": {
+            "type": "div",
+            "props": {
+              "draggable": true,
+              "onDragStart": "bound onItemDragged",
+              "onDragOver": "bound onItemDragOver",
+              "onDrop": "bound onItemDrop",
+              "onDragEnd": "bound onItemDragEnd",
+              "onDragLeave": "bound onItemDragLeave",
+              "children": {
+                "type": "div",
+                "props": {
+                  "children": "Item 1"
+                },
+                "_store": {}
+              }
+            },
+            "_store": {}
+          }
+        },
+        "key": "item_0",
+        "ref": "ref",
+        "rendered": {
+          "nodeType": "host",
+          "type": "div",
+          "props": {
+            "draggable": true,
+            "onDragStart": "bound onItemDragged",
+            "onDragOver": "bound onItemDragOver",
+            "onDrop": "bound onItemDrop",
+            "onDragEnd": "bound onItemDragEnd",
+            "onDragLeave": "bound onItemDragLeave",
+            "children": {
+              "type": "div",
+              "props": {
+                "children": "Item 1"
+              },
+              "_store": {}
+            }
+          },
+          "rendered": {
+            "nodeType": "host",
+            "type": "div",
+            "props": {
+              "children": "Item 1"
+            },
+            "rendered": "Item 1"
+          }
+        }
+      },
+      "type": "TouchDraggable",
+      "props": {
+        "onTouchStart": "bound onTouchStart",
+        "onTouchMove": "bound onTouchMove",
+        "onTouchEnd": "bound onTouchEnd",
+        "onTouchCancel": "bound onTouchCancel",
+        "key": "item_0"
+      },
+      "children": [
+        {
+          "node": {
+            "nodeType": "host",
+            "type": "div",
+            "props": {
+              "draggable": true,
+              "onDragStart": "bound onItemDragged",
+              "onDragOver": "bound onItemDragOver",
+              "onDrop": "bound onItemDrop",
+              "onDragEnd": "bound onItemDragEnd",
+              "onDragLeave": "bound onItemDragLeave",
+              "children": {
+                "type": "div",
+                "props": {
+                  "children": "Item 1"
+                },
+                "_store": {}
+              }
+            },
+            "rendered": {
+              "nodeType": "host",
+              "type": "div",
+              "props": {
+                "children": "Item 1"
+              },
+              "rendered": "Item 1"
+            }
+          },
+          "type": "div",
+          "props": {
+            "draggable": true,
+            "onDragStart": "bound onItemDragged",
+            "onDragOver": "bound onItemDragOver",
+            "onDrop": "bound onItemDrop",
+            "onDragEnd": "bound onItemDragEnd",
+            "onDragLeave": "bound onItemDragLeave"
+          },
+          "children": [
+            {
+              "node": {
+                "nodeType": "host",
+                "type": "div",
+                "props": {
+                  "children": "Item 1"
+                },
+                "rendered": "Item 1"
+              },
+              "type": "div",
+              "props": {},
+              "children": [
+                "Item 1"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "node": {
+        "nodeType": "class",
+        "type": "TouchDraggable",
+        "props": {
+          "onTouchStart": "bound onTouchStart",
+          "onTouchMove": "bound onTouchMove",
+          "onTouchEnd": "bound onTouchEnd",
+          "onTouchCancel": "bound onTouchCancel",
+          "children": {
+            "type": "div",
+            "props": {
+              "draggable": true,
+              "onDragStart": "bound onItemDragged",
+              "onDragOver": "bound onItemDragOver",
+              "onDrop": "bound onItemDrop",
+              "onDragEnd": "bound onItemDragEnd",
+              "onDragLeave": "bound onItemDragLeave",
+              "children": {
+                "type": "div",
+                "props": {
+                  "children": "Item 2"
+                },
+                "_store": {}
+              }
+            },
+            "_store": {}
+          }
+        },
+        "key": "item_1",
+        "ref": "ref",
+        "rendered": {
+          "nodeType": "host",
+          "type": "div",
+          "props": {
+            "draggable": true,
+            "onDragStart": "bound onItemDragged",
+            "onDragOver": "bound onItemDragOver",
+            "onDrop": "bound onItemDrop",
+            "onDragEnd": "bound onItemDragEnd",
+            "onDragLeave": "bound onItemDragLeave",
+            "children": {
+              "type": "div",
+              "props": {
+                "children": "Item 2"
+              },
+              "_store": {}
+            }
+          },
+          "rendered": {
+            "nodeType": "host",
+            "type": "div",
+            "props": {
+              "children": "Item 2"
+            },
+            "rendered": "Item 2"
+          }
+        }
+      },
+      "type": "TouchDraggable",
+      "props": {
+        "onTouchStart": "bound onTouchStart",
+        "onTouchMove": "bound onTouchMove",
+        "onTouchEnd": "bound onTouchEnd",
+        "onTouchCancel": "bound onTouchCancel",
+        "key": "item_1"
+      },
+      "children": [
+        {
+          "node": {
+            "nodeType": "host",
+            "type": "div",
+            "props": {
+              "draggable": true,
+              "onDragStart": "bound onItemDragged",
+              "onDragOver": "bound onItemDragOver",
+              "onDrop": "bound onItemDrop",
+              "onDragEnd": "bound onItemDragEnd",
+              "onDragLeave": "bound onItemDragLeave",
+              "children": {
+                "type": "div",
+                "props": {
+                  "children": "Item 2"
+                },
+                "_store": {}
+              }
+            },
+            "rendered": {
+              "nodeType": "host",
+              "type": "div",
+              "props": {
+                "children": "Item 2"
+              },
+              "rendered": "Item 2"
+            }
+          },
+          "type": "div",
+          "props": {
+            "draggable": true,
+            "onDragStart": "bound onItemDragged",
+            "onDragOver": "bound onItemDragOver",
+            "onDrop": "bound onItemDrop",
+            "onDragEnd": "bound onItemDragEnd",
+            "onDragLeave": "bound onItemDragLeave"
+          },
+          "children": [
+            {
+              "node": {
+                "nodeType": "host",
+                "type": "div",
+                "props": {
+                  "children": "Item 2"
+                },
+                "rendered": "Item 2"
+              },
+              "type": "div",
+              "props": {},
+              "children": [
+                "Item 2"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+};
+

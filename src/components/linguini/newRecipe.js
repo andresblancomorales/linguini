@@ -2,30 +2,10 @@ import React from 'react';
 import FormComponent from './layout/formComponent';
 import FormField from '../misc/formField';
 import Bubble from './layout/bubble';
-import NewStep from './recipes/newStep';
 import {isDefined} from '../../utils/utilities';
 import IngredientsManagement from './recipes/ingredientsManagement';
 import PreparationManagement from "./recipes/preparationManagement";
-
-const RecipeForm = {
-  name: {
-    validate: (value) => {
-      return Promise.resolve(value.length > 5);
-    }
-  },
-  ingredients: {
-    defaultValue: [],
-    validate: (value) => {
-      return Promise.resolve(value.length > 0);
-    }
-  },
-  preparation: {
-    defaultValue: [],
-    validate: (value) => {
-      return Promise.resolve(value.length > 0);
-    }
-  }
-};
+import {RecipeForm} from '../../forms/recipeForm';
 
 export default class NewRecipe extends FormComponent {
 
@@ -34,7 +14,7 @@ export default class NewRecipe extends FormComponent {
 
     this.state = {
       ...this.state,
-      step: 2
+      step: 0
     };
 
     this.steps = [
@@ -60,7 +40,14 @@ export default class NewRecipe extends FormComponent {
     this.setState({
       ...this.state,
       step: this.state.step + 1
-    })
+    });
+  }
+
+  previousStep() {
+    this.setState({
+      ...this.state,
+      step: this.state.step - 1
+    });
   }
 
   renderNameStep() {
@@ -71,6 +58,7 @@ export default class NewRecipe extends FormComponent {
         </Bubble>
         <Bubble direction='left'>
           <FormField placeholder='Recipe Name'
+                     value={this.state.form.name.value}
                      onChange={this.onFieldChange.bind(this, 'name')}/>
         </Bubble>
         {
@@ -111,7 +99,8 @@ export default class NewRecipe extends FormComponent {
                              ingredients={this.state.form.ingredients.value}
                              onIngredientAdded={this.onIngredientAdded.bind(this)}
                              onIngredientRemoved={this.removeIngredient.bind(this)}
-                             onSubmit={this.nextStep.bind(this)}/>
+                             onSubmit={this.nextStep.bind(this)}
+                             onCancel={this.previousStep.bind(this)}/>
     );
   }
 
@@ -140,11 +129,19 @@ export default class NewRecipe extends FormComponent {
     this.setFormField('preparation', [...this.state.form.preparation.value, step.step]);
   }
 
+  onStepRemoved(step, index) {
+    let newSteps = [...this.state.form.preparation.value];
+    newSteps.splice(index, 1);
+    this.setFormField('preparation', newSteps);
+  }
+
   renderPreparationStep() {
     return (
       <PreparationManagement steps={this.state.form.preparation.value}
                              onStepAdded={this.onStepAdded.bind(this)}
-                             onStepMoved={this.onStepMoved.bind(this)}/>
+                             onStepMoved={this.onStepMoved.bind(this)}
+                             onStepRemoved={this.onStepRemoved.bind(this)}
+                             onCancel={this.previousStep.bind(this)}/>
     );
   }
 

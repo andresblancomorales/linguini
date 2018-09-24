@@ -2,14 +2,7 @@ import React from 'react';
 import FormComponent from '../layout/formComponent';
 import FormField from "../../misc/formField";
 import * as _ from '../../../utils/utilities';
-
-const StepForm = {
-  step: {
-    validate: (value) => {
-      return Promise.resolve(value.length > 5)
-    }
-  }
-};
+import {StepForm} from '../../../forms/stepForm';
 
 export default class NewStep extends FormComponent {
   constructor(props) {

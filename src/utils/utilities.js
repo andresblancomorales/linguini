@@ -10,6 +10,14 @@ export function isFunction(variable) {
   return typeof variable === 'function';
 }
 
+export function isString(variable) {
+  return typeof variable === 'string';
+}
+
+export function isArray(variable) {
+  return Array.isArray(variable);
+}
+
 export function navigateTo(url) {
   window.location.replace(url);
 }

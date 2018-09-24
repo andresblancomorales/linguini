@@ -1,0 +1,20 @@
+exports["should match the snapshot(0)"] = {
+  "node": {
+    "nodeType": "host",
+    "type": "div",
+    "props": {
+      "onTouchEnd": "bound onTouchEnd",
+      "onTouchCancel": "bound onTouchCancel",
+      "onTouchStart": "bound onTouchStart",
+      "onTouchMove": "bound onTouchMove"
+    }
+  },
+  "type": "div",
+  "props": {
+    "onTouchEnd": "bound onTouchEnd",
+    "onTouchCancel": "bound onTouchCancel",
+    "onTouchStart": "bound onTouchStart",
+    "onTouchMove": "bound onTouchMove"
+  }
+};
+

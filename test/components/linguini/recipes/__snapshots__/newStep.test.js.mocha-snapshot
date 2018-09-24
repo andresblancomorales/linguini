@@ -1,0 +1,424 @@
+exports["should match the snapshot(0)"] = {
+  "node": {
+    "nodeType": "host",
+    "type": "div",
+    "props": {
+      "className": "stepForm",
+      "children": [
+        {
+          "type": "FormField",
+          "props": {
+            "placeholder": "Preparation Step",
+            "multiline": true,
+            "className": "preparationStep",
+            "value": "",
+            "onChange": "bound onFieldChange"
+          },
+          "_store": {}
+        },
+        {
+          "type": "button",
+          "props": {
+            "onClick": "bound handleFormSubmit",
+            "className": "stepSubmit",
+            "disabled": true,
+            "children": "Next Step"
+          },
+          "_store": {}
+        }
+      ]
+    },
+    "rendered": [
+      {
+        "nodeType": "class",
+        "type": "FormField",
+        "props": {
+          "placeholder": "Preparation Step",
+          "multiline": true,
+          "className": "preparationStep",
+          "value": "",
+          "onChange": "bound onFieldChange"
+        }
+      },
+      {
+        "nodeType": "host",
+        "type": "button",
+        "props": {
+          "onClick": "bound handleFormSubmit",
+          "className": "stepSubmit",
+          "disabled": true,
+          "children": "Next Step"
+        },
+        "rendered": "Next Step"
+      }
+    ]
+  },
+  "type": "div",
+  "props": {
+    "className": "stepForm"
+  },
+  "children": [
+    {
+      "node": {
+        "nodeType": "class",
+        "type": "FormField",
+        "props": {
+          "placeholder": "Preparation Step",
+          "multiline": true,
+          "className": "preparationStep",
+          "value": "",
+          "onChange": "bound onFieldChange"
+        }
+      },
+      "type": "FormField",
+      "props": {
+        "placeholder": "Preparation Step",
+        "multiline": true,
+        "className": "preparationStep",
+        "value": "",
+        "onChange": "bound onFieldChange"
+      }
+    },
+    {
+      "node": {
+        "nodeType": "host",
+        "type": "button",
+        "props": {
+          "onClick": "bound handleFormSubmit",
+          "className": "stepSubmit",
+          "disabled": true,
+          "children": "Next Step"
+        },
+        "rendered": "Next Step"
+      },
+      "type": "button",
+      "props": {
+        "onClick": "bound handleFormSubmit",
+        "className": "stepSubmit",
+        "disabled": true
+      },
+      "children": [
+        "Next Step"
+      ]
+    }
+  ]
+};
+
+exports["should match the snapshopt when there are error(0)"] = {
+  "node": {
+    "nodeType": "host",
+    "type": "div",
+    "props": {
+      "className": "stepForm",
+      "children": [
+        {
+          "type": "FormField",
+          "props": {
+            "placeholder": "Preparation Step",
+            "multiline": true,
+            "className": "preparationStep",
+            "value": "",
+            "onChange": "bound onFieldChange"
+          },
+          "_store": {}
+        },
+        {
+          "type": "button",
+          "props": {
+            "onClick": "bound handleFormSubmit",
+            "className": "stepSubmit",
+            "disabled": true,
+            "children": "Next Step"
+          },
+          "_store": {}
+        }
+      ]
+    },
+    "rendered": [
+      {
+        "nodeType": "class",
+        "type": "FormField",
+        "props": {
+          "placeholder": "Preparation Step",
+          "multiline": true,
+          "className": "preparationStep",
+          "value": "",
+          "onChange": "bound onFieldChange"
+        }
+      },
+      {
+        "nodeType": "host",
+        "type": "button",
+        "props": {
+          "onClick": "bound handleFormSubmit",
+          "className": "stepSubmit",
+          "disabled": true,
+          "children": "Next Step"
+        },
+        "rendered": "Next Step"
+      }
+    ]
+  },
+  "type": "div",
+  "props": {
+    "className": "stepForm"
+  },
+  "children": [
+    {
+      "node": {
+        "nodeType": "class",
+        "type": "FormField",
+        "props": {
+          "placeholder": "Preparation Step",
+          "multiline": true,
+          "className": "preparationStep",
+          "value": "",
+          "onChange": "bound onFieldChange"
+        }
+      },
+      "type": "FormField",
+      "props": {
+        "placeholder": "Preparation Step",
+        "multiline": true,
+        "className": "preparationStep",
+        "value": "",
+        "onChange": "bound onFieldChange"
+      }
+    },
+    {
+      "node": {
+        "nodeType": "host",
+        "type": "button",
+        "props": {
+          "onClick": "bound handleFormSubmit",
+          "className": "stepSubmit",
+          "disabled": true,
+          "children": "Next Step"
+        },
+        "rendered": "Next Step"
+      },
+      "type": "button",
+      "props": {
+        "onClick": "bound handleFormSubmit",
+        "className": "stepSubmit",
+        "disabled": true
+      },
+      "children": [
+        "Next Step"
+      ]
+    }
+  ]
+};
+
+exports["should match the snapshot when data is valid(0)"] = {
+  "node": {
+    "nodeType": "host",
+    "type": "div",
+    "props": {
+      "className": "stepForm",
+      "children": [
+        {
+          "type": "FormField",
+          "props": {
+            "placeholder": "Preparation Step",
+            "multiline": true,
+            "className": "preparationStep",
+            "value": "Mix the ingredients",
+            "onChange": "bound onFieldChange"
+          },
+          "_store": {}
+        },
+        {
+          "type": "button",
+          "props": {
+            "onClick": "bound handleFormSubmit",
+            "className": "stepSubmit",
+            "disabled": false,
+            "children": "Next Step"
+          },
+          "_store": {}
+        }
+      ]
+    },
+    "rendered": [
+      {
+        "nodeType": "class",
+        "type": "FormField",
+        "props": {
+          "placeholder": "Preparation Step",
+          "multiline": true,
+          "className": "preparationStep",
+          "value": "Mix the ingredients",
+          "onChange": "bound onFieldChange"
+        }
+      },
+      {
+        "nodeType": "host",
+        "type": "button",
+        "props": {
+          "onClick": "bound handleFormSubmit",
+          "className": "stepSubmit",
+          "disabled": false,
+          "children": "Next Step"
+        },
+        "rendered": "Next Step"
+      }
+    ]
+  },
+  "type": "div",
+  "props": {
+    "className": "stepForm"
+  },
+  "children": [
+    {
+      "node": {
+        "nodeType": "class",
+        "type": "FormField",
+        "props": {
+          "placeholder": "Preparation Step",
+          "multiline": true,
+          "className": "preparationStep",
+          "value": "Mix the ingredients",
+          "onChange": "bound onFieldChange"
+        }
+      },
+      "type": "FormField",
+      "props": {
+        "placeholder": "Preparation Step",
+        "multiline": true,
+        "className": "preparationStep",
+        "value": "Mix the ingredients",
+        "onChange": "bound onFieldChange"
+      }
+    },
+    {
+      "node": {
+        "nodeType": "host",
+        "type": "button",
+        "props": {
+          "onClick": "bound handleFormSubmit",
+          "className": "stepSubmit",
+          "disabled": false,
+          "children": "Next Step"
+        },
+        "rendered": "Next Step"
+      },
+      "type": "button",
+      "props": {
+        "onClick": "bound handleFormSubmit",
+        "className": "stepSubmit",
+        "disabled": false
+      },
+      "children": [
+        "Next Step"
+      ]
+    }
+  ]
+};
+
+exports["should match the snapshot when there are errors(0)"] = {
+  "node": {
+    "nodeType": "host",
+    "type": "div",
+    "props": {
+      "className": "stepForm",
+      "children": [
+        {
+          "type": "FormField",
+          "props": {
+            "placeholder": "Preparation Step",
+            "multiline": true,
+            "className": "preparationStep",
+            "value": "",
+            "onChange": "bound onFieldChange"
+          },
+          "_store": {}
+        },
+        {
+          "type": "button",
+          "props": {
+            "onClick": "bound handleFormSubmit",
+            "className": "stepSubmit",
+            "disabled": false,
+            "children": "Next Step"
+          },
+          "_store": {}
+        }
+      ]
+    },
+    "rendered": [
+      {
+        "nodeType": "class",
+        "type": "FormField",
+        "props": {
+          "placeholder": "Preparation Step",
+          "multiline": true,
+          "className": "preparationStep",
+          "value": "",
+          "onChange": "bound onFieldChange"
+        }
+      },
+      {
+        "nodeType": "host",
+        "type": "button",
+        "props": {
+          "onClick": "bound handleFormSubmit",
+          "className": "stepSubmit",
+          "disabled": false,
+          "children": "Next Step"
+        },
+        "rendered": "Next Step"
+      }
+    ]
+  },
+  "type": "div",
+  "props": {
+    "className": "stepForm"
+  },
+  "children": [
+    {
+      "node": {
+        "nodeType": "class",
+        "type": "FormField",
+        "props": {
+          "placeholder": "Preparation Step",
+          "multiline": true,
+          "className": "preparationStep",
+          "value": "",
+          "onChange": "bound onFieldChange"
+        }
+      },
+      "type": "FormField",
+      "props": {
+        "placeholder": "Preparation Step",
+        "multiline": true,
+        "className": "preparationStep",
+        "value": "",
+        "onChange": "bound onFieldChange"
+      }
+    },
+    {
+      "node": {
+        "nodeType": "host",
+        "type": "button",
+        "props": {
+          "onClick": "bound handleFormSubmit",
+          "className": "stepSubmit",
+          "disabled": false,
+          "children": "Next Step"
+        },
+        "rendered": "Next Step"
+      },
+      "type": "button",
+      "props": {
+        "onClick": "bound handleFormSubmit",
+        "className": "stepSubmit",
+        "disabled": false
+      },
+      "children": [
+        "Next Step"
+      ]
+    }
+  ]
+};
+

@@ -1,20 +1,8 @@
 import React from 'react';
 import FormComponent from '../layout/formComponent';
-import FormField from "../../misc/formField";
+import FormField from '../../misc/formField';
 import * as _ from '../../../utils/utilities';
-
-const IngredientForm = {
-  name: {
-    validate: (value) => {
-      return Promise.resolve(value.length > 5)
-    }
-  },
-  quantity: {
-    validate: (value) => {
-      return Promise.resolve(typeof value !== 'undefined')
-    }
-  }
-};
+import {IngredientForm} from '../../../forms/ingredientForm';
 
 export default class NewIngredient extends FormComponent {
   constructor(props) {
@@ -47,7 +35,8 @@ export default class NewIngredient extends FormComponent {
                    onChange={this.onFieldChange.bind(this, 'quantity')}/>
         <button onClick={this.handleFormSubmit.bind(this)}
                 className='ingredientSubmit'
-                disabled={hasError}>+</button>
+                disabled={hasError}>+
+        </button>
       </div>
     )
   }

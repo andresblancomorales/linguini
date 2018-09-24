@@ -1,0 +1,640 @@
+exports["should match the snapshot(0)"] = {
+  "node": {
+    "nodeType": "host",
+    "type": "div",
+    "props": {
+      "className": "bubbleContainer",
+      "children": [
+        {
+          "type": "Bubble",
+          "props": {
+            "direction": "right",
+            "children": {
+              "type": "span",
+              "props": {
+                "children": "Miam-miam... I can already taste it chef. Now tell me, what do we do with the ingredients?"
+              },
+              "_store": {}
+            }
+          },
+          "_store": {}
+        },
+        {
+          "type": "DraggableList",
+          "props": {
+            "className": "notepad preparation",
+            "items": [],
+            "itemRenderer": "bound renderItem",
+            "onItemMoved": "bound handleStepMoved"
+          },
+          "_store": {}
+        },
+        {
+          "type": "Bubble",
+          "props": {
+            "className": "stepBubble",
+            "direction": "left",
+            "children": [
+              {
+                "type": "NewStep",
+                "props": {
+                  "onSubmit": "bound handleStepAdded"
+                },
+                "_store": {}
+              },
+              null
+            ]
+          },
+          "_store": {}
+        }
+      ]
+    },
+    "ref": "ref",
+    "rendered": [
+      {
+        "nodeType": "class",
+        "type": "Bubble",
+        "props": {
+          "direction": "right",
+          "children": {
+            "type": "span",
+            "props": {
+              "children": "Miam-miam... I can already taste it chef. Now tell me, what do we do with the ingredients?"
+            },
+            "_store": {}
+          }
+        },
+        "rendered": {
+          "nodeType": "host",
+          "type": "span",
+          "props": {
+            "children": "Miam-miam... I can already taste it chef. Now tell me, what do we do with the ingredients?"
+          },
+          "rendered": "Miam-miam... I can already taste it chef. Now tell me, what do we do with the ingredients?"
+        }
+      },
+      {
+        "nodeType": "class",
+        "type": "DraggableList",
+        "props": {
+          "className": "notepad preparation",
+          "items": [],
+          "itemRenderer": "bound renderItem",
+          "onItemMoved": "bound handleStepMoved"
+        }
+      },
+      {
+        "nodeType": "class",
+        "type": "Bubble",
+        "props": {
+          "className": "stepBubble",
+          "direction": "left",
+          "children": [
+            {
+              "type": "NewStep",
+              "props": {
+                "onSubmit": "bound handleStepAdded"
+              },
+              "_store": {}
+            },
+            null
+          ]
+        },
+        "rendered": [
+          {
+            "nodeType": "class",
+            "type": "NewStep",
+            "props": {
+              "onSubmit": "bound handleStepAdded"
+            }
+          },
+          null
+        ]
+      }
+    ]
+  },
+  "type": "div",
+  "props": {
+    "className": "bubbleContainer"
+  },
+  "children": [
+    {
+      "node": {
+        "nodeType": "class",
+        "type": "Bubble",
+        "props": {
+          "direction": "right",
+          "children": {
+            "type": "span",
+            "props": {
+              "children": "Miam-miam... I can already taste it chef. Now tell me, what do we do with the ingredients?"
+            },
+            "_store": {}
+          }
+        },
+        "rendered": {
+          "nodeType": "host",
+          "type": "span",
+          "props": {
+            "children": "Miam-miam... I can already taste it chef. Now tell me, what do we do with the ingredients?"
+          },
+          "rendered": "Miam-miam... I can already taste it chef. Now tell me, what do we do with the ingredients?"
+        }
+      },
+      "type": "Bubble",
+      "props": {
+        "direction": "right"
+      },
+      "children": [
+        {
+          "node": {
+            "nodeType": "host",
+            "type": "span",
+            "props": {
+              "children": "Miam-miam... I can already taste it chef. Now tell me, what do we do with the ingredients?"
+            },
+            "rendered": "Miam-miam... I can already taste it chef. Now tell me, what do we do with the ingredients?"
+          },
+          "type": "span",
+          "props": {},
+          "children": [
+            "Miam-miam... I can already taste it chef. Now tell me, what do we do with the ingredients?"
+          ]
+        }
+      ]
+    },
+    {
+      "node": {
+        "nodeType": "class",
+        "type": "DraggableList",
+        "props": {
+          "className": "notepad preparation",
+          "items": [],
+          "itemRenderer": "bound renderItem",
+          "onItemMoved": "bound handleStepMoved"
+        }
+      },
+      "type": "DraggableList",
+      "props": {
+        "className": "notepad preparation",
+        "items": [],
+        "itemRenderer": "bound renderItem",
+        "onItemMoved": "bound handleStepMoved"
+      }
+    },
+    {
+      "node": {
+        "nodeType": "class",
+        "type": "Bubble",
+        "props": {
+          "className": "stepBubble",
+          "direction": "left",
+          "children": [
+            {
+              "type": "NewStep",
+              "props": {
+                "onSubmit": "bound handleStepAdded"
+              },
+              "_store": {}
+            },
+            null
+          ]
+        },
+        "rendered": [
+          {
+            "nodeType": "class",
+            "type": "NewStep",
+            "props": {
+              "onSubmit": "bound handleStepAdded"
+            }
+          },
+          null
+        ]
+      },
+      "type": "Bubble",
+      "props": {
+        "className": "stepBubble",
+        "direction": "left"
+      },
+      "children": [
+        {
+          "node": {
+            "nodeType": "class",
+            "type": "NewStep",
+            "props": {
+              "onSubmit": "bound handleStepAdded"
+            }
+          },
+          "type": "NewStep",
+          "props": {
+            "onSubmit": "bound handleStepAdded"
+          }
+        }
+      ]
+    }
+  ]
+};
+
+exports["should match the snapshot when it has ingredients(0)"] = {
+  "node": {
+    "nodeType": "host",
+    "type": "div",
+    "props": {
+      "className": "bubbleContainer",
+      "children": [
+        {
+          "type": "Bubble",
+          "props": {
+            "direction": "right",
+            "children": {
+              "type": "span",
+              "props": {
+                "children": "Miam-miam... I can already taste it chef. Now tell me, what do we do with the ingredients?"
+              },
+              "_store": {}
+            }
+          },
+          "_store": {}
+        },
+        {
+          "type": "DraggableList",
+          "props": {
+            "className": "notepad preparation",
+            "items": [
+              "Mix all the ingredients"
+            ],
+            "itemRenderer": "bound renderItem",
+            "onItemMoved": "bound handleStepMoved"
+          },
+          "_store": {}
+        },
+        {
+          "type": "Bubble",
+          "props": {
+            "className": "stepBubble",
+            "direction": "left",
+            "children": [
+              {
+                "type": "NewStep",
+                "props": {
+                  "onSubmit": "bound handleStepAdded"
+                },
+                "_store": {}
+              },
+              {
+                "type": "span",
+                "props": {
+                  "children": [
+                    "Easy huh? ",
+                    {
+                      "type": "a",
+                      "props": {
+                        "onClick": "bound handleOnSubmit",
+                        "children": "That's it!"
+                      },
+                      "_store": {}
+                    }
+                  ]
+                },
+                "_store": {}
+              }
+            ]
+          },
+          "_store": {}
+        }
+      ]
+    },
+    "ref": "ref",
+    "rendered": [
+      {
+        "nodeType": "class",
+        "type": "Bubble",
+        "props": {
+          "direction": "right",
+          "children": {
+            "type": "span",
+            "props": {
+              "children": "Miam-miam... I can already taste it chef. Now tell me, what do we do with the ingredients?"
+            },
+            "_store": {}
+          }
+        },
+        "rendered": {
+          "nodeType": "host",
+          "type": "span",
+          "props": {
+            "children": "Miam-miam... I can already taste it chef. Now tell me, what do we do with the ingredients?"
+          },
+          "rendered": "Miam-miam... I can already taste it chef. Now tell me, what do we do with the ingredients?"
+        }
+      },
+      {
+        "nodeType": "class",
+        "type": "DraggableList",
+        "props": {
+          "className": "notepad preparation",
+          "items": [
+            "Mix all the ingredients"
+          ],
+          "itemRenderer": "bound renderItem",
+          "onItemMoved": "bound handleStepMoved"
+        }
+      },
+      {
+        "nodeType": "class",
+        "type": "Bubble",
+        "props": {
+          "className": "stepBubble",
+          "direction": "left",
+          "children": [
+            {
+              "type": "NewStep",
+              "props": {
+                "onSubmit": "bound handleStepAdded"
+              },
+              "_store": {}
+            },
+            {
+              "type": "span",
+              "props": {
+                "children": [
+                  "Easy huh? ",
+                  {
+                    "type": "a",
+                    "props": {
+                      "onClick": "bound handleOnSubmit",
+                      "children": "That's it!"
+                    },
+                    "_store": {}
+                  }
+                ]
+              },
+              "_store": {}
+            }
+          ]
+        },
+        "rendered": [
+          {
+            "nodeType": "class",
+            "type": "NewStep",
+            "props": {
+              "onSubmit": "bound handleStepAdded"
+            }
+          },
+          {
+            "nodeType": "host",
+            "type": "span",
+            "props": {
+              "children": [
+                "Easy huh? ",
+                {
+                  "type": "a",
+                  "props": {
+                    "onClick": "bound handleOnSubmit",
+                    "children": "That's it!"
+                  },
+                  "_store": {}
+                }
+              ]
+            },
+            "rendered": [
+              "Easy huh? ",
+              {
+                "nodeType": "host",
+                "type": "a",
+                "props": {
+                  "onClick": "bound handleOnSubmit",
+                  "children": "That's it!"
+                },
+                "rendered": "That's it!"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "type": "div",
+  "props": {
+    "className": "bubbleContainer"
+  },
+  "children": [
+    {
+      "node": {
+        "nodeType": "class",
+        "type": "Bubble",
+        "props": {
+          "direction": "right",
+          "children": {
+            "type": "span",
+            "props": {
+              "children": "Miam-miam... I can already taste it chef. Now tell me, what do we do with the ingredients?"
+            },
+            "_store": {}
+          }
+        },
+        "rendered": {
+          "nodeType": "host",
+          "type": "span",
+          "props": {
+            "children": "Miam-miam... I can already taste it chef. Now tell me, what do we do with the ingredients?"
+          },
+          "rendered": "Miam-miam... I can already taste it chef. Now tell me, what do we do with the ingredients?"
+        }
+      },
+      "type": "Bubble",
+      "props": {
+        "direction": "right"
+      },
+      "children": [
+        {
+          "node": {
+            "nodeType": "host",
+            "type": "span",
+            "props": {
+              "children": "Miam-miam... I can already taste it chef. Now tell me, what do we do with the ingredients?"
+            },
+            "rendered": "Miam-miam... I can already taste it chef. Now tell me, what do we do with the ingredients?"
+          },
+          "type": "span",
+          "props": {},
+          "children": [
+            "Miam-miam... I can already taste it chef. Now tell me, what do we do with the ingredients?"
+          ]
+        }
+      ]
+    },
+    {
+      "node": {
+        "nodeType": "class",
+        "type": "DraggableList",
+        "props": {
+          "className": "notepad preparation",
+          "items": [
+            "Mix all the ingredients"
+          ],
+          "itemRenderer": "bound renderItem",
+          "onItemMoved": "bound handleStepMoved"
+        }
+      },
+      "type": "DraggableList",
+      "props": {
+        "className": "notepad preparation",
+        "items": [
+          "Mix all the ingredients"
+        ],
+        "itemRenderer": "bound renderItem",
+        "onItemMoved": "bound handleStepMoved"
+      }
+    },
+    {
+      "node": {
+        "nodeType": "class",
+        "type": "Bubble",
+        "props": {
+          "className": "stepBubble",
+          "direction": "left",
+          "children": [
+            {
+              "type": "NewStep",
+              "props": {
+                "onSubmit": "bound handleStepAdded"
+              },
+              "_store": {}
+            },
+            {
+              "type": "span",
+              "props": {
+                "children": [
+                  "Easy huh? ",
+                  {
+                    "type": "a",
+                    "props": {
+                      "onClick": "bound handleOnSubmit",
+                      "children": "That's it!"
+                    },
+                    "_store": {}
+                  }
+                ]
+              },
+              "_store": {}
+            }
+          ]
+        },
+        "rendered": [
+          {
+            "nodeType": "class",
+            "type": "NewStep",
+            "props": {
+              "onSubmit": "bound handleStepAdded"
+            }
+          },
+          {
+            "nodeType": "host",
+            "type": "span",
+            "props": {
+              "children": [
+                "Easy huh? ",
+                {
+                  "type": "a",
+                  "props": {
+                    "onClick": "bound handleOnSubmit",
+                    "children": "That's it!"
+                  },
+                  "_store": {}
+                }
+              ]
+            },
+            "rendered": [
+              "Easy huh? ",
+              {
+                "nodeType": "host",
+                "type": "a",
+                "props": {
+                  "onClick": "bound handleOnSubmit",
+                  "children": "That's it!"
+                },
+                "rendered": "That's it!"
+              }
+            ]
+          }
+        ]
+      },
+      "type": "Bubble",
+      "props": {
+        "className": "stepBubble",
+        "direction": "left"
+      },
+      "children": [
+        {
+          "node": {
+            "nodeType": "class",
+            "type": "NewStep",
+            "props": {
+              "onSubmit": "bound handleStepAdded"
+            }
+          },
+          "type": "NewStep",
+          "props": {
+            "onSubmit": "bound handleStepAdded"
+          }
+        },
+        {
+          "node": {
+            "nodeType": "host",
+            "type": "span",
+            "props": {
+              "children": [
+                "Easy huh? ",
+                {
+                  "type": "a",
+                  "props": {
+                    "onClick": "bound handleOnSubmit",
+                    "children": "That's it!"
+                  },
+                  "_store": {}
+                }
+              ]
+            },
+            "rendered": [
+              "Easy huh? ",
+              {
+                "nodeType": "host",
+                "type": "a",
+                "props": {
+                  "onClick": "bound handleOnSubmit",
+                  "children": "That's it!"
+                },
+                "rendered": "That's it!"
+              }
+            ]
+          },
+          "type": "span",
+          "props": {},
+          "children": [
+            "Easy huh? ",
+            {
+              "node": {
+                "nodeType": "host",
+                "type": "a",
+                "props": {
+                  "onClick": "bound handleOnSubmit",
+                  "children": "That's it!"
+                },
+                "rendered": "That's it!"
+              },
+              "type": "a",
+              "props": {
+                "onClick": "bound handleOnSubmit"
+              },
+              "children": [
+                "That's it!"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+};
+

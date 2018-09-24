@@ -1,0 +1,423 @@
+exports["should match the snapshot(0)"] = {
+  "node": {
+    "nodeType": "host",
+    "type": "div",
+    "props": {
+      "className": "ingredientForm",
+      "children": [
+        {
+          "type": "FormField",
+          "props": {
+            "placeholder": "Name",
+            "className": "ingredientName",
+            "value": "",
+            "onChange": "bound onFieldChange"
+          },
+          "_store": {}
+        },
+        {
+          "type": "FormField",
+          "props": {
+            "placeholder": "Quantity",
+            "className": "ingredientQuantity",
+            "value": "",
+            "onChange": "bound onFieldChange"
+          },
+          "_store": {}
+        },
+        {
+          "type": "button",
+          "props": {
+            "onClick": "bound handleFormSubmit",
+            "className": "ingredientSubmit",
+            "disabled": true,
+            "children": "+"
+          },
+          "_store": {}
+        }
+      ]
+    },
+    "rendered": [
+      {
+        "nodeType": "class",
+        "type": "FormField",
+        "props": {
+          "placeholder": "Name",
+          "className": "ingredientName",
+          "value": "",
+          "onChange": "bound onFieldChange"
+        }
+      },
+      {
+        "nodeType": "class",
+        "type": "FormField",
+        "props": {
+          "placeholder": "Quantity",
+          "className": "ingredientQuantity",
+          "value": "",
+          "onChange": "bound onFieldChange"
+        }
+      },
+      {
+        "nodeType": "host",
+        "type": "button",
+        "props": {
+          "onClick": "bound handleFormSubmit",
+          "className": "ingredientSubmit",
+          "disabled": true,
+          "children": "+"
+        },
+        "rendered": "+"
+      }
+    ]
+  },
+  "type": "div",
+  "props": {
+    "className": "ingredientForm"
+  },
+  "children": [
+    {
+      "node": {
+        "nodeType": "class",
+        "type": "FormField",
+        "props": {
+          "placeholder": "Name",
+          "className": "ingredientName",
+          "value": "",
+          "onChange": "bound onFieldChange"
+        }
+      },
+      "type": "FormField",
+      "props": {
+        "placeholder": "Name",
+        "className": "ingredientName",
+        "value": "",
+        "onChange": "bound onFieldChange"
+      }
+    },
+    {
+      "node": {
+        "nodeType": "class",
+        "type": "FormField",
+        "props": {
+          "placeholder": "Quantity",
+          "className": "ingredientQuantity",
+          "value": "",
+          "onChange": "bound onFieldChange"
+        }
+      },
+      "type": "FormField",
+      "props": {
+        "placeholder": "Quantity",
+        "className": "ingredientQuantity",
+        "value": "",
+        "onChange": "bound onFieldChange"
+      }
+    },
+    {
+      "node": {
+        "nodeType": "host",
+        "type": "button",
+        "props": {
+          "onClick": "bound handleFormSubmit",
+          "className": "ingredientSubmit",
+          "disabled": true,
+          "children": "+"
+        },
+        "rendered": "+"
+      },
+      "type": "button",
+      "props": {
+        "onClick": "bound handleFormSubmit",
+        "className": "ingredientSubmit",
+        "disabled": true
+      },
+      "children": [
+        "+"
+      ]
+    }
+  ]
+};
+
+exports["should match the snapshot when there are errors(0)"] = {
+  "node": {
+    "nodeType": "host",
+    "type": "div",
+    "props": {
+      "className": "ingredientForm",
+      "children": [
+        {
+          "type": "FormField",
+          "props": {
+            "placeholder": "Name",
+            "className": "ingredientName",
+            "value": "",
+            "onChange": "bound onFieldChange"
+          },
+          "_store": {}
+        },
+        {
+          "type": "FormField",
+          "props": {
+            "placeholder": "Quantity",
+            "className": "ingredientQuantity",
+            "value": "",
+            "onChange": "bound onFieldChange"
+          },
+          "_store": {}
+        },
+        {
+          "type": "button",
+          "props": {
+            "onClick": "bound handleFormSubmit",
+            "className": "ingredientSubmit",
+            "disabled": true,
+            "children": "+"
+          },
+          "_store": {}
+        }
+      ]
+    },
+    "rendered": [
+      {
+        "nodeType": "class",
+        "type": "FormField",
+        "props": {
+          "placeholder": "Name",
+          "className": "ingredientName",
+          "value": "",
+          "onChange": "bound onFieldChange"
+        }
+      },
+      {
+        "nodeType": "class",
+        "type": "FormField",
+        "props": {
+          "placeholder": "Quantity",
+          "className": "ingredientQuantity",
+          "value": "",
+          "onChange": "bound onFieldChange"
+        }
+      },
+      {
+        "nodeType": "host",
+        "type": "button",
+        "props": {
+          "onClick": "bound handleFormSubmit",
+          "className": "ingredientSubmit",
+          "disabled": true,
+          "children": "+"
+        },
+        "rendered": "+"
+      }
+    ]
+  },
+  "type": "div",
+  "props": {
+    "className": "ingredientForm"
+  },
+  "children": [
+    {
+      "node": {
+        "nodeType": "class",
+        "type": "FormField",
+        "props": {
+          "placeholder": "Name",
+          "className": "ingredientName",
+          "value": "",
+          "onChange": "bound onFieldChange"
+        }
+      },
+      "type": "FormField",
+      "props": {
+        "placeholder": "Name",
+        "className": "ingredientName",
+        "value": "",
+        "onChange": "bound onFieldChange"
+      }
+    },
+    {
+      "node": {
+        "nodeType": "class",
+        "type": "FormField",
+        "props": {
+          "placeholder": "Quantity",
+          "className": "ingredientQuantity",
+          "value": "",
+          "onChange": "bound onFieldChange"
+        }
+      },
+      "type": "FormField",
+      "props": {
+        "placeholder": "Quantity",
+        "className": "ingredientQuantity",
+        "value": "",
+        "onChange": "bound onFieldChange"
+      }
+    },
+    {
+      "node": {
+        "nodeType": "host",
+        "type": "button",
+        "props": {
+          "onClick": "bound handleFormSubmit",
+          "className": "ingredientSubmit",
+          "disabled": true,
+          "children": "+"
+        },
+        "rendered": "+"
+      },
+      "type": "button",
+      "props": {
+        "onClick": "bound handleFormSubmit",
+        "className": "ingredientSubmit",
+        "disabled": true
+      },
+      "children": [
+        "+"
+      ]
+    }
+  ]
+};
+
+exports["should match the snapshot when there are no errors(0)"] = {
+  "node": {
+    "nodeType": "host",
+    "type": "div",
+    "props": {
+      "className": "ingredientForm",
+      "children": [
+        {
+          "type": "FormField",
+          "props": {
+            "placeholder": "Name",
+            "className": "ingredientName",
+            "value": "Rice",
+            "onChange": "bound onFieldChange"
+          },
+          "_store": {}
+        },
+        {
+          "type": "FormField",
+          "props": {
+            "placeholder": "Quantity",
+            "className": "ingredientQuantity",
+            "value": "1 cup",
+            "onChange": "bound onFieldChange"
+          },
+          "_store": {}
+        },
+        {
+          "type": "button",
+          "props": {
+            "onClick": "bound handleFormSubmit",
+            "className": "ingredientSubmit",
+            "disabled": false,
+            "children": "+"
+          },
+          "_store": {}
+        }
+      ]
+    },
+    "rendered": [
+      {
+        "nodeType": "class",
+        "type": "FormField",
+        "props": {
+          "placeholder": "Name",
+          "className": "ingredientName",
+          "value": "Rice",
+          "onChange": "bound onFieldChange"
+        }
+      },
+      {
+        "nodeType": "class",
+        "type": "FormField",
+        "props": {
+          "placeholder": "Quantity",
+          "className": "ingredientQuantity",
+          "value": "1 cup",
+          "onChange": "bound onFieldChange"
+        }
+      },
+      {
+        "nodeType": "host",
+        "type": "button",
+        "props": {
+          "onClick": "bound handleFormSubmit",
+          "className": "ingredientSubmit",
+          "disabled": false,
+          "children": "+"
+        },
+        "rendered": "+"
+      }
+    ]
+  },
+  "type": "div",
+  "props": {
+    "className": "ingredientForm"
+  },
+  "children": [
+    {
+      "node": {
+        "nodeType": "class",
+        "type": "FormField",
+        "props": {
+          "placeholder": "Name",
+          "className": "ingredientName",
+          "value": "Rice",
+          "onChange": "bound onFieldChange"
+        }
+      },
+      "type": "FormField",
+      "props": {
+        "placeholder": "Name",
+        "className": "ingredientName",
+        "value": "Rice",
+        "onChange": "bound onFieldChange"
+      }
+    },
+    {
+      "node": {
+        "nodeType": "class",
+        "type": "FormField",
+        "props": {
+          "placeholder": "Quantity",
+          "className": "ingredientQuantity",
+          "value": "1 cup",
+          "onChange": "bound onFieldChange"
+        }
+      },
+      "type": "FormField",
+      "props": {
+        "placeholder": "Quantity",
+        "className": "ingredientQuantity",
+        "value": "1 cup",
+        "onChange": "bound onFieldChange"
+      }
+    },
+    {
+      "node": {
+        "nodeType": "host",
+        "type": "button",
+        "props": {
+          "onClick": "bound handleFormSubmit",
+          "className": "ingredientSubmit",
+          "disabled": false,
+          "children": "+"
+        },
+        "rendered": "+"
+      },
+      "type": "button",
+      "props": {
+        "onClick": "bound handleFormSubmit",
+        "className": "ingredientSubmit",
+        "disabled": false
+      },
+      "children": [
+        "+"
+      ]
+    }
+  ]
+};
+

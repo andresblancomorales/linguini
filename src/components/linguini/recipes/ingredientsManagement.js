@@ -29,20 +29,27 @@ export default class IngredientsManagement extends Component {
     }
   }
 
+  handleOnCancel() {
+    if (isFunction(this.props.onCancel)) {
+      this.props.onCancel();
+    }
+  }
+
   render() {
-    let { recipeName, ingredients} = this.props;
+    let {recipeName, ingredients} = this.props;
     return (
       <div className='bubbleContainer' ref={element => this.bubbleContainer = element}>
         <Bubble direction='right'>
-          <span>Let me write down the ingredients chef... I can't wait to cook <strong>{recipeName}</strong>!</span>
+          <span>Let me write down the ingredients chef... I can't wait to cook <strong><a onClick={this.handleOnCancel.bind(this)}>{recipeName}</a></strong>!</span>
         </Bubble>
         <div className='notepad ingredients_notepad'>
           {ingredients.length === 0 ? null :
             <ul>
               {
-                ingredients.map(ingredient => {
+                ingredients.map((ingredient, index) => {
                   return (
-                    <li>{ingredient.name} - {ingredient.quantity}
+                    <li key={`ingredient_${index}`}>
+                      {ingredient.name} - {ingredient.quantity}
                       <button className='deleteButton fa fa-trash'
                               onClick={this.handleIngredientRemoved.bind(this, ingredient)}/>
                     </li>
@@ -53,7 +60,9 @@ export default class IngredientsManagement extends Component {
           }
         </div>
         <Bubble direction='left' className='ingredientsBubble'>
-          <NewIngredient onSubmit={this.handleIngredientAdded.bind(this)}/>
+          {ingredients.length === 10 ? null :
+            <NewIngredient onSubmit={this.handleIngredientAdded.bind(this)}/>
+          }
           {ingredients.length === 0 ? null :
             <span>That's it, no more ingredients. <a onClick={this.handleOnSubmit.bind(this)}>Let's continue</a></span>
           }
