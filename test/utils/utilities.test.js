@@ -22,6 +22,26 @@ describe('Utilities', () => {
     done();
   });
 
+  it('should validate correctly if something is a string', done => {
+    expect(_.isString('Hello World')).to.be.true;
+    done();
+  });
+
+  it('should validate correctly if something is not a function', done => {
+    expect(_.isString([])).to.be.false;
+    done();
+  });
+
+  it('should validate correctly if something is an array', done => {
+    expect(_.isArray([1,2,3])).to.be.true;
+    done();
+  });
+
+  it('should validate correctly if something is not an array', done => {
+    expect(_.isArray({})).to.be.false;
+    done();
+  });
+
   it('should navigate to the specified url', done => {
     let replace = sinon.spy();
     global.window = {

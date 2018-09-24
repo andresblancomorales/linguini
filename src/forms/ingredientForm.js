@@ -6,7 +6,7 @@ export const IngredientForm = {
       return Promise.resolve(isString(value) && value.trim().length > 0);
     }
   },
-  quantity: {
+  amount: {
     validate: (value) => {
       return Promise.resolve(isString(value) && value.trim().length > 0);
     }

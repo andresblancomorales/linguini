@@ -134,4 +134,119 @@ describe('RecipeActions', () => {
       });
   });
 
+  it('should save a recipe and dispatch the correct events', done => {
+    let gusteauClient = new GusteauClient('http://www.gusteau.com');
+    sinon.stub(gusteauClient, 'postRecipe')
+      .withArgs()
+      .returns(Promise.resolve({
+        status: 201,
+        body: {_id: '001', name: 'Mac and Cheese'}
+      }));
+
+    let expectedActions = [
+      {type: RecipeActions.Actions.SAVING_RECIPE, recipe: {name: 'Mac and Cheese'}},
+      {
+        type: RecipeActions.Actions.RECIPE_SAVED,
+        recipe: {_id: '001', name: 'Mac and Cheese'}
+      }
+    ];
+
+    let store = mockStore({});
+
+    let recipeActions = new RecipeActions(gusteauClient);
+
+    store.dispatch(recipeActions.saveRecipe({name: 'Mac and Cheese'}))
+      .then(() => {
+        expect(store.getActions()).to.deep.equal(expectedActions);
+        done();
+      });
+  });
+
+  it('should try to save a recipe and dispatch the correct events if it fails', done => {
+    let gusteauClient = new GusteauClient('http://www.gusteau.com');
+    sinon.stub(gusteauClient, 'postRecipe')
+      .withArgs()
+      .returns(Promise.reject({
+        status: 400,
+        error: {
+          name: 'ValidationError'
+        }
+      }));
+
+    let expectedActions = [
+      {type: RecipeActions.Actions.SAVING_RECIPE, recipe: {name: 'Mac and Cheese'}},
+      {
+        type: RecipeActions.Actions.RECIPE_SAVING_FAILED,
+        recipe: {name: 'Mac and Cheese'}
+      }
+    ];
+
+    let store = mockStore({});
+
+    let recipeActions = new RecipeActions(gusteauClient);
+
+    store.dispatch(recipeActions.saveRecipe({name: 'Mac and Cheese'}))
+      .then(() => {
+        expect(store.getActions()).to.deep.equal(expectedActions);
+        done();
+      });
+  });
+
+  it('should try to save a recipe and dispatch the correct events if it is duplicate', done => {
+    let gusteauClient = new GusteauClient('http://www.gusteau.com');
+    sinon.stub(gusteauClient, 'postRecipe')
+      .withArgs()
+      .returns(Promise.reject({
+        status: 400,
+        error: {
+          name: 'RecipeExistsException'
+        }
+      }));
+
+    let expectedActions = [
+      {type: RecipeActions.Actions.SAVING_RECIPE, recipe: {name: 'Mac and Cheese'}},
+      {
+        type: RecipeActions.Actions.DUPLICATE_RECIPE,
+        recipe: {name: 'Mac and Cheese'}
+      }
+    ];
+
+    let store = mockStore({});
+
+    let recipeActions = new RecipeActions(gusteauClient);
+
+    store.dispatch(recipeActions.saveRecipe({name: 'Mac and Cheese'}))
+      .then(() => {
+        expect(store.getActions()).to.deep.equal(expectedActions);
+        done();
+      });
+  });
+
+  it('should try to save a recipe and dispatch the correct events if something goes wrong', done => {
+    let gusteauClient = new GusteauClient('http://www.gusteau.com');
+    sinon.stub(gusteauClient, 'postRecipe')
+      .withArgs()
+      .returns(Promise.reject({
+        status: 500
+      }));
+
+    let expectedActions = [
+      {type: RecipeActions.Actions.SAVING_RECIPE, recipe: {name: 'Mac and Cheese'}},
+      {
+        type: RecipeActions.Actions.RECIPE_SAVING_FAILED,
+        recipe: {name: 'Mac and Cheese'}
+      }
+    ];
+
+    let store = mockStore({});
+
+    let recipeActions = new RecipeActions(gusteauClient);
+
+    store.dispatch(recipeActions.saveRecipe({name: 'Mac and Cheese'}))
+      .then(() => {
+        expect(store.getActions()).to.deep.equal(expectedActions);
+        done();
+      });
+  });
+
 });

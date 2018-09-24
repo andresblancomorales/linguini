@@ -54,4 +54,14 @@ export default class GusteauClient extends FetchClient {
 
     return this.doGet(request);
   }
+
+  postRecipe(recipe) {
+    let request = {
+      path: '/recipes',
+      deserialize: true,
+      body: recipe
+    };
+
+    return this.doPost(request);
+  }
 }

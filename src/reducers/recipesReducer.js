@@ -4,7 +4,8 @@ const initialState = {
   all: [],
   loading: false,
   error: undefined,
-  categories: []
+  categories: [],
+  savingRecipe: false
 };
 
 export const recipesReducer = (state = initialState, action) => {
@@ -44,6 +45,20 @@ export const recipesReducer = (state = initialState, action) => {
       state = {
         ...state,
         categories: action.categories
+      };
+      break;
+    case RecipeActions.Actions.SAVING_RECIPE:
+      state = {
+        ...state,
+        savingRecipe: true
+      };
+      break;
+    case RecipeActions.Actions.RECIPE_SAVING_FAILED:
+    case RecipeActions.Actions.DUPLICATE_RECIPE:
+    case RecipeActions.Actions.RECIPE_SAVED:
+      state = {
+        ...state,
+        savingRecipe: false
       };
       break;
   }

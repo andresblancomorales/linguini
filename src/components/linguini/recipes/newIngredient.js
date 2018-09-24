@@ -21,7 +21,7 @@ export default class NewIngredient extends FormComponent {
   }
 
   render() {
-    let hasError = !this.state.form.name.isDirty || !this.state.form.quantity.isDirty || this.state.form.name.hasError || this.state.form.quantity.hasError;
+    let hasError = !this.state.form.name.isDirty || !this.state.form.amount.isDirty || this.state.form.name.hasError || this.state.form.amount.hasError;
 
     return (
       <div className='ingredientForm'>
@@ -31,8 +31,8 @@ export default class NewIngredient extends FormComponent {
                    onChange={this.onFieldChange.bind(this, 'name')}/>
         <FormField placeholder='Quantity'
                    className='ingredientQuantity'
-                   value={this.state.form.quantity.value}
-                   onChange={this.onFieldChange.bind(this, 'quantity')}/>
+                   value={this.state.form.amount.value}
+                   onChange={this.onFieldChange.bind(this, 'amount')}/>
         <button onClick={this.handleFormSubmit.bind(this)}
                 className='ingredientSubmit'
                 disabled={hasError}>+

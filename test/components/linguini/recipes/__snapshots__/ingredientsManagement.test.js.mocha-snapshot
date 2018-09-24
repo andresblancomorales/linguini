@@ -17,7 +17,14 @@ exports["should match the snapshot(0)"] = {
                   {
                     "type": "strong",
                     "props": {
-                      "children": "Awesome Pizza!"
+                      "children": {
+                        "type": "a",
+                        "props": {
+                          "onClick": "bound handleOnCancel",
+                          "children": "Awesome Pizza!"
+                        },
+                        "_store": {}
+                      }
                     },
                     "_store": {}
                   },
@@ -44,7 +51,7 @@ exports["should match the snapshot(0)"] = {
                       "children": [
                         "Rice",
                         " - ",
-                        "1 cup",
+                        null,
                         {
                           "type": "button",
                           "props": {
@@ -115,7 +122,14 @@ exports["should match the snapshot(0)"] = {
                 {
                   "type": "strong",
                   "props": {
-                    "children": "Awesome Pizza!"
+                    "children": {
+                      "type": "a",
+                      "props": {
+                        "onClick": "bound handleOnCancel",
+                        "children": "Awesome Pizza!"
+                      },
+                      "_store": {}
+                    }
                   },
                   "_store": {}
                 },
@@ -134,7 +148,14 @@ exports["should match the snapshot(0)"] = {
               {
                 "type": "strong",
                 "props": {
-                  "children": "Awesome Pizza!"
+                  "children": {
+                    "type": "a",
+                    "props": {
+                      "onClick": "bound handleOnCancel",
+                      "children": "Awesome Pizza!"
+                    },
+                    "_store": {}
+                  }
                 },
                 "_store": {}
               },
@@ -147,9 +168,24 @@ exports["should match the snapshot(0)"] = {
               "nodeType": "host",
               "type": "strong",
               "props": {
-                "children": "Awesome Pizza!"
+                "children": {
+                  "type": "a",
+                  "props": {
+                    "onClick": "bound handleOnCancel",
+                    "children": "Awesome Pizza!"
+                  },
+                  "_store": {}
+                }
               },
-              "rendered": "Awesome Pizza!"
+              "rendered": {
+                "nodeType": "host",
+                "type": "a",
+                "props": {
+                  "onClick": "bound handleOnCancel",
+                  "children": "Awesome Pizza!"
+                },
+                "rendered": "Awesome Pizza!"
+              }
             },
             "!"
           ]
@@ -171,7 +207,7 @@ exports["should match the snapshot(0)"] = {
                     "children": [
                       "Rice",
                       " - ",
-                      "1 cup",
+                      null,
                       {
                         "type": "button",
                         "props": {
@@ -201,7 +237,7 @@ exports["should match the snapshot(0)"] = {
                   "children": [
                     "Rice",
                     " - ",
-                    "1 cup",
+                    null,
                     {
                       "type": "button",
                       "props": {
@@ -224,7 +260,7 @@ exports["should match the snapshot(0)"] = {
                 "children": [
                   "Rice",
                   " - ",
-                  "1 cup",
+                  null,
                   {
                     "type": "button",
                     "props": {
@@ -239,7 +275,7 @@ exports["should match the snapshot(0)"] = {
               "rendered": [
                 "Rice",
                 " - ",
-                "1 cup",
+                null,
                 {
                   "nodeType": "host",
                   "type": "button",
@@ -346,7 +382,14 @@ exports["should match the snapshot(0)"] = {
                 {
                   "type": "strong",
                   "props": {
-                    "children": "Awesome Pizza!"
+                    "children": {
+                      "type": "a",
+                      "props": {
+                        "onClick": "bound handleOnCancel",
+                        "children": "Awesome Pizza!"
+                      },
+                      "_store": {}
+                    }
                   },
                   "_store": {}
                 },
@@ -365,7 +408,14 @@ exports["should match the snapshot(0)"] = {
               {
                 "type": "strong",
                 "props": {
-                  "children": "Awesome Pizza!"
+                  "children": {
+                    "type": "a",
+                    "props": {
+                      "onClick": "bound handleOnCancel",
+                      "children": "Awesome Pizza!"
+                    },
+                    "_store": {}
+                  }
                 },
                 "_store": {}
               },
@@ -378,9 +428,24 @@ exports["should match the snapshot(0)"] = {
               "nodeType": "host",
               "type": "strong",
               "props": {
-                "children": "Awesome Pizza!"
+                "children": {
+                  "type": "a",
+                  "props": {
+                    "onClick": "bound handleOnCancel",
+                    "children": "Awesome Pizza!"
+                  },
+                  "_store": {}
+                }
               },
-              "rendered": "Awesome Pizza!"
+              "rendered": {
+                "nodeType": "host",
+                "type": "a",
+                "props": {
+                  "onClick": "bound handleOnCancel",
+                  "children": "Awesome Pizza!"
+                },
+                "rendered": "Awesome Pizza!"
+              }
             },
             "!"
           ]
@@ -401,7 +466,14 @@ exports["should match the snapshot(0)"] = {
                 {
                   "type": "strong",
                   "props": {
-                    "children": "Awesome Pizza!"
+                    "children": {
+                      "type": "a",
+                      "props": {
+                        "onClick": "bound handleOnCancel",
+                        "children": "Awesome Pizza!"
+                      },
+                      "_store": {}
+                    }
                   },
                   "_store": {}
                 },
@@ -414,9 +486,24 @@ exports["should match the snapshot(0)"] = {
                 "nodeType": "host",
                 "type": "strong",
                 "props": {
-                  "children": "Awesome Pizza!"
+                  "children": {
+                    "type": "a",
+                    "props": {
+                      "onClick": "bound handleOnCancel",
+                      "children": "Awesome Pizza!"
+                    },
+                    "_store": {}
+                  }
                 },
-                "rendered": "Awesome Pizza!"
+                "rendered": {
+                  "nodeType": "host",
+                  "type": "a",
+                  "props": {
+                    "onClick": "bound handleOnCancel",
+                    "children": "Awesome Pizza!"
+                  },
+                  "rendered": "Awesome Pizza!"
+                }
               },
               "!"
             ]
@@ -430,14 +517,46 @@ exports["should match the snapshot(0)"] = {
                 "nodeType": "host",
                 "type": "strong",
                 "props": {
-                  "children": "Awesome Pizza!"
+                  "children": {
+                    "type": "a",
+                    "props": {
+                      "onClick": "bound handleOnCancel",
+                      "children": "Awesome Pizza!"
+                    },
+                    "_store": {}
+                  }
                 },
-                "rendered": "Awesome Pizza!"
+                "rendered": {
+                  "nodeType": "host",
+                  "type": "a",
+                  "props": {
+                    "onClick": "bound handleOnCancel",
+                    "children": "Awesome Pizza!"
+                  },
+                  "rendered": "Awesome Pizza!"
+                }
               },
               "type": "strong",
               "props": {},
               "children": [
-                "Awesome Pizza!"
+                {
+                  "node": {
+                    "nodeType": "host",
+                    "type": "a",
+                    "props": {
+                      "onClick": "bound handleOnCancel",
+                      "children": "Awesome Pizza!"
+                    },
+                    "rendered": "Awesome Pizza!"
+                  },
+                  "type": "a",
+                  "props": {
+                    "onClick": "bound handleOnCancel"
+                  },
+                  "children": [
+                    "Awesome Pizza!"
+                  ]
+                }
               ]
             },
             "!"
@@ -462,7 +581,7 @@ exports["should match the snapshot(0)"] = {
                     "children": [
                       "Rice",
                       " - ",
-                      "1 cup",
+                      null,
                       {
                         "type": "button",
                         "props": {
@@ -492,7 +611,7 @@ exports["should match the snapshot(0)"] = {
                   "children": [
                     "Rice",
                     " - ",
-                    "1 cup",
+                    null,
                     {
                       "type": "button",
                       "props": {
@@ -515,7 +634,7 @@ exports["should match the snapshot(0)"] = {
                 "children": [
                   "Rice",
                   " - ",
-                  "1 cup",
+                  null,
                   {
                     "type": "button",
                     "props": {
@@ -530,7 +649,7 @@ exports["should match the snapshot(0)"] = {
               "rendered": [
                 "Rice",
                 " - ",
-                "1 cup",
+                null,
                 {
                   "nodeType": "host",
                   "type": "button",
@@ -562,7 +681,7 @@ exports["should match the snapshot(0)"] = {
                     "children": [
                       "Rice",
                       " - ",
-                      "1 cup",
+                      null,
                       {
                         "type": "button",
                         "props": {
@@ -585,7 +704,7 @@ exports["should match the snapshot(0)"] = {
                   "children": [
                     "Rice",
                     " - ",
-                    "1 cup",
+                    null,
                     {
                       "type": "button",
                       "props": {
@@ -600,7 +719,7 @@ exports["should match the snapshot(0)"] = {
                 "rendered": [
                   "Rice",
                   " - ",
-                  "1 cup",
+                  null,
                   {
                     "nodeType": "host",
                     "type": "button",
@@ -624,7 +743,7 @@ exports["should match the snapshot(0)"] = {
                   "children": [
                     "Rice",
                     " - ",
-                    "1 cup",
+                    null,
                     {
                       "type": "button",
                       "props": {
@@ -639,7 +758,7 @@ exports["should match the snapshot(0)"] = {
                 "rendered": [
                   "Rice",
                   " - ",
-                  "1 cup",
+                  null,
                   {
                     "nodeType": "host",
                     "type": "button",
@@ -657,7 +776,6 @@ exports["should match the snapshot(0)"] = {
               "children": [
                 "Rice",
                 " - ",
-                "1 cup",
                 {
                   "node": {
                     "nodeType": "host",
@@ -849,7 +967,14 @@ exports["should match the snapshot when 10 ingredients are added(0)"] = {
                   {
                     "type": "strong",
                     "props": {
-                      "children": "Awesome Pizza!"
+                      "children": {
+                        "type": "a",
+                        "props": {
+                          "onClick": "bound handleOnCancel",
+                          "children": "Awesome Pizza!"
+                        },
+                        "_store": {}
+                      }
                     },
                     "_store": {}
                   },
@@ -1121,7 +1246,14 @@ exports["should match the snapshot when 10 ingredients are added(0)"] = {
                 {
                   "type": "strong",
                   "props": {
-                    "children": "Awesome Pizza!"
+                    "children": {
+                      "type": "a",
+                      "props": {
+                        "onClick": "bound handleOnCancel",
+                        "children": "Awesome Pizza!"
+                      },
+                      "_store": {}
+                    }
                   },
                   "_store": {}
                 },
@@ -1140,7 +1272,14 @@ exports["should match the snapshot when 10 ingredients are added(0)"] = {
               {
                 "type": "strong",
                 "props": {
-                  "children": "Awesome Pizza!"
+                  "children": {
+                    "type": "a",
+                    "props": {
+                      "onClick": "bound handleOnCancel",
+                      "children": "Awesome Pizza!"
+                    },
+                    "_store": {}
+                  }
                 },
                 "_store": {}
               },
@@ -1153,9 +1292,24 @@ exports["should match the snapshot when 10 ingredients are added(0)"] = {
               "nodeType": "host",
               "type": "strong",
               "props": {
-                "children": "Awesome Pizza!"
+                "children": {
+                  "type": "a",
+                  "props": {
+                    "onClick": "bound handleOnCancel",
+                    "children": "Awesome Pizza!"
+                  },
+                  "_store": {}
+                }
               },
-              "rendered": "Awesome Pizza!"
+              "rendered": {
+                "nodeType": "host",
+                "type": "a",
+                "props": {
+                  "onClick": "bound handleOnCancel",
+                  "children": "Awesome Pizza!"
+                },
+                "rendered": "Awesome Pizza!"
+              }
             },
             "!"
           ]
@@ -1997,7 +2151,14 @@ exports["should match the snapshot when 10 ingredients are added(0)"] = {
                 {
                   "type": "strong",
                   "props": {
-                    "children": "Awesome Pizza!"
+                    "children": {
+                      "type": "a",
+                      "props": {
+                        "onClick": "bound handleOnCancel",
+                        "children": "Awesome Pizza!"
+                      },
+                      "_store": {}
+                    }
                   },
                   "_store": {}
                 },
@@ -2016,7 +2177,14 @@ exports["should match the snapshot when 10 ingredients are added(0)"] = {
               {
                 "type": "strong",
                 "props": {
-                  "children": "Awesome Pizza!"
+                  "children": {
+                    "type": "a",
+                    "props": {
+                      "onClick": "bound handleOnCancel",
+                      "children": "Awesome Pizza!"
+                    },
+                    "_store": {}
+                  }
                 },
                 "_store": {}
               },
@@ -2029,9 +2197,24 @@ exports["should match the snapshot when 10 ingredients are added(0)"] = {
               "nodeType": "host",
               "type": "strong",
               "props": {
-                "children": "Awesome Pizza!"
+                "children": {
+                  "type": "a",
+                  "props": {
+                    "onClick": "bound handleOnCancel",
+                    "children": "Awesome Pizza!"
+                  },
+                  "_store": {}
+                }
               },
-              "rendered": "Awesome Pizza!"
+              "rendered": {
+                "nodeType": "host",
+                "type": "a",
+                "props": {
+                  "onClick": "bound handleOnCancel",
+                  "children": "Awesome Pizza!"
+                },
+                "rendered": "Awesome Pizza!"
+              }
             },
             "!"
           ]
@@ -2052,7 +2235,14 @@ exports["should match the snapshot when 10 ingredients are added(0)"] = {
                 {
                   "type": "strong",
                   "props": {
-                    "children": "Awesome Pizza!"
+                    "children": {
+                      "type": "a",
+                      "props": {
+                        "onClick": "bound handleOnCancel",
+                        "children": "Awesome Pizza!"
+                      },
+                      "_store": {}
+                    }
                   },
                   "_store": {}
                 },
@@ -2065,9 +2255,24 @@ exports["should match the snapshot when 10 ingredients are added(0)"] = {
                 "nodeType": "host",
                 "type": "strong",
                 "props": {
-                  "children": "Awesome Pizza!"
+                  "children": {
+                    "type": "a",
+                    "props": {
+                      "onClick": "bound handleOnCancel",
+                      "children": "Awesome Pizza!"
+                    },
+                    "_store": {}
+                  }
                 },
-                "rendered": "Awesome Pizza!"
+                "rendered": {
+                  "nodeType": "host",
+                  "type": "a",
+                  "props": {
+                    "onClick": "bound handleOnCancel",
+                    "children": "Awesome Pizza!"
+                  },
+                  "rendered": "Awesome Pizza!"
+                }
               },
               "!"
             ]
@@ -2081,14 +2286,46 @@ exports["should match the snapshot when 10 ingredients are added(0)"] = {
                 "nodeType": "host",
                 "type": "strong",
                 "props": {
-                  "children": "Awesome Pizza!"
+                  "children": {
+                    "type": "a",
+                    "props": {
+                      "onClick": "bound handleOnCancel",
+                      "children": "Awesome Pizza!"
+                    },
+                    "_store": {}
+                  }
                 },
-                "rendered": "Awesome Pizza!"
+                "rendered": {
+                  "nodeType": "host",
+                  "type": "a",
+                  "props": {
+                    "onClick": "bound handleOnCancel",
+                    "children": "Awesome Pizza!"
+                  },
+                  "rendered": "Awesome Pizza!"
+                }
               },
               "type": "strong",
               "props": {},
               "children": [
-                "Awesome Pizza!"
+                {
+                  "node": {
+                    "nodeType": "host",
+                    "type": "a",
+                    "props": {
+                      "onClick": "bound handleOnCancel",
+                      "children": "Awesome Pizza!"
+                    },
+                    "rendered": "Awesome Pizza!"
+                  },
+                  "type": "a",
+                  "props": {
+                    "onClick": "bound handleOnCancel"
+                  },
+                  "children": [
+                    "Awesome Pizza!"
+                  ]
+                }
               ]
             },
             "!"

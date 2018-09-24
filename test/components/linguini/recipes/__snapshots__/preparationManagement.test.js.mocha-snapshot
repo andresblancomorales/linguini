@@ -12,7 +12,24 @@ exports["should match the snapshot(0)"] = {
             "children": {
               "type": "span",
               "props": {
-                "children": "Miam-miam... I can already taste it chef. Now tell me, what do we do with the ingredients?"
+                "children": [
+                  "Miam-miam... I can already taste it chef. Now tell me, what do we do with the ",
+                  {
+                    "type": "strong",
+                    "props": {
+                      "children": {
+                        "type": "a",
+                        "props": {
+                          "onClick": "bound handleOnCancel",
+                          "children": "ingredients"
+                        },
+                        "_store": {}
+                      }
+                    },
+                    "_store": {}
+                  },
+                  "?"
+                ]
               },
               "_store": {}
             }
@@ -59,7 +76,24 @@ exports["should match the snapshot(0)"] = {
           "children": {
             "type": "span",
             "props": {
-              "children": "Miam-miam... I can already taste it chef. Now tell me, what do we do with the ingredients?"
+              "children": [
+                "Miam-miam... I can already taste it chef. Now tell me, what do we do with the ",
+                {
+                  "type": "strong",
+                  "props": {
+                    "children": {
+                      "type": "a",
+                      "props": {
+                        "onClick": "bound handleOnCancel",
+                        "children": "ingredients"
+                      },
+                      "_store": {}
+                    }
+                  },
+                  "_store": {}
+                },
+                "?"
+              ]
             },
             "_store": {}
           }
@@ -68,9 +102,52 @@ exports["should match the snapshot(0)"] = {
           "nodeType": "host",
           "type": "span",
           "props": {
-            "children": "Miam-miam... I can already taste it chef. Now tell me, what do we do with the ingredients?"
+            "children": [
+              "Miam-miam... I can already taste it chef. Now tell me, what do we do with the ",
+              {
+                "type": "strong",
+                "props": {
+                  "children": {
+                    "type": "a",
+                    "props": {
+                      "onClick": "bound handleOnCancel",
+                      "children": "ingredients"
+                    },
+                    "_store": {}
+                  }
+                },
+                "_store": {}
+              },
+              "?"
+            ]
           },
-          "rendered": "Miam-miam... I can already taste it chef. Now tell me, what do we do with the ingredients?"
+          "rendered": [
+            "Miam-miam... I can already taste it chef. Now tell me, what do we do with the ",
+            {
+              "nodeType": "host",
+              "type": "strong",
+              "props": {
+                "children": {
+                  "type": "a",
+                  "props": {
+                    "onClick": "bound handleOnCancel",
+                    "children": "ingredients"
+                  },
+                  "_store": {}
+                }
+              },
+              "rendered": {
+                "nodeType": "host",
+                "type": "a",
+                "props": {
+                  "onClick": "bound handleOnCancel",
+                  "children": "ingredients"
+                },
+                "rendered": "ingredients"
+              }
+            },
+            "?"
+          ]
         }
       },
       {
@@ -127,7 +204,24 @@ exports["should match the snapshot(0)"] = {
           "children": {
             "type": "span",
             "props": {
-              "children": "Miam-miam... I can already taste it chef. Now tell me, what do we do with the ingredients?"
+              "children": [
+                "Miam-miam... I can already taste it chef. Now tell me, what do we do with the ",
+                {
+                  "type": "strong",
+                  "props": {
+                    "children": {
+                      "type": "a",
+                      "props": {
+                        "onClick": "bound handleOnCancel",
+                        "children": "ingredients"
+                      },
+                      "_store": {}
+                    }
+                  },
+                  "_store": {}
+                },
+                "?"
+              ]
             },
             "_store": {}
           }
@@ -136,9 +230,52 @@ exports["should match the snapshot(0)"] = {
           "nodeType": "host",
           "type": "span",
           "props": {
-            "children": "Miam-miam... I can already taste it chef. Now tell me, what do we do with the ingredients?"
+            "children": [
+              "Miam-miam... I can already taste it chef. Now tell me, what do we do with the ",
+              {
+                "type": "strong",
+                "props": {
+                  "children": {
+                    "type": "a",
+                    "props": {
+                      "onClick": "bound handleOnCancel",
+                      "children": "ingredients"
+                    },
+                    "_store": {}
+                  }
+                },
+                "_store": {}
+              },
+              "?"
+            ]
           },
-          "rendered": "Miam-miam... I can already taste it chef. Now tell me, what do we do with the ingredients?"
+          "rendered": [
+            "Miam-miam... I can already taste it chef. Now tell me, what do we do with the ",
+            {
+              "nodeType": "host",
+              "type": "strong",
+              "props": {
+                "children": {
+                  "type": "a",
+                  "props": {
+                    "onClick": "bound handleOnCancel",
+                    "children": "ingredients"
+                  },
+                  "_store": {}
+                }
+              },
+              "rendered": {
+                "nodeType": "host",
+                "type": "a",
+                "props": {
+                  "onClick": "bound handleOnCancel",
+                  "children": "ingredients"
+                },
+                "rendered": "ingredients"
+              }
+            },
+            "?"
+          ]
         }
       },
       "type": "Bubble",
@@ -151,14 +288,105 @@ exports["should match the snapshot(0)"] = {
             "nodeType": "host",
             "type": "span",
             "props": {
-              "children": "Miam-miam... I can already taste it chef. Now tell me, what do we do with the ingredients?"
+              "children": [
+                "Miam-miam... I can already taste it chef. Now tell me, what do we do with the ",
+                {
+                  "type": "strong",
+                  "props": {
+                    "children": {
+                      "type": "a",
+                      "props": {
+                        "onClick": "bound handleOnCancel",
+                        "children": "ingredients"
+                      },
+                      "_store": {}
+                    }
+                  },
+                  "_store": {}
+                },
+                "?"
+              ]
             },
-            "rendered": "Miam-miam... I can already taste it chef. Now tell me, what do we do with the ingredients?"
+            "rendered": [
+              "Miam-miam... I can already taste it chef. Now tell me, what do we do with the ",
+              {
+                "nodeType": "host",
+                "type": "strong",
+                "props": {
+                  "children": {
+                    "type": "a",
+                    "props": {
+                      "onClick": "bound handleOnCancel",
+                      "children": "ingredients"
+                    },
+                    "_store": {}
+                  }
+                },
+                "rendered": {
+                  "nodeType": "host",
+                  "type": "a",
+                  "props": {
+                    "onClick": "bound handleOnCancel",
+                    "children": "ingredients"
+                  },
+                  "rendered": "ingredients"
+                }
+              },
+              "?"
+            ]
           },
           "type": "span",
           "props": {},
           "children": [
-            "Miam-miam... I can already taste it chef. Now tell me, what do we do with the ingredients?"
+            "Miam-miam... I can already taste it chef. Now tell me, what do we do with the ",
+            {
+              "node": {
+                "nodeType": "host",
+                "type": "strong",
+                "props": {
+                  "children": {
+                    "type": "a",
+                    "props": {
+                      "onClick": "bound handleOnCancel",
+                      "children": "ingredients"
+                    },
+                    "_store": {}
+                  }
+                },
+                "rendered": {
+                  "nodeType": "host",
+                  "type": "a",
+                  "props": {
+                    "onClick": "bound handleOnCancel",
+                    "children": "ingredients"
+                  },
+                  "rendered": "ingredients"
+                }
+              },
+              "type": "strong",
+              "props": {},
+              "children": [
+                {
+                  "node": {
+                    "nodeType": "host",
+                    "type": "a",
+                    "props": {
+                      "onClick": "bound handleOnCancel",
+                      "children": "ingredients"
+                    },
+                    "rendered": "ingredients"
+                  },
+                  "type": "a",
+                  "props": {
+                    "onClick": "bound handleOnCancel"
+                  },
+                  "children": [
+                    "ingredients"
+                  ]
+                }
+              ]
+            },
+            "?"
           ]
         }
       ]
@@ -249,7 +477,24 @@ exports["should match the snapshot when it has ingredients(0)"] = {
             "children": {
               "type": "span",
               "props": {
-                "children": "Miam-miam... I can already taste it chef. Now tell me, what do we do with the ingredients?"
+                "children": [
+                  "Miam-miam... I can already taste it chef. Now tell me, what do we do with the ",
+                  {
+                    "type": "strong",
+                    "props": {
+                      "children": {
+                        "type": "a",
+                        "props": {
+                          "onClick": "bound handleOnCancel",
+                          "children": "ingredients"
+                        },
+                        "_store": {}
+                      }
+                    },
+                    "_store": {}
+                  },
+                  "?"
+                ]
               },
               "_store": {}
             }
@@ -314,7 +559,24 @@ exports["should match the snapshot when it has ingredients(0)"] = {
           "children": {
             "type": "span",
             "props": {
-              "children": "Miam-miam... I can already taste it chef. Now tell me, what do we do with the ingredients?"
+              "children": [
+                "Miam-miam... I can already taste it chef. Now tell me, what do we do with the ",
+                {
+                  "type": "strong",
+                  "props": {
+                    "children": {
+                      "type": "a",
+                      "props": {
+                        "onClick": "bound handleOnCancel",
+                        "children": "ingredients"
+                      },
+                      "_store": {}
+                    }
+                  },
+                  "_store": {}
+                },
+                "?"
+              ]
             },
             "_store": {}
           }
@@ -323,9 +585,52 @@ exports["should match the snapshot when it has ingredients(0)"] = {
           "nodeType": "host",
           "type": "span",
           "props": {
-            "children": "Miam-miam... I can already taste it chef. Now tell me, what do we do with the ingredients?"
+            "children": [
+              "Miam-miam... I can already taste it chef. Now tell me, what do we do with the ",
+              {
+                "type": "strong",
+                "props": {
+                  "children": {
+                    "type": "a",
+                    "props": {
+                      "onClick": "bound handleOnCancel",
+                      "children": "ingredients"
+                    },
+                    "_store": {}
+                  }
+                },
+                "_store": {}
+              },
+              "?"
+            ]
           },
-          "rendered": "Miam-miam... I can already taste it chef. Now tell me, what do we do with the ingredients?"
+          "rendered": [
+            "Miam-miam... I can already taste it chef. Now tell me, what do we do with the ",
+            {
+              "nodeType": "host",
+              "type": "strong",
+              "props": {
+                "children": {
+                  "type": "a",
+                  "props": {
+                    "onClick": "bound handleOnCancel",
+                    "children": "ingredients"
+                  },
+                  "_store": {}
+                }
+              },
+              "rendered": {
+                "nodeType": "host",
+                "type": "a",
+                "props": {
+                  "onClick": "bound handleOnCancel",
+                  "children": "ingredients"
+                },
+                "rendered": "ingredients"
+              }
+            },
+            "?"
+          ]
         }
       },
       {
@@ -428,7 +733,24 @@ exports["should match the snapshot when it has ingredients(0)"] = {
           "children": {
             "type": "span",
             "props": {
-              "children": "Miam-miam... I can already taste it chef. Now tell me, what do we do with the ingredients?"
+              "children": [
+                "Miam-miam... I can already taste it chef. Now tell me, what do we do with the ",
+                {
+                  "type": "strong",
+                  "props": {
+                    "children": {
+                      "type": "a",
+                      "props": {
+                        "onClick": "bound handleOnCancel",
+                        "children": "ingredients"
+                      },
+                      "_store": {}
+                    }
+                  },
+                  "_store": {}
+                },
+                "?"
+              ]
             },
             "_store": {}
           }
@@ -437,9 +759,52 @@ exports["should match the snapshot when it has ingredients(0)"] = {
           "nodeType": "host",
           "type": "span",
           "props": {
-            "children": "Miam-miam... I can already taste it chef. Now tell me, what do we do with the ingredients?"
+            "children": [
+              "Miam-miam... I can already taste it chef. Now tell me, what do we do with the ",
+              {
+                "type": "strong",
+                "props": {
+                  "children": {
+                    "type": "a",
+                    "props": {
+                      "onClick": "bound handleOnCancel",
+                      "children": "ingredients"
+                    },
+                    "_store": {}
+                  }
+                },
+                "_store": {}
+              },
+              "?"
+            ]
           },
-          "rendered": "Miam-miam... I can already taste it chef. Now tell me, what do we do with the ingredients?"
+          "rendered": [
+            "Miam-miam... I can already taste it chef. Now tell me, what do we do with the ",
+            {
+              "nodeType": "host",
+              "type": "strong",
+              "props": {
+                "children": {
+                  "type": "a",
+                  "props": {
+                    "onClick": "bound handleOnCancel",
+                    "children": "ingredients"
+                  },
+                  "_store": {}
+                }
+              },
+              "rendered": {
+                "nodeType": "host",
+                "type": "a",
+                "props": {
+                  "onClick": "bound handleOnCancel",
+                  "children": "ingredients"
+                },
+                "rendered": "ingredients"
+              }
+            },
+            "?"
+          ]
         }
       },
       "type": "Bubble",
@@ -452,14 +817,105 @@ exports["should match the snapshot when it has ingredients(0)"] = {
             "nodeType": "host",
             "type": "span",
             "props": {
-              "children": "Miam-miam... I can already taste it chef. Now tell me, what do we do with the ingredients?"
+              "children": [
+                "Miam-miam... I can already taste it chef. Now tell me, what do we do with the ",
+                {
+                  "type": "strong",
+                  "props": {
+                    "children": {
+                      "type": "a",
+                      "props": {
+                        "onClick": "bound handleOnCancel",
+                        "children": "ingredients"
+                      },
+                      "_store": {}
+                    }
+                  },
+                  "_store": {}
+                },
+                "?"
+              ]
             },
-            "rendered": "Miam-miam... I can already taste it chef. Now tell me, what do we do with the ingredients?"
+            "rendered": [
+              "Miam-miam... I can already taste it chef. Now tell me, what do we do with the ",
+              {
+                "nodeType": "host",
+                "type": "strong",
+                "props": {
+                  "children": {
+                    "type": "a",
+                    "props": {
+                      "onClick": "bound handleOnCancel",
+                      "children": "ingredients"
+                    },
+                    "_store": {}
+                  }
+                },
+                "rendered": {
+                  "nodeType": "host",
+                  "type": "a",
+                  "props": {
+                    "onClick": "bound handleOnCancel",
+                    "children": "ingredients"
+                  },
+                  "rendered": "ingredients"
+                }
+              },
+              "?"
+            ]
           },
           "type": "span",
           "props": {},
           "children": [
-            "Miam-miam... I can already taste it chef. Now tell me, what do we do with the ingredients?"
+            "Miam-miam... I can already taste it chef. Now tell me, what do we do with the ",
+            {
+              "node": {
+                "nodeType": "host",
+                "type": "strong",
+                "props": {
+                  "children": {
+                    "type": "a",
+                    "props": {
+                      "onClick": "bound handleOnCancel",
+                      "children": "ingredients"
+                    },
+                    "_store": {}
+                  }
+                },
+                "rendered": {
+                  "nodeType": "host",
+                  "type": "a",
+                  "props": {
+                    "onClick": "bound handleOnCancel",
+                    "children": "ingredients"
+                  },
+                  "rendered": "ingredients"
+                }
+              },
+              "type": "strong",
+              "props": {},
+              "children": [
+                {
+                  "node": {
+                    "nodeType": "host",
+                    "type": "a",
+                    "props": {
+                      "onClick": "bound handleOnCancel",
+                      "children": "ingredients"
+                    },
+                    "rendered": "ingredients"
+                  },
+                  "type": "a",
+                  "props": {
+                    "onClick": "bound handleOnCancel"
+                  },
+                  "children": [
+                    "ingredients"
+                  ]
+                }
+              ]
+            },
+            "?"
           ]
         }
       ]

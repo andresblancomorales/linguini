@@ -49,7 +49,7 @@ export default class IngredientsManagement extends Component {
                 ingredients.map((ingredient, index) => {
                   return (
                     <li key={`ingredient_${index}`}>
-                      {ingredient.name} - {ingredient.quantity}
+                      {ingredient.name} - {ingredient.amount}
                       <button className='deleteButton fa fa-trash'
                               onClick={this.handleIngredientRemoved.bind(this, ingredient)}/>
                     </li>

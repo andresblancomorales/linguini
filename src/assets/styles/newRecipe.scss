@@ -219,8 +219,7 @@ $fa-font-path: '~@fortawesome/fontawesome-free/webfonts';
 .stepForm {
   display: grid;
   grid-template-columns: 1fr auto;
-  grid-template-areas: 'step'
-                       'submit';
+  grid-template-areas: 'step' 'submit';
   grid-column-gap: 0.5rem;
 
   .preparationStep {
@@ -300,6 +299,24 @@ $fa-font-path: '~@fortawesome/fontawesome-free/webfonts';
   }
 }
 
+.loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  display: flex;
+
+  span {
+    margin: auto;
+    color: white;
+    font-size: 4rem;
+    animation: spin 1s ease-out infinite;
+  }
+}
+
 @media only screen and (max-width: 800px) {
   .bubble {
     max-width: 20rem;
@@ -307,8 +324,7 @@ $fa-font-path: '~@fortawesome/fontawesome-free/webfonts';
 
   .ingredientForm {
     grid-template-columns: 1fr auto;
-    grid-template-areas: 'name submit'
-                         'quantity submit';
+    grid-template-areas: 'name submit' 'quantity submit';
 
     .ingredientSubmit {
       align-self: end;

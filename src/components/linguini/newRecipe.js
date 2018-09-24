@@ -6,8 +6,11 @@ import {isDefined} from '../../utils/utilities';
 import IngredientsManagement from './recipes/ingredientsManagement';
 import PreparationManagement from "./recipes/preparationManagement";
 import {RecipeForm} from '../../forms/recipeForm';
+import {connect} from "react-redux";
+import * as _ from "../../utils/utilities";
+import {bindActionCreators} from 'redux';
 
-export default class NewRecipe extends FormComponent {
+export class NewRecipe extends FormComponent {
 
   constructor(props) {
     super(props, RecipeForm);
@@ -48,6 +51,13 @@ export default class NewRecipe extends FormComponent {
       ...this.state,
       step: this.state.step - 1
     });
+  }
+
+  handleRecipeSubmit() {
+    let recipe = this.getFormObject();
+    recipe.category = '000000000000000000000001';
+    this.props.actions.saveRecipe(recipe);
+
   }
 
   renderNameStep() {
@@ -141,8 +151,20 @@ export default class NewRecipe extends FormComponent {
                              onStepAdded={this.onStepAdded.bind(this)}
                              onStepMoved={this.onStepMoved.bind(this)}
                              onStepRemoved={this.onStepRemoved.bind(this)}
+                             onSubmit={this.handleRecipeSubmit.bind(this)}
                              onCancel={this.previousStep.bind(this)}/>
     );
+  }
+
+  renderLoader() {
+    if (!this.props.savingRecipe) {
+      return null;
+    }
+    return (
+      <div className='loader'>
+        <span className='fas fa-spinner'/>
+      </div>
+    )
   }
 
   renderStep() {
@@ -152,8 +174,26 @@ export default class NewRecipe extends FormComponent {
   render() {
     return (
       <div className='newRecipe'>
+        {this.renderLoader()}
         {this.renderStep()}
       </div>
     )
   }
 }
+
+const instanceProvider = _.getLinguiniInstanceProvider();
+const recipeActions = instanceProvider.recipeActions;
+
+const mapStateToProps = state => {
+  return {
+    savingRecipe: state.recipes.savingRecipe
+  };
+};
+
+const mapActionsToProps = dispatch => {
+  return {
+    actions: bindActionCreators(recipeActions.creators, dispatch)
+  };
+};
+
+export default connect(mapStateToProps, mapActionsToProps)(NewRecipe);

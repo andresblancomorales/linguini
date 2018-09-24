@@ -10,7 +10,8 @@ describe('RecipesReducer', () =>{
       all: [],
       loading: false,
       error: undefined,
-      categories: []
+      categories: [],
+      savingRecipe: false
     });
 
     done();

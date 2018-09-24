@@ -98,4 +98,22 @@ describe('GusteauClient', () => {
     expect(result).to.deep.equal({status: 200, body: [{_id: '001', name: 'pasta', description: 'Pasta'}]});
   });
 
+  it('should send the right request when posting a recipe', async () => {
+    let client = new GusteauClient('http://www.gusteau.com');
+    sinon.stub(client, 'doPost')
+      .withArgs({
+        path: '/recipes',
+        deserialize: true,
+        body: {name: 'Mac and cheese'}
+      })
+      .returns(Promise.resolve({
+        status: 200,
+        body: {_id: '001', name: 'Mac and cheese'}
+      }));
+
+    let result = await client.postRecipe({name: 'Mac and cheese'});
+
+    expect(result).to.deep.equal({status: 200, body: {_id: '001', name: 'Mac and cheese'}});
+  });
+
 });
